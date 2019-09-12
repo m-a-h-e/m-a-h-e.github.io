@@ -45,3 +45,5 @@ To adjust the weights *(parameters)* of the network, an optimization algorithm i
   - Adam
 
 The Python package - implementing all the above Neural Network components - can be found [here ...](https://github.com/m-a-h-e/numpy-neural-network)
+
+$$ F = G \frac{m_1 m_2} {r^2} $$
