@@ -1,3 +1,6 @@
+---
+tags: python,numpy,neural-network,activation-functions,loss-functions,optimizer,optimizer-algorithms,derivatives,convolution,pooling,relu,leakyrelu,softmax
+---
 # A NumPy based Neural Network Package Implementation
 
 ## Objective
