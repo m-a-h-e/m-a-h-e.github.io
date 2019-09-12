@@ -44,4 +44,4 @@ To adjust the weights *(parameters)* of the network, an optimization algorithm i
   - Adadelta
   - Adam
 
-The Python package - implementing all the above components - can be found [here ...](https://github.com/m-a-h-e/numpy-neural-network)
+The Python package - implementing all the above Neural Network components - can be found [here ...](https://github.com/m-a-h-e/numpy-neural-network)
