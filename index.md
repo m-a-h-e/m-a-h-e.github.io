@@ -1,6 +1,3 @@
----
-mathjax: true
----
 # A NumPy based Neural Network Package Implementation
 
 ## Objective
@@ -31,6 +28,7 @@ An easy way to build up a neural network is to define the following types of lay
   - [Tanh](https://nbviewer.jupyter.org/github/m-a-h-e/numpy-neural-network/blob/master/Tanh.ipynb)
   - [Sigmoid](https://nbviewer.jupyter.org/github/m-a-h-e/numpy-neural-network/blob/master/Sigmoid.ipynb)
   - [Softmax](https://nbviewer.jupyter.org/github/m-a-h-e/numpy-neural-network/blob/master/Softmax.ipynb)
+  - [Softmax](softmax.md)
 
 - **Loss layer** *(to implement network error loss functions)*
   - RMS loss *(= L2 Norm loss)*
@@ -48,5 +46,3 @@ To adjust the weights *(parameters)* of the network, an optimization algorithm i
   - Adam
 
 The Python package - implementing all the above Neural Network components - can be found [here ...](https://github.com/m-a-h-e/numpy-neural-network)
-
-$$ F = G \frac{m_1 m_2} {r^2} $$
