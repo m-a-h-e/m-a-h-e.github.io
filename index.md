@@ -1,3 +1,6 @@
+---
+mathjax: true
+---
 # A NumPy based Neural Network Package Implementation
 
 ## Objective
