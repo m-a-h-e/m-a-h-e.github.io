@@ -45,3 +45,5 @@ To adjust the weights *(parameters)* of the network, an optimization algorithm i
   - Adam
 
 The Python package - implementing all the above Neural Network components - can be found [here ...](https://github.com/m-a-h-e/numpy-neural-network)
+
+$$f'(x)[n] = y'[n] = \\frac{ e^{x[n]} * { \\sum_{}^{} e^{x[k]} } - e^{x[n]} * e^{x[k]}}{ (\\sum_{}^{} e^{x[k]})^2 }$$
