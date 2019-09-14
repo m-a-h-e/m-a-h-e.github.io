@@ -4,6 +4,7 @@
 @import "{{ site.theme }}";
 
 ul.toc-page,
-ul.toc-categories {
+ul.toc-categories,
+ul.toc-categories li {
   list-style: none;
 }
