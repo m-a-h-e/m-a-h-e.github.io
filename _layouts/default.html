@@ -60,10 +60,10 @@
           {% endif %}
 
           {% for cat in site.toc-categories %}
-          <ul>
-            <li class="toc-category">{{ cat }}
-              <ul>{% for page in site.pages %}{% if page.add-to-toc == true %}{% for page-toc-cat in page.toc-categories %}{% if page-toc-cat == cat %}
-                <li class="toc-page"><a href="{{ page.url }}">{{ page.title }}</a></li>
+          <ul class="toc-categories">
+            <li>{{ cat }}
+              <ul class="toc-cat-pages">{% for page in site.pages %}{% if page.add-to-toc == true %}{% for page-toc-cat in page.toc-categories %}{% if page-toc-cat == cat %}
+                <li><a href="{{ page.url }}">{{ page.title }}</a></li>
               {% endif %}{% endfor %}{% endif %}{% endfor %}</ul>
             </li>
           </ul>
