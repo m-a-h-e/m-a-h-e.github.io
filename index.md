@@ -1,7 +1,7 @@
 ---
 tags: python,numpy,neural-network,activation-functions,loss-functions,optimizer,optimizer-algorithms,derivatives,convolution,pooling,relu,leakyrelu,softmax
 add-to-toc: true
-toc-categories: [first]
+toc-categories: [Neural Network Basics]
 ---
 # A NumPy based Neural Network Package Implementation
 
