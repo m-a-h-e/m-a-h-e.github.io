@@ -24,6 +24,10 @@ pre.highlight {
 pre code {
     background-color: inherit;
 }
+blockquote {
+    padding: 0 0 0 15px;
+    border-left: 4px solid #48c;
+}
 
 @media only screen and (max-width: 767px) {
 
