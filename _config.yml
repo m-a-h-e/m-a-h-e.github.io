@@ -2,4 +2,4 @@ theme: jekyll-theme-architect
 title: Welcome to m-a-h-e's GitHub Pages.
 description: Pages related to Python, NumPy and of course ... Machine Learning.
 markdown: kramdown
-toc-categories: [first, second, third]
+toc-categories: [Neural Network Basics, Reinforcement Learning]
