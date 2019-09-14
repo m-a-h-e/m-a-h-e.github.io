@@ -2,11 +2,11 @@
 add-to-toc: true
 toc-categories: [NumPy Basics]
 ---
-# NumPy Image Data
+# NumPy Image Data Conventions
 
 ## Image Data Axes
 
-NumPy and other Python based frameworks define image data as arrays of pixels.
+NumPy and other Python based frameworks - like TensorFlow - define image data as arrays of pixels.
 
 This means, that an image is represented by a 3-dimensional array with:
 - axis 0 representing the image height,
