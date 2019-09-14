@@ -3,6 +3,10 @@
 
 @import "{{ site.theme }}";
 
+div.toc {
+    padding-bottom: 30px;
+}
+
 ul.toc-categories li {
     font-size: 15px;
     font-weight: 400;
