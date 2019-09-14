@@ -1,5 +1,7 @@
 ---
 mathjax: true
+add-to-toc: true
+toc-categories: [second]
 ---
 # The Softmax Function and it's Derivative
 
