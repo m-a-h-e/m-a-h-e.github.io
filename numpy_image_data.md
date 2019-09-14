@@ -13,7 +13,7 @@ This means, that an image is represented by a 3-dimensional array with:
 - axis 1 representing the image width,
 - axis 2 representing the pixel depth (number of color channels)
 
-Following this convention, the shape of an image looks like that:
+Following this convention, the Python shape of an image looks like that:
 - (height, width, depth)
 
 ## Reading an Image File into a NumPy Array
