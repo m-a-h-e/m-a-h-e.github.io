@@ -26,7 +26,7 @@ img = Image.open(f)
 data = np.array(img)
 ```
 
-## Reading all Image Files from a Zip package
+## Reading all Image Files from a Zip Package
 
 ```python
 from zipfile import ZipFile
