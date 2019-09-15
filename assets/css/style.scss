@@ -39,6 +39,10 @@ p.note {
     -webkit-border-radius: 5px;
     box-shadow: 0 0 2px 4px #eee;
 }
+img {
+    display: block;
+    margin: 20 auto;
+}
 
 @media only screen and (max-width: 767px) {
 
