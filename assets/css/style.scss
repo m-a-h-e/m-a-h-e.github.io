@@ -28,6 +28,11 @@ blockquote {
     padding: 0 0 0 15px;
     border-left: 4px solid #48c;
 }
+p.note {
+    background-color: #48c;
+    color: #fff;
+    font-weight: 200;
+}
 
 @media only screen and (max-width: 767px) {
 
