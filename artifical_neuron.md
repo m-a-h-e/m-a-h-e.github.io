@@ -6,3 +6,6 @@ toc-categories: [Neural Network Basics]
 # The Artifical Neuron
 
 ![artifical neuron structure](/assets/images/artifical_neuron.png)
+Structure of an Artifical Neuron
+
+Description
