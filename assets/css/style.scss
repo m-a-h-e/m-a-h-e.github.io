@@ -32,6 +32,9 @@ p.note {
     background-color: #6ae;
     color: #fff;
     padding: 5px 10px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
 }
 
 @media only screen and (max-width: 767px) {
