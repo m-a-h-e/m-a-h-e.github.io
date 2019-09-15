@@ -16,6 +16,10 @@ This means, that an image is represented by a 3-dimensional array with:
 Following this convention, the Python data shape of an image looks like that:
 - (height, width, depth)
 
+### References
+
+- [Image Axes in TensorFlow](https://www.tensorflow.org/api_docs/python/tf/io/decode_image)
+
 ## Reading an Image File into a NumPy Array
 
 ```python
