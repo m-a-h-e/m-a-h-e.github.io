@@ -29,9 +29,10 @@ blockquote {
     border-left: 4px solid #48c;
 }
 p.note {
-    background-color: #def;
-    font-weight: 700;
+    margin: 10px 0;
     padding: 10px 20px;
+    border-width: thin;
+    border-style: solid;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
