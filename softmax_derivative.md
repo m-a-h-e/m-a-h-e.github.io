@@ -5,7 +5,8 @@ toc-categories: [Neural Network Basics]
 ---
 # The Softmax Function and it's Derivative
 
-{:.note}We define n as the softmax output vector index and k as the softmax input vector index.
+{:.note}
+We define n as the softmax output vector index and k as the softmax input vector index.
 The sum symbol in the formulas below always means "sum over all k" (sum over all input indices).
 
 **The softmax function is defined as:**
