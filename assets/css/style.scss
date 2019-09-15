@@ -41,7 +41,11 @@ p.note {
 }
 img {
     display: block;
-    margin: 15px auto 20px auto; 
+    padding: 5px;
+    border-color: #48c;
+    border-width: thin;
+    border-style: solid;    
+    margin: 10px auto 15px auto; 
 }
 p.caption {
     text-align: center;
