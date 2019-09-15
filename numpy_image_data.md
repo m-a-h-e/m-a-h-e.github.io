@@ -18,7 +18,8 @@ Following this convention, the Python data shape of an image looks like that:
 
 ### References
 
-- [Image Axes in TensorFlow](https://www.tensorflow.org/api_docs/python/tf/io/decode_image)
+- [Image axes in TensorFlow](https://www.tensorflow.org/api_docs/python/tf/io/decode_image)
+- [Unfortunately PyTorch defines image axes in a different way](https://discuss.pytorch.org/t/dimensions-of-an-input-image/19439/2)
 
 ## Reading an Image File into a NumPy Array
 
