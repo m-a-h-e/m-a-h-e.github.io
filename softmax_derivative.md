@@ -13,6 +13,7 @@ The sum symbol in the formulas below always means "sum over all k" (sum over all
 
 $$f(x)[n] = y[n] = \frac{e^{x[n]}}{\sum_{}^{}e^{x[k]}}$$
 
+---
 **The derivative of softmax(x)[n] with respect to x[k] has to be divided into two cases:**
 
 **The case in which n equals k:**
