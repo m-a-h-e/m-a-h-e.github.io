@@ -11,12 +11,12 @@ We define n as the softmax output vector index and k as the softmax input vector
 The sum symbol in the formulas below always means "sum over all k" (sum over all input indices).
 
 ---
-**The softmax function is defined as:**
+## The softmax function is defined as:
 
 $$f(x)[n] = y[n] = \frac{e^{x[n]}}{\sum_{}^{}e^{x[k]}}$$
 
 ---
-**The derivative of softmax(x)[n] with respect to x[k] has to be divided into two cases:**
+## The derivative of softmax(x)[n] with respect to x[k] has to be divided into two cases:
 
 **The case in which n equals k:**
 
