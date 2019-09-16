@@ -5,14 +5,14 @@ toc-categories: [Neural Network Basics]
 ---
 # Machine Learning Fields
 
-- Supervised Learning
+- **Supervised Learning**
   - Regression, Interpolation, Extrapolation
   - Classification
   - Time Series Prediction
 
-- Unsupervised Learning
+- **Unsupervised Learning**
   - Clustering
   - Dimensionality Reduction
 
-- Reinforcement Learning
+- **Reinforcement Learning**
   - Explorative Behavior Optimization
