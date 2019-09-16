@@ -46,7 +46,6 @@ p.note {
     border-width: thin;
     border-style: solid;
     margin: 20px auto 5px auto;
-    max-width: calc(1vw - 40px);
 }
 p.caption {
     font-size: 12px;
@@ -70,5 +69,8 @@ p.caption {
         border-radius: 5px;
         -moz-border-radius: 5px;
         -webkit-border-radius: 5px;
+    }
+    #main-content img {
+        max-width: calc(1vw - 40px);
     }
 }
