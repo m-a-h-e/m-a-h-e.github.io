@@ -57,6 +57,9 @@ p.caption {
 #main-content li > ul {
     margin-bottom: 0px;
 }
+#main-content ul > ul > strong {
+    margin-bottom: 10px;
+}
 
 @media only screen and (max-width: 767px) {
 
