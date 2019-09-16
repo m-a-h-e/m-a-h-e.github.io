@@ -13,5 +13,3 @@ Forward pass matrix operation
 {:.caption}
 ![fully connected layer backward pass](/assets/images/fully_conn_backward.png)
 Backward pass matrix operations
-
-Description
