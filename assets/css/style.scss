@@ -61,8 +61,28 @@ p.caption {
     line-height: 2.0;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    #main-content h1,
+    #main-content h2,
+    #main-content h3,
+    #main-content h4,
+    #main-content h5,
+    #main-content h6 {
+        text-indent: 0px;
+    }
+}
+
 @media only screen and (max-width: 767px) {
 
+    #main-content h1,
+    #main-content h2,
+    #main-content h3,
+    #main-content h4,
+    #main-content h5,
+    #main-content h6 {
+        text-indent: 0px;
+    }
     header {
         padding: 25px 0;
     }
