@@ -29,7 +29,7 @@ toc-categories: [Neural Network Basics]
   - Clustering
     - K-Means
   - Dimensionality Reduction
-    - Pricipal Component Analysis (PCA)
+    - Principal Component Analysis (PCA)
     - Autoencoders
 
 - **Reinforcement Learning**
