@@ -5,7 +5,7 @@ toc-categories: [Neural Network Basics]
 ---
 # Machine Learning Fields
 
-- **Supervised Learning**
+- **Supervised Learning** (building a model from labeled data or input-output data pairs)
   - Regression
     - Neural Networks
       - Linear Regression
@@ -25,14 +25,14 @@ toc-categories: [Neural Network Basics]
       - Long Short Term Memory (LSTM)
       - Gated Recurrent Unit (GRU)
 
-- **Unsupervised Learning**
+- **Unsupervised Learning** (learning the underlying structure of data without given labels)
   - Clustering
     - K-Means
   - Dimensionality Reduction
     - Principal Component Analysis (PCA)
     - Autoencoders
 
-- **Reinforcement Learning**
+- **Reinforcement Learning** (solving tasks by exploring an environment and evaluating the returned reward)
   - Explorative Behavior Optimization
     - Neural Networks
       - Q Learning
