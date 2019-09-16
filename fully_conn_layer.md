@@ -1,4 +1,5 @@
 ---
+tags: python,numpy,neural-network,vector,matrix,tensor,forward pass,backward pass,backpropagation
 mathjax: true
 add-to-toc: true
 toc-categories: [Neural Network Basics]
