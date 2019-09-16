@@ -25,14 +25,12 @@ toc-categories: [Neural Network Basics]
       - Long Short Term Memory (LSTM)
       - Gated Recurrent Unit (GRU)
 
-
 - **Unsupervised Learning**
   - Clustering
     - K-Means
   - Dimensionality Reduction
     - Pricipal Component Analysis (PCA)
     - Autoencoders
-
 
 - **Reinforcement Learning**
   - Explorative Behavior Optimization
