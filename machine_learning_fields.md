@@ -6,7 +6,7 @@ toc-categories: [Neural Network Basics]
 # Machine Learning Fields
 
 - **Supervised Learning**
-  - Regression, Interpolation, Extrapolation
+  - Regression
   - Classification
   - Time Series Prediction
 
