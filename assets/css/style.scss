@@ -44,8 +44,9 @@ img {
     padding: 15px;
     border-color: #48c;
     border-width: thin;
-    border-style: solid;    
-    margin: 20px auto 5px auto; 
+    border-style: solid;
+    margin: 20px auto 5px auto;
+    max-width: calc(100% - 40px);
 }
 p.caption {
     font-size: 12px;
