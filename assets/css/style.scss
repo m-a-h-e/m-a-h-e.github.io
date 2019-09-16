@@ -3,6 +3,9 @@
 
 @import "{{ site.theme }}";
 
+body {
+    color: #556;
+}
 div.toc {
     padding-bottom: 30px;
 }
