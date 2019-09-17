@@ -159,6 +159,9 @@ header h2 {
     }
 }
 @media only screen and (max-width: 767px) {
+    .inner {
+        width: 90%;
+    }
     #main-content,
     header h1,
     header h2 {
