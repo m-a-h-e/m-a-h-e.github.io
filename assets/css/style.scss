@@ -146,6 +146,10 @@ header h2 {
     }
 }
 @media only screen and (max-width: 767px) {
+    header h1,
+    header h2 {
+        width: 100%;
+    }
     header a.button {
         border-color: #fff;
     }
