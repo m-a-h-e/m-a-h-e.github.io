@@ -135,8 +135,16 @@ p.note {
 #main-content h6:before {
     color: #46a;
 }
+header h1,
+header h2 {
+    width: 690px;
+}
 
 @media only screen and (max-width: 767px) {
+    header h1,
+    header h2 {
+        width: 490px;
+    }
     header a.button {
         border-color: #fff;
     }
