@@ -132,3 +132,10 @@ blockquote {
 #main-content h6:before {
     color: #46a;
 }
+
+@media only screen and (max-width: 767px) {
+
+    header a.button {
+        border-color: #343a46;
+    }
+}
