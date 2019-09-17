@@ -62,7 +62,6 @@ p.caption {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-
     #main-content h1,
     #main-content h2,
     #main-content h3,
@@ -74,7 +73,6 @@ p.caption {
 }
 
 @media only screen and (max-width: 767px) {
-
     #main-content h1,
     #main-content h2,
     #main-content h3,
@@ -98,6 +96,10 @@ p.caption {
         -webkit-border-radius: 5px;
     }
 }
+
+/* ================================================ */
+/* color style override ...                         */
+/* ================================================ */
 
 body {
     background-color: #e4eaf6;
@@ -135,7 +137,6 @@ p.note {
 }
 
 @media only screen and (max-width: 767px) {
-
     header a.button {
         border-color: #fff;
     }
