@@ -111,3 +111,17 @@ header {
     background-color: #46a;
     color: #e4eaf6;
 }
+a {
+    color: #46a;
+}
+blockquote {
+    border-left: 4px solid #46a;
+}
+#main-content h1:before,
+#main-content h2:before,
+#main-content h3:before,
+#main-content h4:before,
+#main-content h5:before,
+#main-content h6:before {
+    color: #46a;
+}
