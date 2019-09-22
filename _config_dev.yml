@@ -1,0 +1,7 @@
+
+url: 'http://localhost'
+baseurl: ''
+
+github:
+  is_project_page: false
+
