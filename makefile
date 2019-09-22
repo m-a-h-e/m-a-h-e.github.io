@@ -1,5 +1,6 @@
 
 CONFIG = --config _config.yml,_config_dev.yml
+HOST   = --host localhost --port 4000
 
 .PHONY: check clean build serve
 
@@ -7,7 +8,7 @@ build: clean check
 	bundle exec jekyll build $(CONFIG) --incremental --verbose
 
 serve: clean
-	bundle exec jekyll serve $(CONFIG) --incremental
+	bundle exec jekyll serve $(CONFIG) --incremental $(HOST)
 
 check: clean
 	@echo "======== JEKYLL CHECK ========"
