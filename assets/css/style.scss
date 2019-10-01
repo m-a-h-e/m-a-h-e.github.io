@@ -125,8 +125,8 @@ html {
 
 @media only screen and (max-width: calc(640px - 1px)) {
     #sidebar {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
         padding-left: 3%;
         padding-right: 3%;
     }
@@ -267,58 +267,71 @@ pre.highlight {
 /* ================================================== */
 /* colors and shadows */
 
+:root {
+    --headerbg: #369;
+    --headerfg: #F8F8F8;
+    --headerlinkactive: #ACE;
+
+    --contentbg: #F8F8F8;
+    --contentfg: #444;
+    --contentlinkactive: #246;
+
+    --codebg: #f0f2f4;
+    --shadow: #888;
+}
+
 html {
-    background-color: #FAFAFA;
-    color: #464646;
+    background-color: var(--contentbg);
+    color: var(--contentfg);
 }
 header,
 header a {
-    background-color: #469;
-    color: #FAFAFA;
+    background-color: var(--headerbg);
+    color: var(--contentbg);
 }
 #header a:active, #header a:hover {
-    color: #D8E0E4;
+    color: var(--headerlinkactive);
 }
 #footer a,
 #content a,
 #sidebar a {
-    color: #469;
+    color: var(--headerbg);
 }
 #footer a:active, #footer a:hover,
 #content a:active, #content a:hover,
 #sidebar a:active, #sidebar a:hover {
-    color: #246;
+    color: var(--contentlinkactive);
 }
 #content h1:before,
 #content h2:before,
 #content h3:before,
 #content h4:before {
-    color: #469;
+    color: var(--headerbg);
 }
 #content img,
 p.note {
-    border-color: #469;
-    box-shadow: 0px 3px 5px 0px #888;
+    border-color: var(--headerbg);
+    box-shadow: 0px 3px 5px 0px var(--shadow);
 }
 pre.highlight {
-    background-color: #f3f4f7;
+    background-color: var(--codebg);
 }
 pre code {
     background-color: inherit;
 }
 hr {
-    color: #469;
+    color: var(--headerbg);
 }
 blockquote {
-    border-left: 4px solid #469;
+    border-left: 4px solid var(--headerbg);
 }
 #footer {
-    border-top: 2px solid #469;
+    border-top: 2px solid var(--headerbg);
 }
 
 @media only screen and (max-width: calc(640px - 1px)) {
     #sidebar {
-        border-top: 2px solid #469;
+        border-top: 2px solid var(--headerbg);
     }
 }
 
