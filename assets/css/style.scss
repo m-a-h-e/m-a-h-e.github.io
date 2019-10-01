@@ -168,42 +168,48 @@ pre.highlight {
     font-size: 0.9em;
 }
 
+/* ========== harmonic font sizes ===========
+   1.260 : 1.00 1.26 1.59 2.00 2.52 3.18 4.00
+   1.201 : 1.00 1.20 1.44 1.73 2.08 2.50 3.00
+   1.165 : 1.00 1.17 1.36 1.58 1.84 2.15 2.50
+*/
+
 #header h1 {
-    font-size: 4em;
-    line-height: 1.05em;
+    font-size: 4.00em;
+    line-height: 1.1em;
 }
 #header h2,
 #content h1 {
-    font-size: 2.25em;
+    font-size: 2.52em;
     line-height: 1.25em;
 }
 #header h3,
 #content h2 {
-    font-size: 1.75em;
+    font-size: 1.59em;
     line-height: 1.25em;
 }
 #content h3 {
-    font-size: 1.125em;
+    font-size: 1.00em;
     line-height: 1.25em;
 }
 
 @media only screen and (max-width: calc(960px - 1px)) {
     #header h1 {
-        font-size: 3em;
-        line-height: 1.125em;
+        font-size: 3.00em;
+        line-height: 1.25em;
     }
     #header h2,
     #content h1 {
-        font-size: 2em;
+        font-size: 2.08em;
         line-height: 1.25em;
     }
     #header h3,
     #content h2 {
-        font-size: 1.5em;
+        font-size: 1.44em;
         line-height: 1.25em;
     }
     #content h3 {
-        font-size: 1.125em;
+        font-size: 1.00em;
         line-height: 1.25em;
     }
 }
@@ -215,17 +221,17 @@ pre.highlight {
     }
     #header h2,
     #content h1 {
-        font-size: 1.625em;
-        line-height: 1.2em;
+        font-size: 1.84em;
+        line-height: 1.25em;
     }
     #header h3,
     #content h2 {
-        font-size: 1.375em;
-        line-height: 1.2em;
+        font-size: 1.36em;
+        line-height: 1.25em;
     }
     #content h3 {
-        font-size: 1.125em;
-        line-height: 1.2em;
+        font-size: 1.00em;
+        line-height: 1.25em;
     }
 }
 
@@ -355,6 +361,8 @@ ul {
 }
 blockquote {
     padding-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 #content img {
     display: block;
@@ -373,7 +381,7 @@ p.note {
     border-width: thin;
     border-style: solid;
     padding: 15px;
-    margin: 10px 0 20px 0;
+    margin: 20px 0 20px 0;
 }
 pre.highlight {
     padding: 15px;
