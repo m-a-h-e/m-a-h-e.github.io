@@ -3,6 +3,9 @@
 
 @import "normalize.css";
 @import "rouge-github";
+@import "responsive_layout";
+@import "responsive_fonts_4fs";
+
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Serif');
 
 html {
@@ -20,216 +23,63 @@ html {
 }
 
 /* ================================================== */
-/* clearfix */
+/* some padding adjustments */
 
-.group:after {
-    content: "";
-    display: table;
-    clear: both;
+#footer {
+    padding-bottom: 20px;
 }
 
-/* ================================================== */
-/* responsive page layout */
-
-#footer,
-#header-wrapper,
-#content-wrapper {
-    width: 960px;
-    margin: 0 auto;
-}
-#header,
-#content {
-    margin-left: 20px;
-    width: calc(100% - (20px + 240px));
-}
-#content {
-    float: left;
-}
-#sidebar {
-    width: 240px;
-    float: left;
-}
-
-@media only screen and (max-width: calc(960px - 1px)) {
-    #header,
-    #footer,
-    #header-wrapper,
-    #content-wrapper {
-        width: 100%;
-    }
-    #header,
-    #content {
-        margin-left: 0px;
+@media (min-width: 640px) {
+    #header {
+        padding-top: 1px;
+        padding-bottom: 10px;
     }
     #content {
-        width: calc(100% - 240px);
+        padding-top: 1px;
     }
 }
 
-@media only screen and (max-width: calc(640px - 1px)) {
+@media (min-width: 960px) {
     #header,
-    #footer,
-    #content,
-    #sidebar {
-        width: 100%;
-        float: none;
+    #content {
+        padding-left: 40px;
     }
 }
 
 /* ================================================== */
 /* header content dependent, nice looking text wrap */
 
-@media only screen and (max-width: calc(960px - 1px)) {
-    #header {
-        width: 550px;
-    }
-}
-@media only screen and (max-width: calc(640px - 1px)) {
-    #header {
-        width: 500px;
-    }
-}
-@media only screen and (max-width: calc(500px - 1px)) {
-    #header {
-        width: 100%;
-    }
-}
-
-/* ================================================== */
-/* responsive region padding */
-
 #header {
-    padding: 20px 20px 15px 20px;
+    max-width: 440px;
 }
-#content {
-    padding: 20px 20px;
-}
-#sidebar {
-    padding: 20px 20px 20px 10px;
-}
-#footer {
-    padding: 10px 20px 20px 20px;
-}
-
-@media only screen and (max-width: calc(960px - 1px)) {
-    #header,
-    #footer,
-    #content {
-        padding-left: 3%;
-        padding-right: 3%;
-    }
-    #sidebar {
-        padding-left: 0px;
+@media (min-width: 640px) {
+    #header {
+        max-width: 550px;
     }
 }
-
-@media only screen and (max-width: calc(640px - 1px)) {
-    #sidebar {
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-left: 3%;
-        padding-right: 3%;
-    }
-    #content {
-        padding-bottom: 10px;
+@media (min-width: 960px) {
+    #header {
+        max-width: 700px;
     }
 }
 
 /* ================================================== */
 /* fonts */
 
-body {
+html, body {
     font-family: 'Noto Sans', sans-serif;
     font-size: 15px;
     font-weight: normal;
-    line-height: 1.5;
 }
-
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Noto Serif', serif;
     font-weight: bold;
 }
-
-h1, h2, h3, h4 {
-    margin-top: 0;
-    margin-bottom: 8px;
-}
-h1 {
-    margin-bottom: 20px;
-}
-
 p.caption {
     font-size: 0.85em;
 }
 pre.highlight {
     font-size: 0.9em;
-}
-
-/* ========== harmonic font sizes ===========
-   1.260 : 1.00 1.26 1.59 2.00 2.52 3.18 4.00
-   1.201 : 1.00 1.20 1.44 1.73 2.08 2.50 3.00
-   1.165 : 1.00 1.17 1.36 1.58 1.84 2.15 2.50
-*/
-
-#header h1 {
-    font-size: 4.00em;
-    line-height: 1.1em;
-}
-#header h2,
-#content h1 {
-    font-size: 2.52em;
-    line-height: 1.25em;
-}
-#header h3,
-#content h2 {
-    font-size: 1.59em;
-    line-height: 1.25em;
-}
-#content h3 {
-    font-size: 1.00em;
-    line-height: 1.25em;
-}
-
-@media only screen and (max-width: calc(960px - 1px)) {
-    #header h1 {
-        font-size: 3.00em;
-        line-height: 1.25em;
-    }
-    #header h2,
-    #content h1 {
-        font-size: 2.08em;
-        line-height: 1.25em;
-    }
-    #header h3,
-    #content h2 {
-        font-size: 1.44em;
-        line-height: 1.25em;
-    }
-    #content h3 {
-        font-size: 1.00em;
-        line-height: 1.25em;
-    }
-}
-
-@media only screen and (max-width: calc(640px - 1px)) {
-    #header h1 {
-        font-size: 2.5em;
-        line-height: 1.25em;
-    }
-    #header h2,
-    #content h1 {
-        font-size: 1.84em;
-        line-height: 1.25em;
-    }
-    #header h3,
-    #content h2 {
-        font-size: 1.36em;
-        line-height: 1.25em;
-    }
-    #content h3 {
-        font-size: 1.00em;
-        line-height: 1.25em;
-    }
 }
 
 /* ================================================== */
@@ -245,25 +95,26 @@ pre.highlight {
     text-align: right;
     padding-right: 8px;
 }
-#content h1:before {
-    content: "/";
-}
-#content h2:before {
-    content: "//";
-}
-#content h3:before {
-    content: "///";
-}
+
+#content h1:before,
+#content h2:before,
+#content h3:before,
 #content h4:before {
-    content: "////";
+    content: "";
 }
 
-@media only screen and (max-width: calc(960px - 1px)) {
-    #content h1:before,
-    #content h2:before,
-    #content h3:before,
+@media (min-width: 960px) {
+    #content h1:before {
+        content: "/";
+    }
+    #content h2:before {
+        content: "//";
+    }
+    #content h3:before {
+        content: "///";
+    }
     #content h4:before {
-        content: "";
+        content: "////";
     }
 }
 
@@ -328,13 +179,14 @@ hr {
 blockquote {
     border-left: 4px solid var(--headerbg);
 }
+
+#sidebar,
 #footer {
     border-top: 2px solid var(--headerbg);
 }
-
-@media only screen and (max-width: calc(640px - 1px)) {
+@media (min-width: 640px) {
     #sidebar {
-        border-top: 2px solid var(--headerbg);
+        border-style: none;
     }
 }
 
