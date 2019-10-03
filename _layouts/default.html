@@ -7,8 +7,7 @@
     {% if page.tags %}
     <meta itemprop="keywords" content="{{ page.tags }}" />
     {% endif %}
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" media="screen" type="text/css">
-    <link rel="stylesheet" href="{{ '/assets/css/print.css' | relative_url }}" media="print" type="text/css">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" type="text/css">
     <title>{{ site.title | default: site.github.repository_name }}</title>
     {% if page.mathjax %}
     <!-- http://docs.mathjax.org/en/latest/ -->
@@ -23,7 +22,7 @@
           <a href="{{ '/' | absolute_url }}">
             <h1>{{ site.title | default: site.github.repository_name }}</h1>
           </a>
-          <h3>{{ site.description | default: site.github.project_tagline }}</h3>
+          <h2>{{ site.description | default: site.github.project_tagline }}</h2>
         </div>
       </div>
     </header>
