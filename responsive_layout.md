@@ -6,13 +6,13 @@ toc-categories: [Webdesign]
 
 {:.caption}
 ![large page layout](/assets/images/large_layout.png)
-Large Page Layout
+Large (Desktop) Page Layout
 
 {:.caption}
 ![medium page layout](/assets/images/medium_layout.png)
-Medium Page Layout
+Medium (Tablet) Page Layout
 
 {:.caption}
 ![small page layout](/assets/images/small_layout.png)
-Small Page Layout
+Small (Mobile) Page Layout
 
