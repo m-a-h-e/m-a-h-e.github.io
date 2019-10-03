@@ -1,6 +1,6 @@
 
 :root {
-    --sidebar-w: 240px;
+    --sidebar-w: 300px;
 }
 
 html {
@@ -42,11 +42,11 @@ html {
 
 @media (min-width: 640px) {
     #content {
-        width: calc(100% - var(--sidebar-w));
+        width: 70%;
         float: left;
     }
     #sidebar {
-        width: var(--sidebar-w);
+        width: 30%;
         float: left;
     }
     #header,
@@ -60,11 +60,11 @@ html {
     }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1024px) {
     #header-wrapper,
     #content-wrapper,
     #footer-wrapper {
-        width: 960px;
+        width: 1024px;
         margin: 0 auto;
     }
 }
