@@ -42,6 +42,9 @@ html {
     #content {
         padding-left: 40px;
     }
+    #content {
+        padding-right: 30px;
+    }
 }
 
 /* ================================================== */
@@ -248,6 +251,30 @@ ul {
 }
 
 /* ================================================== */
+/* header */
+
+#header-wrapper {
+    position: relative;
+}
+#header-wrapper:before,
+#header-wrapper:after {
+    position: absolute;
+    bottom: -35px;
+    width: 1000px;
+    height: 0px;
+    border-top: 40px solid var(--headerbg);
+    content: "";
+}
+#header-wrapper:before {
+    left: -1050px;
+    border-right: 12px solid transparent;
+}
+#header-wrapper:after {
+    right: -1050px;
+    border-left: 12px solid transparent;
+}
+
+/* ================================================== */
 /* sidebar border and shadows */
 
 #sidebar {
@@ -264,7 +291,7 @@ ul {
         position: relative;
         background-color: var(--contentbg);
         padding-top: 0px;
-        margin-top: 10px;
+        margin-top: 25px;
         margin-bottom: 15px;
         margin-right: 10px;
         width: calc(30% - 10px);
