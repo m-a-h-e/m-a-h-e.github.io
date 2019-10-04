@@ -7,11 +7,11 @@ toc-categories: [Neural Network Basics]
 
 ## **Supervised Learning** (building a model from labeled data or input-output data pairs)
 
-- Regression
+- **Regression**
   - Neural Networks
     - Linear Regression
     - Logistic Regression
-- Classification
+- **Classification**
   - Neural Networks
     - Convolutional NNs
     - Logistic Regression + Softmax
@@ -20,7 +20,7 @@ toc-categories: [Neural Network Basics]
   - Decision Trees
   - Random Forests
   - Naive Bayes
-- Time Series Prediction
+- **Time Series Prediction**
   - Neural Networks
     - Recurrent Neural Networks (RNN)
     - Long Short Term Memory (LSTM)
@@ -28,15 +28,15 @@ toc-categories: [Neural Network Basics]
 
 ## **Unsupervised Learning** (learning the underlying structure of data without given labels)
 
-- Clustering
+- **Clustering**
   - K-Means
-- Dimensionality Reduction
+- **Dimensionality Reduction**
   - Principal Component Analysis (PCA)
   - Autoencoders
 
 ## **Reinforcement Learning** (solving tasks by exploring an environment and evaluating the returned reward)
 
-- Explorative Behavior Optimization
+- **Explorative Behavior Optimization**
   - Neural Networks
     - Q Learning
     - Temporal Difference (TD) Learning
