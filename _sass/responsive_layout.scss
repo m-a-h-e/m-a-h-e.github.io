@@ -17,8 +17,7 @@ html {
             box-sizing: inherit;
 }
 
-/* clearfix */
-.group:after {
+.clearfix:after {
     content: "";
     display: table;
     clear: both;
