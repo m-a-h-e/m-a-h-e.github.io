@@ -232,6 +232,10 @@ pre code {
 ul {
     list-style: disc;
 }
+:not(li) > ul,
+:not(li) > ul > li ul {
+    padding-left: 25px;
+}
 #sidebar :not(li) > ul {
     list-style-type: none;
     padding-left: 0px;
@@ -241,9 +245,6 @@ ul {
 }
 #sidebar :not(li) > ul > li + li {
     margin-top: 1em;
-}
-:not(li) > ul > li ul {
-    padding-left: 25px;
 }
 
 /* ================================================== */
