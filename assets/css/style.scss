@@ -221,7 +221,7 @@ blockquote {
     max-width: calc(100% - 20px);
 }
 
-@media (min-width: 640px) {
+@media (min-width: 512px) {
     #content p.caption.small {
         width: 40%;
         float: left;
