@@ -275,7 +275,7 @@ ul {
         position: absolute;
         content: "";
         width: 10px;
-        height: calc(100% - 50px);
+        height: 400px;
         top: 5px;
         background-color: var(--shadow);
         z-index: -1;
@@ -283,12 +283,12 @@ ul {
     #sidebar:before {
         left: 15px;
         box-shadow: -10px 0px 10px var(--shadow);
-        transform: rotate(-2deg);
+        transform: rotate(-4deg);
     }
     #sidebar:after {
         right: 15px;
         box-shadow: 10px 0px 10px var(--shadow);
-        transform: rotate(2deg);
+        transform: rotate(4deg);
     }
 }
 
