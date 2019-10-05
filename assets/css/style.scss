@@ -251,30 +251,6 @@ ul {
 }
 
 /* ================================================== */
-/* header */
-
-#header-wrapper {
-    position: relative;
-}
-#header-wrapper:before,
-#header-wrapper:after {
-    position: absolute;
-    bottom: -35px;
-    width: 1000px;
-    height: 0px;
-    border-top: 40px solid var(--headerbg);
-    content: "";
-}
-#header-wrapper:before {
-    left: -1050px;
-    border-right: 12px solid transparent;
-}
-#header-wrapper:after {
-    right: -1050px;
-    border-left: 12px solid transparent;
-}
-
-/* ================================================== */
 /* sidebar border and shadows */
 
 #sidebar {
