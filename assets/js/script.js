@@ -23,7 +23,7 @@ $(document).ready(function() {
         $(this).addClass("top-ul");
         $(this).children("li").each(function() {
           if (!$(this).contents().first().is("ul")) {
-            $(this).contents().first().wrap("<span></span>");
+            $(this).contents().first().wrap('<span class="top-li"></span>');
           }
         });
       }
