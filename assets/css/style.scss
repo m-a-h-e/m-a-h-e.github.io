@@ -198,6 +198,7 @@ pre code {
 
     img {
         display: block;
+        max-width: 100%;
         padding: 15px;
         margin: 0px auto;
         box-shadow: 0px 0px 8px 0px var(--shadow);
@@ -209,6 +210,9 @@ pre code {
         margin-top: 10px;
     }
 }
+#content div.img.large-img {
+    margin: 20px 0;
+}
 
 @media (min-width: 512px) {
     #content div.img:not(.large-img) {
@@ -217,7 +221,6 @@ pre code {
         margin-left: 0;
         
         img {
-            max-width: 100%;
             margin-left: 0;
         }
         img:hover {
