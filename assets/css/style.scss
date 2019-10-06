@@ -76,9 +76,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Noto Serif', serif;
     font-weight: bold;
 }
-p.caption {
-    font-size: 0.85em;
-}
 pre.highlight {
     font-size: 0.9em;
 }
@@ -95,12 +92,6 @@ pre.highlight {
     display: inline-block;
     text-align: right;
     padding-right: 8px;
-}
-
-#content h1:before,
-#content h2:before,
-#content h3:before,
-#content h4:before {
     content: "";
 }
 
@@ -202,30 +193,39 @@ pre code {
 /* ================================================== */
 /* images */
 
-#content p.caption {
-    text-align: center;
-    margin: 10px 0 20px 0;
-}
-#content img {
-    display: block;
-    padding: 15px;
-    margin: 20px auto 8px auto;
-    max-width: calc(100% - 20px);
-    box-shadow: 0px 0px 8px 0px var(--shadow);
+#content div.img {
+    margin: 20px;
+
+    img {
+        display: block;
+        padding: 15px;
+        margin: 0px auto;
+        box-shadow: 0px 0px 8px 0px var(--shadow);
+    }
+    p {
+        font-size: 0.85em;
+        text-align: center;
+        margin: 0;
+        margin-top: 10px;
+    }
 }
 
 @media (min-width: 512px) {
-    #content p.caption.small {
-        width: 40%;
+    #content div.img:not(.large-img) {
         float: left;
-        text-align: left;
-        margin: 0px 0px 20px 0px;
-    }
-    #content img.small {
-        margin: 20px 20px 10px 0px;
-    }
-    #content img.small:hover {
-        opacity: 0.7;
+        max-width: 40%;
+        margin-left: 0;
+        
+        img {
+            max-width: 100%;
+            margin-left: 0;
+        }
+        img:hover {
+            opacity: 0.7;
+        }
+        p {
+            text-align: left;
+        }
     }
 }
 
@@ -234,20 +234,22 @@ pre code {
 
 ul {
     list-style: disc;
-}
-:not(li) > ul,
-:not(li) > ul > li ul {
     padding-left: 25px;
 }
-#sidebar :not(li) > ul {
+ul.top-ul {
     list-style-type: none;
     padding-left: 0px;
-}
-#sidear :not(li) > ul > li > ul {
-    margin-top: 0.2em;
-}
-#sidebar :not(li) > ul > li + li {
-    margin-top: 1em;
+
+    span {
+        font-weight: bold;
+    }
+    ul {
+        margin-top: 0.2em;
+        margin-bottom: 0.2em;
+    }
+    > li + li {
+        margin-top: 1em;
+    }
 }
 
 /* ================================================== */
