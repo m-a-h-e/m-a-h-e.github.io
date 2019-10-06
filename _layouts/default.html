@@ -37,7 +37,7 @@
           <div class="toc">
             {% if site.toc-categories %}{% for cat in site.toc-categories %}
             <ul class="toc-categories">
-              <li><strong>{{ cat }}</strong>
+              <li>{{ cat }}
                 <ul class="toc-cat-pages">{% for page in site.pages %}{% if page.add-to-toc == true %}{% for page-toc-cat in page.toc-categories %}{% if page-toc-cat == cat %}
                   <li><a href="{{ page.url }}">{{ page.title }}</a></li>
                 {% endif %}{% endfor %}{% endif %}{% endfor %}</ul>
@@ -45,7 +45,7 @@
             </ul>
             {% endfor %}{% endif %}
             <ul class="toc-categories">
-              <li><strong>My GitHub Repositories</strong>
+              <li>My GitHub Repositories
                 <ul class="toc-cat-pages">
                   <li><a href="https://github.com/m-a-h-e/numpy-neural-network">NumPy Neural Network</a></li>
                   <li><a href="https://github.com/m-a-h-e/python-basics">Python Basics</a></li>

@@ -1,5 +1,7 @@
 
 $(document).ready(function() {
+
+  /* rearrange images and their caption and handle small/large click event */
   $("img").each(function() {
     if ($(this).parent().is("p")) {
       $(this).parent().before('<div class="clearfix"></div>');
@@ -14,13 +16,15 @@ $(document).ready(function() {
     $(this).toggleClass("large-img");
   });
 
+  /* add top-ul for CSS styling and "span" wrap top li texts */
   $("ul").each(function() {
     if (!$(this).parent().is("li")) {
       if ($(this).has("li").has("ul").length) {
         $(this).addClass("top-ul");
         $(this).children("li").each(function() {
-          //console.log($(this).text());
-          // TODO wrap top-ul li text into <span>...</span> but without other (ul/li) sub-elements
+          if (!$(this).contents().first().is("ul")) {
+            $(this).contents().first().wrap("<span></span>");
+          }
         });
       }
     }

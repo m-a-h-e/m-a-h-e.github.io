@@ -240,7 +240,7 @@ ul.top-ul {
     list-style-type: none;
     padding-left: 0px;
 
-    span {
+    > li > span {
         font-weight: bold;
     }
     ul {
