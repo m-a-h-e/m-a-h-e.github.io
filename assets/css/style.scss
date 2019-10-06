@@ -194,7 +194,7 @@ pre code {
 /* images */
 
 #content div.img {
-    margin: 20px;
+    margin: 20px 0;
 
     img {
         display: block;
@@ -210,15 +210,12 @@ pre code {
         margin-top: 10px;
     }
 }
-#content div.img.large-img {
-    margin: 20px 0;
-}
 
 @media (min-width: 512px) {
     #content div.img:not(.large-img) {
         float: left;
         max-width: 40%;
-        margin-left: 0;
+        margin: 20px 20px 20px 0;
         
         img {
             margin-left: 0;
