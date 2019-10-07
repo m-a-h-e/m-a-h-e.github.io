@@ -1,18 +1,17 @@
 
 $(document).ready(function() {
 
-  /* rearrange images and their caption and handle small/large click event */
+  /* make image paragraph styling possible */
   $("img").each(function() {
-    if ($(this).parent().is("p")) {
-      $(this).parent().before('<div class="clearfix"></div>');
-      $(this).parent().wrap('<div class="img"></div>');
-      $(this).insertBefore($(this).parent());
-    } else {
-      $(this).before('<div class="clearfix"></div>');
-      $(this).wrap('<div class="img"></div>');
+    var par = $(this).parent();
+    if (par.is("p")) {
+      par.before('<div class="clearfix"></div>');
+      par.addClass('img');
     }
   });
-  $("div.img").on('click', function() {
+
+  /* handle small/large image click event */
+  $("p.img").on('click', function() {
     $(this).toggleClass("large-img");
   });
 
