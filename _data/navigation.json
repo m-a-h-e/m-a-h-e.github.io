@@ -1,0 +1,21 @@
+{
+  "categories": [
+    {
+      "name": "Neural Network Basics",
+      "page_names": [
+        "index.md",
+        "machine_learning_fields.md",
+        "numpy_image_data.md",
+        "artificial_neuron.md",
+        "fully_conn_layer.md",
+        "softmax_derivative.md"
+      ]
+    },{
+      "name": "Webdesign",
+      "page_names": [
+        "responsive_layout.md",
+        "typography.md"
+      ]
+    }
+  ]
+}
