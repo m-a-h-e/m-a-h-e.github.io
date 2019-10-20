@@ -1,6 +1,4 @@
 ---
-add-to-toc: true
-toc-categories: [NumPy Basics]
 ---
 # NumPy Image Data Conventions
 

@@ -1,6 +1,4 @@
 ---
-add-to-toc: true
-toc-categories: [Webdesign]
 ---
 # Typography and Responsive Fonts
 
