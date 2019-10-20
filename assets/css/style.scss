@@ -119,10 +119,10 @@ pre.highlight {
     --headerlinkactive: #ACE;
 
     --contentbg: #F8F8F8;
-    --contentfg: #333;
+    --contentfg: #444;
     --contentlinkactive: #246;
 
-    --codebg: #f0f2f4;
+    --codebg: #f0f0f0;
     --shadow: #888;
 }
 
@@ -169,8 +169,8 @@ hr {
 
 blockquote {
     padding-left: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px;
+    margin-left: 12px;
     border-left: 4px solid var(--headerbg);
 }
 p.note {
@@ -185,6 +185,8 @@ p.note {
 pre.highlight {
     background-color: var(--codebg);
     padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 pre code {
     background-color: var(--codebg);
