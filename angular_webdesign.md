@@ -2,10 +2,16 @@
 ---
 # Angular based Webdesign
 
-## Angular.io
+## Angular
 
 - [Angular Docs](https://angular.io/docs)
 - [Angular Architecture](https://angular.io/guide/architecture)
+- [Angular HTTP Client](https://angular.io/guide/http)
+- [A Developer Angular Blog](https://brianflove.com/)
+
+## REST API Handling
+
+- [HTTP Methods for REST Services](https://www.restapitutorial.com/lessons/httpmethods.html)
 
 ## Reactive Forms in Angular
 
