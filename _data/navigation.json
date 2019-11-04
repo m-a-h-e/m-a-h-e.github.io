@@ -14,7 +14,8 @@
       "name": "Webdesign",
       "page_names": [
         "responsive_layout.md",
-        "typography.md"
+        "typography.md",
+        "angular_webdesign.md"
       ]
     }
   ]
