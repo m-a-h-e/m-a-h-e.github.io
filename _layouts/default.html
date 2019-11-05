@@ -39,9 +39,14 @@
             {% for cat in site.data.navigation.categories %}
             <ul class="toc-categories">
               <li>{{ cat.name }}
-                <ul class="toc-cat-pages">{% for page_name in cat.page_names %}{% for page in site.pages %}{% if page_name == page.name %}
-                  <li><a href="{{ page.url }}">{{ page.title }}</a></li>{% endif %}{% endfor %}{% endfor %}
-                </ul>
+                <ul class="toc-cat-pages">{% for page_name in cat.page_names %}
+                  {% for page in site.pages %}{% if page_name == page.name %}
+                    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+                  {% endif %}{% endfor %}
+                  {% for page in site.github.public_repositories %}{% if page_name == page.name %}
+                    <li><a href="{{ page.url }}">{{ page.description }}</a></li>
+                  {% endif %}{% endfor %}
+                {% endfor %}</ul>
               </li>
             </ul>
             {% endfor %}
@@ -50,8 +55,8 @@
                 <ul class="toc-cat-pages">
                   <li><a href="https://github.com/m-a-h-e/numpy-neural-network">NumPy Neural Network</a></li>
                   <li><a href="https://github.com/m-a-h-e/python-basics">Python Basics</a></li>
+                  <li><a href="https://github.com/m-a-h-e/angular-todo-list">Angular Todo List</a></li>
                   <li><a href="https://github.com/m-a-h-e">Overview</a></li>
-                  <li><a href="https://m-a-h-e.github.io/angular-todo-list/">My First Angular App</a></li>
                 </ul>
               </li>
             </ul>

@@ -15,7 +15,8 @@
       "page_names": [
         "responsive_layout.md",
         "typography.md",
-        "angular_webdesign.md"
+        "angular_webdesign.md",
+        "angular-todo-list"
       ]
     }
   ]
