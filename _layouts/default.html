@@ -41,7 +41,7 @@
                     <li><a href="{{ page.url }}">{{ page.title }}</a></li>
                   {% endif %}{% endfor %}
                   {% for page in site.github.public_repositories %}{% if page_name == page.name %}
-                    <li><a href="{{ page.url }}">{{ page.description }}</a></li>
+                    <li><a href="https://{{ site.github.owner_name }}.github.io/{{ page.name }}">{{ page.description }}</a></li>
                   {% endif %}{% endfor %}
                 {% endfor %}</ul>
               </li>
