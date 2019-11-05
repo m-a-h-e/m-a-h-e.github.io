@@ -25,7 +25,8 @@
       "repo_names": [
         "numpy-neural-network",
         "python-basics",
-        "angular-todo-list"
+        "angular-todo-list",
+        "overview"
       ]
     }
   ]
