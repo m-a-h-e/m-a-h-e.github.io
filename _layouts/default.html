@@ -36,14 +36,17 @@
             {% for cat in site.data.navigation.categories %}
             <ul class="toc-categories">
               <li>{{ cat.name }}
-                <ul class="toc-cat-pages">{% for page_name in cat.page_names %}
-                  {% for page in site.pages %}{% if page_name == page.name %}
+                <ul class="toc-cat-pages">
+                  {% for page_name in cat.page_names %}{% for page in site.pages %}{% if page_name == page.name %}
                     <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-                  {% endif %}{% endfor %}
-                  {% for page in site.github.public_repositories %}{% if page_name == page.name %}
+                  {% endif %}{% endfor %}{% endfor %}
+                  {% for page_name in cat.docs_names %}{% for page in site.github.public_repositories %}{% if page_name == page.name %}
                     <li><a href="https://{{ site.github.owner_name }}.github.io/{{ page.name }}">{{ page.description }}</a></li>
-                  {% endif %}{% endfor %}
-                {% endfor %}</ul>
+                  {% endif %}{% endfor %}{% endfor %}
+                  {% for page_name in cat.repo_names %}{% for page in site.github.public_repositories %}{% if page_name == page.name %}
+                    <li><a href="{{ site.github.html_url }}">{{ page.description }}</a></li>
+                  {% endif %}{% endfor %}{% endfor %}
+                </ul>
               </li>
             </ul>
             {% endfor %}
