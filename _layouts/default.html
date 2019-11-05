@@ -27,6 +27,9 @@
       </div>
     </header>
     <div id="content-wrapper" class="clearfix">
+      <div>
+        {{ site.github | jsonify }}
+      </div>
       <section id="content" class="clearfix">
         {{ content }}
       </section>
