@@ -1,7 +1,7 @@
 ---
 mathjax: true
 ---
-# The Softmax Function and it's Derivative
+# The Softmax Function and its Derivative
 
 {:.note}
 We define n as the softmax output vector index and k as the softmax input vector index.
