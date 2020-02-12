@@ -1,7 +1,7 @@
 ---
 tags: python,numpy,neural-network,activation-functions,loss-functions,optimizer,optimizer-algorithms,derivatives,convolution,pooling,relu,leakyrelu,softmax
 ---
-# A NumPy based Neural Network [Package Implementation](https://github.com/m-a-h-e/numpy-neural-network)
+# A NumPy based Neural Network [Package Implementation](https://github.com/maideas/numpy-neural-network)
 
 ## Objective
 
@@ -25,11 +25,11 @@ An easy way to build up a neural network is to define the following types of lay
   - MaxPooling layer
 
 - **Function layer** *(to implement neuron activation functions)*
-  - [Linear](https://nbviewer.jupyter.org/github/m-a-h-e/numpy-neural-network/blob/master/Linear.ipynb)
-  - [ReLU](https://nbviewer.jupyter.org/github/m-a-h-e/numpy-neural-network/blob/master/ReLU.ipynb)
-  - [LeakyReLU](https://nbviewer.jupyter.org/github/m-a-h-e/numpy-neural-network/blob/master/LeakyReLU.ipynb)
-  - [Tanh](https://nbviewer.jupyter.org/github/m-a-h-e/numpy-neural-network/blob/master/Tanh.ipynb)
-  - [Sigmoid](https://nbviewer.jupyter.org/github/m-a-h-e/numpy-neural-network/blob/master/Sigmoid.ipynb)
+  - [Linear](https://nbviewer.jupyter.org/github/maideas/numpy-neural-network/blob/master/Linear.ipynb)
+  - [ReLU](https://nbviewer.jupyter.org/github/maideas/numpy-neural-network/blob/master/ReLU.ipynb)
+  - [LeakyReLU](https://nbviewer.jupyter.org/github/maideas/numpy-neural-network/blob/master/LeakyReLU.ipynb)
+  - [Tanh](https://nbviewer.jupyter.org/github/maideas/numpy-neural-network/blob/master/Tanh.ipynb)
+  - [Sigmoid](https://nbviewer.jupyter.org/github/maideas/numpy-neural-network/blob/master/Sigmoid.ipynb)
   - [Softmax](softmax_derivative.md)
 
 - **Loss layer** *(to implement network error loss functions)*
