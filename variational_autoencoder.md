@@ -4,11 +4,11 @@ mathjax: true
 ---
 # Variational Autoencoder (VAE)
 
-## Deriving the Kullback-Leibler divergence
+## Deriving the Kullback-Leibler divergence loss
 
 {:.caption}
 ![fully connected layer forward pass](assets/images/deriving_the_KL_divergence_loss_for_vaes.png)
-[Deriving the Kullback-Leibler divergence for VAEs](https://stats.stackexchange.com/questions/318748/deriving-the-kl-divergence-loss-for-vaes)
+[Deriving the Kullback-Leibler divergence loss](https://stats.stackexchange.com/questions/318748/deriving-the-kl-divergence-loss-for-vaes)
 
 <div class="clearfix"></div>
 
