@@ -10,6 +10,8 @@ mathjax: true
 
 <div class="clearfix"></div>
 
+- **x** : input space vector.
+- **z** : latent space vector.
 - **p** and **q** : probability distributions.
 - **$$\mathcal{N}$$** : a gaussian normal distribution, represented by an [expected value vector](https://en.wikipedia.org/wiki/Expected_value) and a [covariance matrix](https://en.wikipedia.org/wiki/Covariance_matrix).
 - **$$\pmb{I}$$** : a pure diagonal matrix with all diagonal elements set to 1.
