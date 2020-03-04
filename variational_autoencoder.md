@@ -13,7 +13,7 @@ mathjax: true
 - **p** and **q** : probability distributions.
 - **$$\mathcal{N}$$** : a gaussian normal distribution, represented by an [expected value vector](https://en.wikipedia.org/wiki/Expected_value) and a [covariance matrix](https://en.wikipedia.org/wiki/Covariance_matrix).
 - **$$\pmb{I}$$** : a pure diagonal matrix with all diagonal elements set to 1.
-- **$$\Sigma$$** : the [covariance matrix](https://en.wikipedia.org/wiki/Covariance_matrix) of a distribution. In case of the VAE, all covariance matrices are pure diagonal and can therefore be represented by a diagonal vector).
+- **$$\Sigma$$** : the [covariance matrix](https://en.wikipedia.org/wiki/Covariance_matrix) of a probability distribution. In case of the VAE, all covariance matrices are pure diagonal and can therefore be represented by a diagonal vector).
 - **$$\sigma^2$$** : a variance value.
 - **$$\mu$$** : a mean value.
 - **tr$$\{A\}$$** : the [trace](https://en.wikipedia.org/wiki/Trace_(linear_algebra)) of the matrix, which equals the sum over all diagonal elements of the matrix.
