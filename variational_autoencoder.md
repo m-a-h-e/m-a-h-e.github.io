@@ -24,11 +24,11 @@ mathjax: true
 - **$$\vert A \vert$$** : the [determinant](https://en.wikipedia.org/wiki/Determinant) of the matrix, which - in case of a pure diagonal matrix - equals the product over all diagonal elements of the matrix.
 - **log** : the natural log is a good choice when calculating the [Kullback-Leibler divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence#Multivariate_normal_distributions) of multivariate normal distributions.
 
-## Some nice pages explaning VAEs
+## Some nice pages explaining VAEs
 
 - [Understanding Variational Autoencoders (VAEs) - by Joseph Rocca](https://towardsdatascience.com/understanding-variational-autoencoders-vaes-f70510919f73)
 - [Variational Autoencoder: Intuition and Implementation - by Augustinus Kristiadi](https://wiseodd.github.io/techblog/2016/12/10/variational-autoencoder/)
-- [Variational autoencoders - by Jeremy Jordan](https://www.jeremyjordan.me/variational-autoencoders/)
+- [Variational Autoencoders - by Jeremy Jordan](https://www.jeremyjordan.me/variational-autoencoders/)
 - [Intuitively Understanding Variational Autoencoders - by Irhum Shafkat](https://towardsdatascience.com/intuitively-understanding-variational-autoencoders-1bfe67eb5daf)
 
 ## YouTube
@@ -36,5 +36,4 @@ mathjax: true
 {:.caption}
 [![Deep Generative Modeling, MIT 6.S191](https://img.youtube.com/vi/rZufA635dq4/0.jpg)](https://www.youtube.com/watch?v=rZufA635dq4)
 Deep Generative Modeling, MIT 6.S191
-
 
