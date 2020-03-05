@@ -12,16 +12,15 @@ mathjax: true
 
 <div class="clearfix"></div>
 
-- **x** : input vector.
-- **z** : latent space vector.
+- **x** and **z** : encoder input vector and latent space vector.
 - **p** and **q** : probability distributions.
 - **$$\mathcal{N}$$** : a gaussian normal distribution, represented by an [expected value vector](https://en.wikipedia.org/wiki/Expected_value) and a [covariance matrix](https://en.wikipedia.org/wiki/Covariance_matrix).
-- **$$\pmb{I}$$** : a pure diagonal matrix with all diagonal elements set to 1.
-- **$$\Sigma$$** : the [covariance matrix](https://en.wikipedia.org/wiki/Covariance_matrix) of a probability distribution. In case of the VAE, all covariance matrices are pure diagonal and can therefore be represented by a diagonal vector).
-- **$$\sigma^2$$** : a variance value.
-- **$$\mu$$** : a mean value.
+- **$$\pmb{I}$$** : a diagonal matrix with all diagonal elements set to 1.
+- **$$\Sigma$$** : the [covariance matrix](https://en.wikipedia.org/wiki/Covariance_matrix) of a probability distribution. In case of the VAE, the latent space covariance matrix is defined as a diagonal matrix and can therefore be represented by its diagonal vector. The non-diagonal elements are supposed to be 0, which implies that the latent space features are uncorrelated / independent of each other.
+- **$$\sigma^2$$** : a variance vector = vector of squared deviation values.
+- **$$\mu$$** : a mean vector.
 - **tr$$\{A\}$$** : the [trace](https://en.wikipedia.org/wiki/Trace_(linear_algebra)) of the matrix, which equals the sum over all diagonal elements of the matrix.
-- **$$\vert A \vert$$** : the [determinant](https://en.wikipedia.org/wiki/Determinant) of the matrix, which - in case of a pure diagonal matrix - equals the product over all diagonal elements of the matrix.
+- **$$\vert A \vert$$** : the [determinant](https://en.wikipedia.org/wiki/Determinant) of the matrix, which - in case of a diagonal matrix - equals the product over all diagonal elements of the matrix.
 - **log** : the natural log is a good choice when calculating the [Kullback-Leibler divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence#Multivariate_normal_distributions) of multivariate normal distributions.
 
 ## Some nice Posts Explaining VAEs
