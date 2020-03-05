@@ -29,6 +29,7 @@ mathjax: true
 - [Understanding Variational Autoencoders (VAEs) - by Joseph Rocca](https://towardsdatascience.com/understanding-variational-autoencoders-vaes-f70510919f73)
 - [Variational Autoencoder: Intuition and Implementation - by Augustinus Kristiadi](https://wiseodd.github.io/techblog/2016/12/10/variational-autoencoder/)
 - [Variational Autoencoders - by Jeremy Jordan](https://www.jeremyjordan.me/variational-autoencoders/)
+- [Variational Autoencoders Explained - by Yoel Zeldes](https://anotherdatum.com/vae.html)
 - [Intuitively Understanding Variational Autoencoders - by Irhum Shafkat](https://towardsdatascience.com/intuitively-understanding-variational-autoencoders-1bfe67eb5daf)
 
 {:.caption}
