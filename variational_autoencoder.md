@@ -29,7 +29,7 @@ A Variational AutoEncoder is trained like a normal autoencoder to minimize the r
 - **$$\vert A \vert$$** : the [determinant](https://en.wikipedia.org/wiki/Determinant) of the matrix, which - in case of a diagonal matrix - equals the product over all diagonal elements of the matrix.
 - **log** : the natural log is a good choice when calculating the [Kullback-Leibler divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence#Multivariate_normal_distributions) of multivariate normal distributions.
 
-## Some nice Posts Explaining VAEs
+## Some nice Articles Explaining VAEs
 
 - [Understanding Variational Autoencoders (VAEs) - by Joseph Rocca](https://towardsdatascience.com/understanding-variational-autoencoders-vaes-f70510919f73)
 - [Variational Autoencoder: Intuition and Implementation - by Augustinus Kristiadi](https://wiseodd.github.io/techblog/2016/12/10/variational-autoencoder/)
