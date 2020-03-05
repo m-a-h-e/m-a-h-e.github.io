@@ -4,6 +4,12 @@ mathjax: true
 ---
 # Variational Autoencoder (VAE)
 
+## What are Autoencoders and VAEs ?
+
+An autoencoder is a structure which encodes a high dimensional input dataset into a low dimensional (bottleneck) latent space representation from which a decoder is used to reconstruct the original input. The idea behind this structure is to find the main underlying features of a dataset, which represent its characteristics and may show up as latent space features. Both the encoder and decoder can be implemented using neural networks, which learn a latent space representation by optimizing the reconstruction error of data passed through this structure. The post by [Joseph Rocca](https://towardsdatascience.com/@joseph.rocca) perfecly shows, that even a 1-dimensional latent space can represent each complex dataset by heavily overfitting. A classical autoencoder is trained without any mechanism of latent space regularisation and after training the decoder itself can most probably not be used (without unexpected effects) to generate new output data from latent space vectors which the decoder not seen before during training. Thats the point where VAEs come into play.
+
+A Variational AutoEncoder is trained like a normal autoencoder to minimize the reconstruction loss, but in addition the latent space representation of the dataset is optimized to represent a gaussian normal distribution with zero mean and unit variance. This can be done by using the [Kullback-Leibler divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence#Multivariate_normal_distributions), which calculates the distance between two probability distributions and allows to miminize this distance by gradient descent with respect to the encoder parameters. To get a robust latent space representation, latent space vectors are sampled using a gaussian distribution and optimizing the decoder to correctly map the sampled values to the original target values. This adds a stochastic element to the learning process and prevents the VAE - together with the latent space regularisation - from overfitting. As a result - after training - the encoder can be used to generate new, better interpolated and more meaningful output data from unseen latent space vectors.
+
 ## Deriving the Kullback-Leibler Divergence Loss
 
 {:.caption}
