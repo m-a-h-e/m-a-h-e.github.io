@@ -5,8 +5,8 @@
       "page_names": [
         "index.md",
         "machine_learning_fields.md",
-        "numpy_image_data.md",
         "variational_autoencoder.md",
+        "numpy_image_data.md",
         "artificial_neuron.md",
         "fully_conn_layer.md",
         "softmax_derivative.md"
