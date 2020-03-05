@@ -12,7 +12,7 @@ tags: python,numpy,neural-network,machine learning,supervised learning,unsupervi
 - Classification
   - Neural Networks
     - Convolutional NNs
-    - Logistic Regression + Softmax
+    - Logistic Regression + [Softmax](https://maideas.github.io/softmax_derivative.html)
   - K Nearest Neighbors (KNN)
   - Support Vector Machines (SVM)
   - Decision Trees
@@ -30,7 +30,7 @@ tags: python,numpy,neural-network,machine learning,supervised learning,unsupervi
   - K-Means
 - Dimensionality Reduction
   - Principal Component Analysis (PCA)
-  - Autoencoders
+  - [Autoencoders / Variational Autoencoders (VAEs)](https://maideas.github.io/variational_autoencoder.html)
 
 ## **Reinforcement Learning** (solving tasks by exploring an environment and evaluating the returned reward)
 
