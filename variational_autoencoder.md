@@ -37,3 +37,4 @@ mathjax: true
 [![Deep Generative Modeling, MIT 6.S191](https://img.youtube.com/vi/rZufA635dq4/0.jpg)](https://www.youtube.com/watch?v=rZufA635dq4)
 Deep Generative Modeling, MIT 6.S191
 
+
