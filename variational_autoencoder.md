@@ -35,6 +35,8 @@ A Variational AutoEncoder is trained like a normal autoencoder to minimize the r
 [![Deep Generative Modeling, MIT 6.S191](https://img.youtube.com/vi/rZufA635dq4/0.jpg)](https://www.youtube.com/watch?v=rZufA635dq4)
 Deep Generative Modeling, MIT 6.S191 (2020)
 
+<div class="clearfix"></div>
+
 ## Some nice Articles Explaining VAEs
 
 - [Understanding Variational Autoencoders (VAEs) - by Joseph Rocca](https://towardsdatascience.com/understanding-variational-autoencoders-vaes-f70510919f73)
