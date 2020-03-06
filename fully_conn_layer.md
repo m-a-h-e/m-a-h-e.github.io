@@ -10,9 +10,9 @@ Forward pass matrix operation to compute output vector
 
 {:.caption}
 ![fully connected layer backward pass](/assets/images/fully_conn_backward_gw.png)
-Backward pass matrix operations to compute weights gradient matrix
+Backward pass matrix operation to compute weights gradient matrix
 
 {:.caption}
 ![fully connected layer backward pass](/assets/images/fully_conn_backward_gx.png)
-Backward pass matrix operations to compute input gradient vector
+Backward pass matrix operation to compute input gradient vector
 
