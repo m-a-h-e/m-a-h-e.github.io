@@ -6,7 +6,18 @@ mathjax: true
 
 ## What are Autoencoders and VAEs ?
 
+{:.caption}
+![Classical Autoencoder](assets/images/autoencoder.png)
+Classical Autoencoder
+<div class="clearfix"></div>
+
+
 An autoencoder is a structure which encodes a high dimensional input dataset into a low dimensional - bottleneck - latent space representation from which a decoder is used to reconstruct the original input data. The idea behind this structure is to find the main underlying features of a dataset, which represent its characteristics and may show up as latent space features. Both the encoder and decoder can be implemented using neural networks, which learn a latent space representation by optimizing the reconstruction error of data passed through this structure. The post by [Joseph Rocca](https://towardsdatascience.com/@joseph.rocca) perfecly shows, that even a 1-dimensional latent space can represent each complex dataset by heavily overfitting. A classical autoencoder is trained without any mechanism of latent space regularisation and after training the decoder itself can most probably not be used - without unexpected effects - to generate new output data from latent space vectors which the decoder has not seen before during training. Thats the point where VAEs come into play ...
+
+{:.caption}
+![Variational Autoencoder](assets/images/vae.png)
+Variational Autoencoder
+<div class="clearfix"></div>
 
 A Variational AutoEncoder is trained like a normal autoencoder to minimize the reconstruction loss, but in addition the latent space representation of the dataset is optimized to form a gaussian normal distribution with zero mean and unit variance. This can be done by using the [Kullback-Leibler divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence#Multivariate_normal_distributions), which calculates the distance between two probability distributions and allows to miminize this distance by gradient descent with respect to the encoder parameters. To get a robust latent space representation, latent space vectors are sampled using a gaussian distribution and optimizing the decoder to correctly map these sampled latent space vectors to the original target vectors. This adds a stochastic element to the learning process and prevents the VAE - together with the latent space regularisation - from overfitting. As a result - after training - the encoder can be used to generate new, better interpolated and more meaningful output data from unseen latent space vectors.
 
@@ -15,7 +26,6 @@ A Variational AutoEncoder is trained like a normal autoencoder to minimize the r
 {:.caption}
 ![fully connected layer forward pass](assets/images/deriving_the_KL_divergence_loss_for_vaes.png)
 [Deriving the Kullback-Leibler divergence loss](https://stats.stackexchange.com/questions/318748/deriving-the-kl-divergence-loss-for-vaes)
-
 <div class="clearfix"></div>
 
 - **x** and **z** : encoder input vector and latent space vector.
@@ -34,7 +44,6 @@ A Variational AutoEncoder is trained like a normal autoencoder to minimize the r
 {:.caption}
 [![Deep Generative Modeling, MIT 6.S191](https://img.youtube.com/vi/rZufA635dq4/0.jpg)](https://www.youtube.com/watch?v=rZufA635dq4)
 Deep Generative Modeling, MIT 6.S191 (2020)
-
 <div class="clearfix"></div>
 
 ## Some nice Articles Explaining VAEs
