@@ -6,8 +6,13 @@ mathjax: true
 
 {:.caption}
 ![fully connected layer forward pass](/assets/images/fully_conn_forward.png)
-Forward pass matrix operation
+Forward pass matrix operation to compute output vector
 
 {:.caption}
-![fully connected layer backward pass](/assets/images/fully_conn_backward.png)
-Backward pass matrix operations
+![fully connected layer backward pass](/assets/images/fully_conn_backward_gw.png)
+Backward pass matrix operations to compute weights gradient matrix
+
+{:.caption}
+![fully connected layer backward pass](/assets/images/fully_conn_backward_gx.png)
+Backward pass matrix operations to compute input gradient vector
+
