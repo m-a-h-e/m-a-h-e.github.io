@@ -3,8 +3,6 @@ tags: python,numpy,neural-network,activation-functions,loss-functions,optimizer,
 ---
 # A NumPy based Neural Network [Package Implementation](https://github.com/maideas/numpy-neural-network)
 
-<img src="{{site.author.avatar}}">
-
 ## Objective
 
 Years ago I studied Microelectronics and Computer Science and had the opportunity to join some Machine Learning lectures.
