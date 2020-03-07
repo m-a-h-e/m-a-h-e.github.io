@@ -44,3 +44,4 @@ for file_name in zf.infolist():
     img = Image.open(f)
     data.append(np.array(img))
 ```
+
