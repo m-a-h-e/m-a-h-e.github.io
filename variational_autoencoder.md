@@ -4,8 +4,6 @@ mathjax: true
 ---
 # Variational Autoencoder (VAE)
 
-## What are Autoencoders and VAEs ?
-
 {:.caption}
 ![Classical Autoencoder](assets/images/autoencoder.png)
 Autoencoder Structure
