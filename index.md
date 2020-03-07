@@ -30,7 +30,7 @@ An easy way to build up a neural network is to define the following types of lay
   - [LeakyReLU](https://nbviewer.jupyter.org/github/maideas/numpy-neural-network/blob/master/LeakyReLU.ipynb)
   - [Tanh](https://nbviewer.jupyter.org/github/maideas/numpy-neural-network/blob/master/Tanh.ipynb)
   - [Sigmoid](https://nbviewer.jupyter.org/github/maideas/numpy-neural-network/blob/master/Sigmoid.ipynb)
-  - Softplus
+  - [Softplus](https://nbviewer.jupyter.org/github/maideas/numpy-neural-network/blob/master/Softplus.ipynb)
   - [Softmax](softmax_derivative.md)
 
 - **Loss layer** *(to implement network error loss functions)*
