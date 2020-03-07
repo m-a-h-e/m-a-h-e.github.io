@@ -28,8 +28,8 @@ Image source: [Stats.StackExchange](https://stats.stackexchange.com/questions/31
 
 - **x** and **z** : encoder input vector and latent space vector.
 - **p** and **q** : probability distributions.
-- **$$\mathcal{N}$$** : a gaussian normal distribution, represented by an [expected value vector](https://en.wikipedia.org/wiki/Expected_value) and a [covariance matrix](https://en.wikipedia.org/wiki/Covariance_matrix).
-- **$$\pmb{I}$$** : a diagonal matrix with all diagonal elements set to 1.
+- **$$\mathcal{N}$$** : a [gaussian normal distribution](https://en.wikipedia.org/wiki/Normal_distribution), represented by an [expected value vector](https://en.wikipedia.org/wiki/Expected_value) and a [covariance matrix](https://en.wikipedia.org/wiki/Covariance_matrix).
+- **$$\pmb{I}$$** : [identity matrix](https://en.wikipedia.org/wiki/Identity_matrix).
 - **$$\Sigma$$** : the [covariance matrix](https://en.wikipedia.org/wiki/Covariance_matrix) of a probability distribution. In case of the VAE, the latent space covariance matrix is defined as a diagonal matrix and can therefore be represented by its diagonal vector. The non-diagonal elements are supposed to be 0, which implies that the latent space features are uncorrelated / independent of each other.
 - **$$\sigma^2$$** : a variance vector = vector of squared deviation values.
 - **$$\mu$$** : a mean vector.
