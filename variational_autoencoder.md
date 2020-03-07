@@ -30,13 +30,14 @@ Image source: [Stats.StackExchange](https://stats.stackexchange.com/questions/31
 - **$$\mathcal{N}$$** : a [gaussian normal distribution](https://en.wikipedia.org/wiki/Normal_distribution), represented by an [expected value vector](https://en.wikipedia.org/wiki/Expected_value) and a [covariance matrix](https://en.wikipedia.org/wiki/Covariance_matrix).
 - **$$\pmb{I}$$** : [identity matrix](https://en.wikipedia.org/wiki/Identity_matrix).
 - **$$\Sigma$$** : the [covariance matrix](https://en.wikipedia.org/wiki/Covariance_matrix) of a probability distribution. In case of the VAE, the latent space covariance matrix is defined as a diagonal matrix and can therefore be represented by its diagonal vector. The non-diagonal elements are supposed to be 0, which implies that the latent space features are uncorrelated / independent of each other.
-- **$$\sigma^2$$** : a variance vector = vector of squared deviation values.
+- **$$\sigma^2$$** : a variance vector = vector of squared standard deviation values.
 - **$$\mu$$** : a mean vector.
 - **tr$$\{A\}$$** : the [trace](https://en.wikipedia.org/wiki/Trace_(linear_algebra)) of the matrix, which equals the sum over all diagonal elements of the matrix.
 - **$$\vert A \vert$$** : the [determinant](https://en.wikipedia.org/wiki/Determinant) of the matrix, which - in case of a diagonal matrix - equals the product over all diagonal elements of the matrix.
 - **log** : the natural log is a good choice when calculating the [Kullback-Leibler divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence#Multivariate_normal_distributions) of multivariate normal distributions.
 
-To get meaningful standard variation values - which are always positive - the activation function which generates $$\sigma^2$$ has to softly map negative values from the encoder network to positive values. A good choice is to use the [Softplus](https://github.com/maideas/numpy-neural-network/blob/master/Softplus.ipynb) activation function. This also prevents negative values to be fed into the log function which is part of the Kullback-Leibler divergence loss. The mean vector $$\mu$$ can be generated using a [Linear](https://github.com/maideas/numpy-neural-network/blob/master/Linear.ipynb) activation function.
+To get meaningful variance values - which are always positive - the activation function which generates $$\sigma^2$$ has to softly map negative values from the encoder network to positive values. A good choice is the [Softplus](https://github.com/maideas/numpy-neural-network/blob/master/Softplus.ipynb) activation function. This also prevents negative values to be fed into the log function which is part of the Kullback-Leibler divergence loss.
+The mean vector $$\mu$$ can simply be generated using a [Linear](https://github.com/maideas/numpy-neural-network/blob/master/Linear.ipynb) activation function.
 
 ## Related MIT Deep Learning Lecture
 
