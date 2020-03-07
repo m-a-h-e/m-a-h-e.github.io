@@ -50,4 +50,5 @@ Deep Generative Modeling, MIT 6.S191 (2020)
 - [Variational Autoencoders - by Jeremy Jordan](https://www.jeremyjordan.me/variational-autoencoders/)
 - [Variational Autoencoders Explained - by Yoel Zeldes](https://anotherdatum.com/vae.html)
 - [Intuitively Understanding Variational Autoencoders - by Irhum Shafkat](https://towardsdatascience.com/intuitively-understanding-variational-autoencoders-1bfe67eb5daf)
+- [From Autoencoder to Beta-VAE - by Lilian Weng](https://lilianweng.github.io/lil-log/2018/08/12/from-autoencoder-to-beta-vae.html)
 
