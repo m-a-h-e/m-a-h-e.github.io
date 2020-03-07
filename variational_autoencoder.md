@@ -8,7 +8,7 @@ mathjax: true
 
 {:.caption}
 ![Classical Autoencoder](assets/images/autoencoder.png)
-Autoencoder
+Autoencoder Structure
 <div class="clearfix"></div>
 
 
@@ -16,7 +16,7 @@ An autoencoder is a structure which encodes a high dimensional input dataset int
 
 {:.caption}
 ![Variational Autoencoder](assets/images/variational_autoencoder.png)
-Variational Autoencoder
+Variational Autoencoder Structure
 <div class="clearfix"></div>
 
 A Variational AutoEncoder is trained like a normal autoencoder to minimize the reconstruction loss, but in addition the latent space representation of the dataset is optimized to form a gaussian normal distribution with zero mean and unit variance. This can be done by using the [Kullback-Leibler divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence#Multivariate_normal_distributions), which calculates the distance between two probability distributions and allows to miminize this distance by gradient descent with respect to the encoder parameters. To get a robust latent space representation, latent space vectors are sampled using a gaussian distribution and optimizing the decoder to correctly map these sampled latent space vectors to the original target vectors. This adds a stochastic element to the learning process and prevents the VAE - together with the latent space regularisation - from overfitting. As a result - after training - the encoder can be used to generate new, better interpolated and more meaningful output data from unseen latent space vectors.
