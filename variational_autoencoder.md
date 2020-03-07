@@ -8,14 +8,14 @@ mathjax: true
 
 {:.caption}
 ![Classical Autoencoder](assets/images/autoencoder.png)
-Classical Autoencoder
+Autoencoder
 <div class="clearfix"></div>
 
 
 An autoencoder is a structure which encodes a high dimensional input dataset into a low dimensional - bottleneck - latent space representation from which a decoder is used to reconstruct the original input data. The idea behind this structure is to find the main underlying features of a dataset, which represent its characteristics and may show up as latent space features. Both the encoder and decoder can be implemented using neural networks, which learn a latent space representation by optimizing the reconstruction error of data passed through this structure. The post by [Joseph Rocca](https://towardsdatascience.com/@joseph.rocca) perfecly shows, that even a 1-dimensional latent space can represent each complex dataset by heavily overfitting. A classical autoencoder is trained without any mechanism of latent space regularisation and after training the decoder itself can most probably not be used - without unexpected effects - to generate new output data from latent space vectors which the decoder has not seen before during training. Thats the point where VAEs come into play ...
 
 {:.caption}
-![Variational Autoencoder](assets/images/vae.png)
+![Variational Autoencoder](assets/images/variational_autoencoder.png)
 Variational Autoencoder
 <div class="clearfix"></div>
 
@@ -25,7 +25,7 @@ A Variational AutoEncoder is trained like a normal autoencoder to minimize the r
 
 {:.caption}
 ![fully connected layer forward pass](assets/images/deriving_the_KL_divergence_loss_for_vaes.png)
-[Deriving the Kullback-Leibler divergence loss](https://stats.stackexchange.com/questions/318748/deriving-the-kl-divergence-loss-for-vaes)
+Image source: [Stats.StackExchange - Deriving the Kullback-Leibler Divergence Loss](https://stats.stackexchange.com/questions/318748/deriving-the-kl-divergence-loss-for-vaes)
 <div class="clearfix"></div>
 
 - **x** and **z** : encoder input vector and latent space vector.
