@@ -8,3 +8,4 @@ mathjax: true
 ![artificial neuron structure](/assets/images/artificial_neuron.png)
 Structure of an Artificial Neuron
 
+
