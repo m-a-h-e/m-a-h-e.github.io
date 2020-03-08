@@ -39,11 +39,16 @@ Image source: [Stats.StackExchange](https://stats.stackexchange.com/questions/31
 To get meaningful variance values - which are always positive - the activation function which generates $$\sigma^2$$ has to softly map negative values from the encoder network to positive values. A good choice is the [Softplus](https://github.com/maideas/numpy-neural-network/blob/master/Softplus.ipynb) activation function. This also prevents negative values to be fed into the log function which is part of the Kullback-Leibler divergence loss.
 The mean vector $$\mu$$ can simply be generated using a [Linear](https://github.com/maideas/numpy-neural-network/blob/master/Linear.ipynb) activation function.
 
-## Related MIT Deep Learning Lecture
+## Deep Learning Lectures
 
 {:.caption}
 [![Deep Generative Modeling, MIT 6.S191](https://img.youtube.com/vi/rZufA635dq4/0.jpg)](https://www.youtube.com/watch?v=rZufA635dq4)
 Deep Generative Modeling, MIT 6.S191 (2020)
+<div class="clearfix"></div>
+
+{:.caption}
+[![Generative Models, Stanford University cs231n](https://img.youtube.com/vi/5WoItGTWV54/0.jpg)](https://www.youtube.com/watch?v=5WoItGTWV54)
+Generative Models, Stanford University cs231n (2017)
 <div class="clearfix"></div>
 
 ## Some nice Articles Explaining VAEs
