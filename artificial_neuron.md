@@ -8,9 +8,11 @@ mathjax: true
 ![artificial neuron structure](/assets/images/artificial_neuron.png)
 Structure of an Artificial Neuron
 
+{:.caption}
 <video controls>
   <source src="numpy-neural-network/non_linear_regression_tanh.webm" type="video/webm">
   <source src="numpy-neural-network/non_linear_regression_tanh.ogv" type="video/ogg">
   <source src="numpy-neural-network/non_linear_regression_tanh.mp4" type="video/mp4">
 </video>
+Non-Linear Regression (Tanh-based Network)
 
