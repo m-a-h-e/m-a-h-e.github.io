@@ -16,3 +16,11 @@ Structure of an Artificial Neuron
 </video>
 Non-Linear Regression (Tanh-based Network)
 
+{:.caption}
+<video controls>
+  <source src="numpy-neural-network/non_linear_regression_leaky_relu.webm" type="video/webm">
+  <source src="numpy-neural-network/non_linear_regression_leaky_relu.ogv" type="video/ogg">
+  <source src="numpy-neural-network/non_linear_regression_leaky_relu.mp4" type="video/mp4">
+</video>
+Non-Linear Regression (LeakyReLU-based Network)
+
