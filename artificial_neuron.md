@@ -9,6 +9,22 @@ mathjax: true
 Structure of an Artificial Neuron
 
 {:.caption}
+<video controls poster="numpy-neural-network/linear_regression.png">
+  <source src="numpy-neural-network/linear_regression.webm" type="video/webm">
+  <source src="numpy-neural-network/linear_regression.ogv" type="video/ogg">
+  <source src="numpy-neural-network/linear_regression.mp4" type="video/mp4">
+</video>
+Linear Regression (Single Linear Neuron)
+
+{:.caption}
+<video controls poster="numpy-neural-network/xor_function_regression.png">
+  <source src="numpy-neural-network/xor_function_regression.webm" type="video/webm">
+  <source src="numpy-neural-network/xor_function_regression.ogv" type="video/ogg">
+  <source src="numpy-neural-network/xor_function_regression.mp4" type="video/mp4">
+</video>
+XOR Function Regression (Small LeakyReLU-based Network)
+
+{:.caption}
 <video controls poster="numpy-neural-network/non_linear_regression_tanh.png">
   <source src="numpy-neural-network/non_linear_regression_tanh.webm" type="video/webm">
   <source src="numpy-neural-network/non_linear_regression_tanh.ogv" type="video/ogg">
