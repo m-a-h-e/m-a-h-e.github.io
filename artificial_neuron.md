@@ -9,7 +9,7 @@ mathjax: true
 Structure of an Artificial Neuron
 
 {:.caption}
-<video controls>
+<video controls poster="numpy-neural-network/non_linear_regression_tanh.png">
   <source src="numpy-neural-network/non_linear_regression_tanh.webm" type="video/webm">
   <source src="numpy-neural-network/non_linear_regression_tanh.ogv" type="video/ogg">
   <source src="numpy-neural-network/non_linear_regression_tanh.mp4" type="video/mp4">
@@ -17,7 +17,7 @@ Structure of an Artificial Neuron
 Non-Linear Regression (Tanh-based Network)
 
 {:.caption}
-<video controls>
+<video controls poster="numpy-neural-network/non_linear_regression_leaky_relu.png">
   <source src="numpy-neural-network/non_linear_regression_leaky_relu.webm" type="video/webm">
   <source src="numpy-neural-network/non_linear_regression_leaky_relu.ogv" type="video/ogg">
   <source src="numpy-neural-network/non_linear_regression_leaky_relu.mp4" type="video/mp4">
