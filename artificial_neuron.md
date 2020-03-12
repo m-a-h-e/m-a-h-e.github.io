@@ -40,3 +40,11 @@ Non-Linear Regression (Tanh-based Network)
 </video>
 Non-Linear Regression (LeakyReLU-based Network)
 
+{:.caption}
+<video controls poster="numpy-neural-network/xor_two_classes.png">
+  <source src="numpy-neural-network/xor_two_classes.webm" type="video/webm">
+  <source src="numpy-neural-network/xor_two_classes.ogv" type="video/ogg">
+  <source src="numpy-neural-network/xor_two_classes.mp4" type="video/mp4">
+</video>
+XOR Classification using Softmax + Cross-Entropy-Loss
+
