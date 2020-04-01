@@ -127,10 +127,10 @@ Autoencoder without Latent Space Regularization (Tanh activation)
 Autoencoder without Latent Space Regularization (LeakyReLU activation)
 
 {:.caption}
-<video controls poster="/assets/videos/variational_autoencoder_four_classes_tanh.png">
-  <source src="/assets/videos/variational_autoencoder_four_classes_tanh.webm" type="video/webm">
-  <source src="/assets/videos/variational_autoencoder_four_classes_tanh.ogv" type="video/ogg">
-  <source src="/assets/videos/variational_autoencoder_four_classes_tanh.mp4" type="video/mp4">
+<video controls poster="/assets/videos/variational_autoencoder_four_classes.png">
+  <source src="/assets/videos/variational_autoencoder_four_classes.webm" type="video/webm">
+  <source src="/assets/videos/variational_autoencoder_four_classes.ogv" type="video/ogg">
+  <source src="/assets/videos/variational_autoencoder_four_classes.mp4" type="video/mp4">
 </video>
 Variational Autoencoder with Latent Space Regularisation using KL-Divergence
 
