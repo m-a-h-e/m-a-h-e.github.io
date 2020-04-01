@@ -21,7 +21,7 @@ A Variational AutoEncoder is trained like a normal autoencoder to minimize the r
 ## Deriving the Kullback-Leibler Divergence Loss
 
 {:.caption}
-![fully connected layer forward pass](assets/images/deriving_the_KL_divergence_loss_for_vaes.png)
+![Deriving the Kullback-Leibler Divergence Loss](assets/images/deriving_the_KL_divergence_loss_for_vaes.png)
 Image source: [Stats.StackExchange](https://stats.stackexchange.com/questions/318748/deriving-the-kl-divergence-loss-for-vaes)
 <div class="clearfix"></div>
 
