@@ -2,7 +2,7 @@
 tags: autoencoder,encoder,decoder,latent space,covariance matrix,expected value,gaussian distribution,Kullback-Leibler divergence
 mathjax: true
 ---
-# NumPy Neural Network Autoencoder Implementation
+## NumPy Neural Network Autoencoder Implementation
 
 {:.caption}
 <video controls poster="/assets/videos/autoencoder_four_classes_tanh.png">
@@ -20,7 +20,7 @@ Autoencoder without Latent Space Regularization (Tanh activation)
 </video>
 Autoencoder without Latent Space Regularization (LeakyReLU activation)
 
-# NumPy Neural Network VAE Implementation
+## NumPy Neural Network VAE Implementation
 
 {:.caption}
 <video controls poster="/assets/videos/variational_autoencoder_four_classes.png">
