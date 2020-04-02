@@ -59,12 +59,12 @@ tr(\Sigma_0)
 \right)
 $$
 
-with i as the latent space feature index
+with i as the n-dimensional latent space feature index
 
 $$
 D_{KL}(\mathcal{N}_0 \vert\vert \mathcal{N}_1) = \frac{1}{2} \left(
 \sum_i \sigma_i^2
-- ln( \prod \sigma_i^2 )
+- ln( \prod_i \sigma_i^2 )
 - n
 + \sum_i \mu_i^2
 \right)
@@ -78,6 +78,15 @@ D_{KL}(\mathcal{N}_0 \vert\vert \mathcal{N}_1) = \frac{1}{2} \left(
 - \sum_i ln( \sigma_i^2 )
 - n
 + \sum_i \mu_i^2
+\right)
+$$
+
+$$
+D_{KL}(\mathcal{N}_0 \vert\vert \mathcal{N}_1) = \frac{1}{2}
+\sum_i \left( \sigma_i^2
+- ln( \sigma_i^2 )
+- 1
++ \mu_i^2
 \right)
 $$
 
@@ -105,52 +114,4 @@ $$\frac{d D_{KL}}{d \mu_i} = \frac{1}{2} \left( 2 \mu_i \right) = \mu_i$$
 
 To get meaningful variance values - which are always positive - the activation function which generates $$\sigma^2$$ has to softly map negative values from the encoder network to positive values. A good choice is the [Softplus](https://github.com/maideas/numpy-neural-network/blob/master/Softplus.ipynb) activation function. This also prevents negative values to be fed into the log function which is part of the Kullback-Leibler divergence loss.
 The mean vector $$\mu$$ can simply be generated using a [Linear](https://github.com/maideas/numpy-neural-network/blob/master/Linear.ipynb) activation function.
-
-## NumPy Neural Network Autoencoder Implementation
-
-{:.caption}
-<video controls poster="/assets/videos/autoencoder_four_classes_tanh.png">
-  <source src="/assets/videos/autoencoder_four_classes_tanh.webm" type="video/webm">
-  <source src="/assets/videos/autoencoder_four_classes_tanh.ogv" type="video/ogg">
-  <source src="/assets/videos/autoencoder_four_classes_tanh.mp4" type="video/mp4">
-</video>
-Autoencoder without Latent Space Regularization (Tanh activation)
-
-{:.caption}
-<video controls poster="/assets/videos/autoencoder_four_classes_leaky_relu.png">
-  <source src="/assets/videos/autoencoder_four_classes_leaky_relu.webm" type="video/webm">
-  <source src="/assets/videos/autoencoder_four_classes_leaky_relu.ogv" type="video/ogg">
-  <source src="/assets/videos/autoencoder_four_classes_leaky_relu.mp4" type="video/mp4">
-</video>
-Autoencoder without Latent Space Regularization (LeakyReLU activation)
-
-## NumPy Neural Network VAE Implementation
-
-{:.caption}
-<video controls poster="/assets/videos/variational_autoencoder_four_classes.png">
-  <source src="/assets/videos/variational_autoencoder_four_classes.webm" type="video/webm">
-  <source src="/assets/videos/variational_autoencoder_four_classes.ogv" type="video/ogg">
-  <source src="/assets/videos/variational_autoencoder_four_classes.mp4" type="video/mp4">
-</video>
-Variational Autoencoder with Latent Space Regularisation using KL-Divergence
-
-## Deep Learning Lectures
-
-{:.caption}
-[![Deep Generative Modeling, MIT 6.S191](https://img.youtube.com/vi/rZufA635dq4/0.jpg)](https://www.youtube.com/watch?v=rZufA635dq4)
-Deep Generative Modeling, MIT 6.S191 (2020)
-<div class="clearfix"></div>
-
-{:.caption}
-[![Generative Models, Stanford University cs231n](https://img.youtube.com/vi/5WoItGTWV54/0.jpg)](https://www.youtube.com/watch?v=5WoItGTWV54)
-Generative Models, Stanford University cs231n (2017)
-<div class="clearfix"></div>
-
-## Some nice Articles Explaining VAEs
-
-- [Understanding Variational Autoencoders (VAEs) - by Joseph Rocca](https://towardsdatascience.com/understanding-variational-autoencoders-vaes-f70510919f73)
-- [Variational Autoencoders - by Jeremy Jordan](https://www.jeremyjordan.me/variational-autoencoders/)
-- [Variational Autoencoders Explained - by Yoel Zeldes](https://anotherdatum.com/vae.html)
-- [Intuitively Understanding Variational Autoencoders - by Irhum Shafkat](https://towardsdatascience.com/intuitively-understanding-variational-autoencoders-1bfe67eb5daf)
-- [From Autoencoder to Beta-VAE - by Lilian Weng](https://lilianweng.github.io/lil-log/2018/08/12/from-autoencoder-to-beta-vae.html)
 

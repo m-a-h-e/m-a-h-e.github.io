@@ -6,6 +6,8 @@
         "index.md",
         "machine_learning_fields.md",
         "variational_autoencoder.md",
+        "npnn_vae_implementation.md",
+        "vae_references.md",
         "numpy_image_data.md",
         "artificial_neuron.md",
         "fully_conn_layer.md",
