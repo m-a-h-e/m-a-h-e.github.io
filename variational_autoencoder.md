@@ -20,21 +20,88 @@ A Variational AutoEncoder is trained like a normal autoencoder to minimize the r
 
 ## Deriving the Kullback-Leibler Divergence Loss
 
-{:.caption}
-![Deriving the Kullback-Leibler Divergence Loss](assets/images/deriving_the_KL_divergence_loss_for_vaes.png)
-Image source: [Stats.StackExchange](https://stats.stackexchange.com/questions/318748/deriving-the-kl-divergence-loss-for-vaes)
-<div class="clearfix"></div>
+The Kullback-Leibler Divergence between the encoder output multivariate normal distribution
 
-- **x** and **z** : encoder input vector and latent space vector.
-- **p** and **q** : probability distributions.
-- **$$\mathcal{N}$$** : a [gaussian normal distribution](https://en.wikipedia.org/wiki/Normal_distribution), represented by an [expected value vector](https://en.wikipedia.org/wiki/Expected_value) and a [covariance matrix](https://en.wikipedia.org/wiki/Covariance_matrix).
-- **$$\pmb{I}$$** : [identity matrix](https://en.wikipedia.org/wiki/Identity_matrix).
-- **$$\Sigma$$** : the [covariance matrix](https://en.wikipedia.org/wiki/Covariance_matrix) of a probability distribution. In case of the VAE, the latent space covariance matrix is defined as a diagonal matrix and can therefore be represented by its diagonal vector. The non-diagonal elements are supposed to be 0, which implies that the latent space features are uncorrelated / independent of each other.
-- **$$\sigma^2$$** : a variance vector = vector of squared standard deviation values.
-- **$$\mu$$** : a mean vector.
-- **tr$$\{A\}$$** : the [trace](https://en.wikipedia.org/wiki/Trace_(linear_algebra)) of the matrix, which equals the sum over all diagonal elements of the matrix.
-- **$$\vert A \vert$$** : the [determinant](https://en.wikipedia.org/wiki/Determinant) of the matrix, which - in case of a diagonal matrix - equals the product over all diagonal elements of the matrix.
-- **log** : the natural log is a good choice when calculating the [Kullback-Leibler divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence#Multivariate_normal_distributions) of multivariate normal distributions.
+$$p(z \vert x) = \mathcal{N}(z \vert \mu_x, \Sigma_x) = \mathcal{N}(\mu_0, \Sigma_0)$$
+
+and the desired zero mean unit variance latent space normal distribution
+
+$$p(z) = \mathcal{N}(0, \pmb{I}) = \mathcal{N}(\mu_1, \Sigma_1)$$
+
+is defined as
+
+$$
+D_{KL}(\mathcal{N}_0 \vert\vert \mathcal{N}_1) = \frac{1}{2} \left(
+tr(\Sigma_1^{-1}\Sigma_0)
++ ln \left( \frac{\vert\Sigma_1\vert}{\vert\Sigma_0\vert} \right)
+- n
++ (\mu_1 - \mu_0)^T\Sigma_1^{-1}(\mu_1 - \mu_0)
+\right)
+$$
+
+with $$\mu_1 = 0$$ and $$\Sigma_1 = \pmb{I}$$ we get
+
+$$
+D_{KL}(\mathcal{N}_0 \vert\vert \mathcal{N}_1) = \frac{1}{2} \left(
+tr(\pmb{I}^{-1}\Sigma_0)
++ ln \left( \frac{\vert\pmb{I}\vert}{\vert\Sigma_0\vert} \right)
+- n
++ (0 - \mu_0)^T\pmb{I}^{-1}(0 - \mu_0)
+\right)
+$$
+
+$$
+D_{KL}(\mathcal{N}_0 \vert\vert \mathcal{N}_1) = \frac{1}{2} \left(
+tr(\Sigma_0)
+- ln( \vert\Sigma_0\vert )
+- n
++ \mu_0^T\mu_0
+\right)
+$$
+
+with i as the latent space feature index
+
+$$
+D_{KL}(\mathcal{N}_0 \vert\vert \mathcal{N}_1) = \frac{1}{2} \left(
+\sum_i \sigma_i^2
+- ln( \prod \sigma_i^2 )
+- n
++ \sum_i \mu_i^2
+\right)
+$$
+
+we get the loss function based on the encoder output variance and mean vectors
+
+$$
+D_{KL}(\mathcal{N}_0 \vert\vert \mathcal{N}_1) = \frac{1}{2} \left(
+\sum_i \sigma_i^2
+- \sum_i ln( \sigma_i^2 )
+- n
++ \sum_i \mu_i^2
+\right)
+$$
+
+The derivative of the loss function with respect to $$\sigma^2$$ gives us the variance gradient
+
+$$\frac{d D_{KL}}{d \sigma_i^2} = \frac{1}{2} \left( 1 - \frac{1}{\sigma_i^2} \right)
+= \frac{1}{2} - \frac{1}{2 \sigma_i^2} $$
+
+and the derivative of the loss function with respect to $$\mu$$ gives us the mean gradient
+
+$$\frac{d D_{KL}}{d \mu_i} = \frac{1}{2} \left( 2 \mu_i \right) = \mu_i$$
+
+---
+
+- x and z : encoder input vector and latent space vector.
+- p : probability distribution.
+- $$\mathcal{N}$$ : a [gaussian normal distribution](https://en.wikipedia.org/wiki/Normal_distribution), represented by an [expected value vector](https://en.wikipedia.org/wiki/Expected_value) and a [covariance matrix](https://en.wikipedia.org/wiki/Covariance_matrix).
+- $$\pmb{I}$$ : [identity matrix](https://en.wikipedia.org/wiki/Identity_matrix).
+- $$\Sigma$$ : the [covariance matrix](https://en.wikipedia.org/wiki/Covariance_matrix) of a probability distribution. In case of the VAE, the latent space covariance matrix is defined as a diagonal matrix and can therefore be represented by its diagonal vector. The non-diagonal elements are supposed to be 0, which implies that the latent space features are uncorrelated / independent of each other.
+- $$\sigma^2$$ : a variance vector = vector of squared standard deviation values.
+- $$\mu$$ : a mean vector.
+- $$tr(A)$$ : the [trace](https://en.wikipedia.org/wiki/Trace_(linear_algebra)) of the matrix, which equals the sum over all diagonal elements of the matrix.
+- $$\vert A \vert$$ : the [determinant](https://en.wikipedia.org/wiki/Determinant) of the matrix, which - in case of a diagonal matrix - equals the product over all diagonal elements of the matrix.
+- $$ln$$ : the natural log is a good choice when calculating the [Kullback-Leibler divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence#Multivariate_normal_distributions) of multivariate normal distributions.
 
 To get meaningful variance values - which are always positive - the activation function which generates $$\sigma^2$$ has to softly map negative values from the encoder network to positive values. A good choice is the [Softplus](https://github.com/maideas/numpy-neural-network/blob/master/Softplus.ipynb) activation function. This also prevents negative values to be fed into the log function which is part of the Kullback-Leibler divergence loss.
 The mean vector $$\mu$$ can simply be generated using a [Linear](https://github.com/maideas/numpy-neural-network/blob/master/Linear.ipynb) activation function.
