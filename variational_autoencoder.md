@@ -106,6 +106,34 @@ $$\frac{d D_{KL}}{d \mu_i} = \frac{1}{2} \left( 2 \mu_i \right) = \mu_i$$
 To get meaningful variance values - which are always positive - the activation function which generates $$\sigma^2$$ has to softly map negative values from the encoder network to positive values. A good choice is the [Softplus](https://github.com/maideas/numpy-neural-network/blob/master/Softplus.ipynb) activation function. This also prevents negative values to be fed into the log function which is part of the Kullback-Leibler divergence loss.
 The mean vector $$\mu$$ can simply be generated using a [Linear](https://github.com/maideas/numpy-neural-network/blob/master/Linear.ipynb) activation function.
 
+## NumPy Neural Network Autoencoder Implementation
+
+{:.caption}
+<video controls poster="/assets/videos/autoencoder_four_classes_tanh.png">
+  <source src="/assets/videos/autoencoder_four_classes_tanh.webm" type="video/webm">
+  <source src="/assets/videos/autoencoder_four_classes_tanh.ogv" type="video/ogg">
+  <source src="/assets/videos/autoencoder_four_classes_tanh.mp4" type="video/mp4">
+</video>
+Autoencoder without Latent Space Regularization (Tanh activation)
+
+{:.caption}
+<video controls poster="/assets/videos/autoencoder_four_classes_leaky_relu.png">
+  <source src="/assets/videos/autoencoder_four_classes_leaky_relu.webm" type="video/webm">
+  <source src="/assets/videos/autoencoder_four_classes_leaky_relu.ogv" type="video/ogg">
+  <source src="/assets/videos/autoencoder_four_classes_leaky_relu.mp4" type="video/mp4">
+</video>
+Autoencoder without Latent Space Regularization (LeakyReLU activation)
+
+## NumPy Neural Network VAE Implementation
+
+{:.caption}
+<video controls poster="/assets/videos/variational_autoencoder_four_classes.png">
+  <source src="/assets/videos/variational_autoencoder_four_classes.webm" type="video/webm">
+  <source src="/assets/videos/variational_autoencoder_four_classes.ogv" type="video/ogg">
+  <source src="/assets/videos/variational_autoencoder_four_classes.mp4" type="video/mp4">
+</video>
+Variational Autoencoder with Latent Space Regularisation using KL-Divergence
+
 ## Deep Learning Lectures
 
 {:.caption}
