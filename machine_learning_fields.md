@@ -3,7 +3,9 @@ tags: python,numpy,neural-network,machine learning,supervised learning,unsupervi
 ---
 # Machine Learning Fields
 
-## **Supervised Learning** (building a model from labeled data or input-output data pairs)
+## Supervised Learning
+
+building a model from labeled data or input-output data pairs
 
 - Regression
   - Neural Networks
@@ -24,7 +26,9 @@ tags: python,numpy,neural-network,machine learning,supervised learning,unsupervi
     - Long Short Term Memory (LSTM)
     - Gated Recurrent Unit (GRU)
 
-## **Unsupervised Learning** (learning the underlying structure of data without given labels)
+## Unsupervised Learning
+
+learning the underlying structure of data without given labels
 
 - Clustering
   - K-Means
@@ -32,7 +36,9 @@ tags: python,numpy,neural-network,machine learning,supervised learning,unsupervi
   - Principal Component Analysis (PCA)
   - [Autoencoders / Variational Autoencoders (VAEs)](https://maideas.github.io/variational_autoencoder.html)
 
-## **Reinforcement Learning** (solving tasks by exploring an environment and evaluating the returned reward)
+## Reinforcement Learning
+
+solving tasks by exploring an environment and evaluating the returned reward
 
 - Explorative Behavior Optimization
   - Neural Networks
