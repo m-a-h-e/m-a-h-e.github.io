@@ -30,6 +30,7 @@
     },{
       "name": "Time Series Prediction",
       "page_names": [
+        "recurrent_networks.md",
         "long_short_term_memory.md"
       ]
     },{
