@@ -28,6 +28,17 @@
         "generative_networks.md"
       ]
     },{
+      "name": "Time Series Prediction",
+      "page_names": [
+        "long_short_term_memory.md"
+      ]
+    },{
+      "name": "Reinforcement Learning",
+      "page_names": [
+        "tabular_q_learning.md",
+        "deep_q_learning.md"
+      ]
+    },{
       "name": "Additional Notes",
       "page_names": [
         "numpy_image_data.md"
