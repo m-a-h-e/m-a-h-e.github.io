@@ -5,13 +5,20 @@
       "page_names": [
         "index.md",
         "machine_learning_fields.md",
-        "variational_autoencoder.md",
-        "npnn_vae_implementation.md",
-        "vae_references.md",
-        "numpy_image_data.md",
         "artificial_neuron.md",
-        "fully_conn_layer.md",
-        "softmax_derivative.md"
+        "dense_connected_layer.md",
+        "linear_regression.md",
+        "logistic_regression.md",
+        "non_linear_regression.md",
+        "classification.md",
+        "xor_classification.md",
+        "convolutional_networks.md",
+        "le_net_5_classification.md",
+        "inception_classification.md",
+        "autoencoder.md",
+        "variational_autoencoder.md",
+        "generative_networks.md",
+        "numpy_image_data.md"
       ]
     },{
       "name": "My GitHub Repositories",

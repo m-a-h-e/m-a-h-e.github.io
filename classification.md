@@ -1,7 +1,10 @@
 ---
+tags: python,numpy,neural-network,classification,classes,sigmoid,softmax
 mathjax: true
 ---
-# The Softmax Function and its Derivative
+# Classification
+
+## The Softmax Function and its Derivative
 
 {:.note}
 We define n as the softmax output vector index and k as the softmax input vector index.
