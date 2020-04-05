@@ -6,18 +6,30 @@
         "index.md",
         "machine_learning_fields.md",
         "artificial_neuron.md",
-        "dense_connected_layer.md",
         "linear_regression.md",
         "logistic_regression.md",
-        "non_linear_regression.md",
+        "dense_connected_layer.md",
+        "non_linear_regression.md"
+      ]
+    },{
+      "name": "Classification",
+      "page_names": [
         "classification.md",
         "xor_classification.md",
         "convolutional_networks.md",
         "le_net_5_classification.md",
-        "inception_classification.md",
+        "inception_classification.md"
+      ]
+    },{
+      "name": "Generative Models",
+      "page_names": [
         "autoencoder.md",
         "variational_autoencoder.md",
-        "generative_networks.md",
+        "generative_networks.md"
+      ]
+    },{
+      "name": "Additional Notes",
+      "page_names": [
         "numpy_image_data.md"
       ]
     },{
