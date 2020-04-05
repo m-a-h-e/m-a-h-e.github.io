@@ -48,9 +48,10 @@ learning the underlying principal feature distribution and generating new but si
 solving tasks by exploring an environment and evaluating the returned reward
 
 - Explorative Behavior Optimization
+  - Tabular Q Learning
   - Neural Networks
-    - Q Learning
+    - Deep Q Learning
     - Temporal Difference (TD) Learning
     - Actor Critic Learning
-  - Tabular Q Learning
+  - Genetic Algorithms
 
