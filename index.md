@@ -11,7 +11,7 @@ My interest in all the things surrounding this field of research and the ever gr
 The idea was to use the knowledge about neural networks as they were when I studied and combine it with the latest research outcomes regarding new activation functions, new optimizer algorithms and new structures, better suited to solve several problems.
 As a side effect I got a better knowledge of Python and NumPy ...
 
-## What is a Neural Network made off ?
+## What is a Neural Network made of ?
 
 >Connected Layers of Neurons
 
