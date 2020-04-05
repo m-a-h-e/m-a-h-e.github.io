@@ -20,9 +20,10 @@ These layers of neurons are coupled by weighted connections which are adjusted d
 An easy way to build up a neural network is to define the following types of layers:
 
 - **Connect layer** *(to implement sums of weighted connections)*
-  - Fully connected layer
+  - Dense connected layer
   - Convolutional layer
-  - MaxPooling layer
+  - UpConvolutional layer
+  - Pooling layer
 
 - **Function layer** *(to implement neuron activation functions)*
   - [Linear](https://nbviewer.jupyter.org/github/maideas/numpy-neural-network/blob/master/Linear.ipynb)
@@ -37,6 +38,15 @@ An easy way to build up a neural network is to define the following types of lay
   - RMS loss *(= L2 Norm loss)*
   - L1 Norm loss
   - Cross Entropy loss
+  - Binary Cross Entropy loss
+  - Kullback-Leibler loss
+
+- **Complex layer**
+  - Sequential layer
+  - Inception layer
+  - Latent and Sample layer
+  - LSTM layer
+  - GRU layer
 
 To adjust the weights *(parameters)* of the network, an optimization algorithm is needed:
 
