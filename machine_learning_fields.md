@@ -13,7 +13,7 @@ building a model from labeled data or input-output data pairs
     - Logistic Regression
 - Classification
   - Neural Networks
-    - Convolutional NNs
+    - Convolutional Neural Networks
     - Logistic Regression + [Softmax](https://maideas.github.io/softmax_derivative.html)
   - K Nearest Neighbors (KNN)
   - Support Vector Machines (SVM)
@@ -34,7 +34,14 @@ learning the underlying structure of data without given labels
   - K-Means
 - Dimensionality Reduction
   - Principal Component Analysis (PCA)
+
+## Semi-Supervised Learning
+
+learning the underlying principal feature distribution and generating new but similar data
+
+- Generative Models
   - [Autoencoders / Variational Autoencoders (VAEs)](https://maideas.github.io/variational_autoencoder.html)
+  - Generative Adversarial Networks (GANs)
 
 ## Reinforcement Learning
 
