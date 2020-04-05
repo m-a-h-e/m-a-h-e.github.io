@@ -21,8 +21,8 @@ An easy way to build up a neural network is to define the following types of lay
 
 - **Connect layer** *(to implement sums of weighted connections)*
   - Dense connected layer
-  - Convolutional layer
-  - UpConvolutional layer
+  - Convolution layer
+  - UpConvolution layer
   - Pooling layer
 
 - **Function layer** *(to implement neuron activation functions)*
