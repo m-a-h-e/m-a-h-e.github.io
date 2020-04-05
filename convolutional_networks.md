@@ -2,7 +2,11 @@
 tags: python,numpy,neural-network,convolution,convolutional networks
 mathjax: true
 ---
-# Convolutional Neural Networks
+# Convolutional Neural Networks (CNNs)
+
+## The Convolution Layer
+
+## CNN Implementation
 
 {:.caption}
 <video controls poster="/assets/videos/four_img_classes.png">
