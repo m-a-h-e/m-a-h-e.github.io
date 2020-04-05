@@ -28,7 +28,7 @@
         "generative_networks.md"
       ]
     },{
-      "name": "Time Series Prediction",
+      "name": "Series Prediction",
       "page_names": [
         "recurrent_networks.md",
         "long_short_term_memory.md"
