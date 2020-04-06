@@ -1,11 +1,15 @@
 {
   "categories": [
     {
-      "name": "Machine Learning",
+      "name": "Introduction",
       "page_names": [
         "index.md",
         "machine_learning_fields.md",
-        "artificial_neuron.md",
+        "artificial_neuron.md"
+      ]
+    },{
+      "name": "Regression",
+      "page_names": [
         "linear_regression.md",
         "logistic_regression.md",
         "dense_connected_layer.md",
