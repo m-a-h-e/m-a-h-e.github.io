@@ -35,5 +35,5 @@ The most simple Artificial Neuron has only one weighted input path, a weighted b
 $$y = w * x + wb$$
 
 In this case $$w$$, $$x$$, $$wb$$ and $$y$$ are all scalar values.
-This equation lools like a one-dimensional linear function with gain $$w$$ and offset $$wb$$ ... and yes ... an Artificial Neuron with only one scalar input can be used to model a linear function.
+The equation lools like a one-dimensional linear function with gain $$w$$ and offset $$wb$$ ... and yes ... an Artificial Neuron with only one scalar input can be used to model a linear function.
 
