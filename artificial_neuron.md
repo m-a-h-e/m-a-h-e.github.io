@@ -37,3 +37,7 @@ $$y = w * x + wb$$
 In this case $$w$$, $$x$$, $$wb$$ and $$y$$ are all scalar values.
 The equation lools like a one-dimensional linear function with gain $$w$$ and offset $$wb$$ ... and yes ... an Artificial Neuron with only one scalar input can be used to model a linear function.
 
+{:.caption}
+![linear function](assets/images/linear_function.png)
+A Linear Function with Gain w and Offset wb
+
