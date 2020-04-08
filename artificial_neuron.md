@@ -41,3 +41,13 @@ The equation lools like a one-dimensional linear function with gain $$w$$ and of
 ![linear function](assets/images/linear_function.png)
 A Linear Function with Gain w and Offset wb
 
+## How the Artifical Neuron Learns
+
+Learning - even for a Neuron - is a step by step adaption process according an error(function) which represents the distance between desired and actual output.
+The objective is to optimize the error by adjusting the Neuron parameters in a way that the error gets smaller.
+The error is a multidimensional function depending on the Neuron parameters (its weights) and its input values.
+Its a landscape we have to descent - step by step - towards its minimun.
+To determine the direction of the optimal descent we have to calculate the gradient - meaning the partial derivative of the error function - at the point we are at the moment.
+The gradient always points towards the ascending direction which means we have to step exactly towards the oposite direction and repeat this procedure until we reach a minimum.
+Unfortunately this minimum can be a local one or a plateau and the optimal global minimum may be far away and unreachable behind huge error mountains.
+

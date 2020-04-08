@@ -17,7 +17,7 @@ As a side effect I got a better knowledge of Python and NumPy ...
 
 These layers of neurons are coupled by weighted connections which are adjusted during the learning process in a way to minimize the prediction error of the network normally using some sort of error gradient backpropagation.
 
-An good way to assemble neural networks is to define the following types of layers:
+A good way to build neural networks is to define the following basic building blocks which make it easy to assemble neural networks of arbitrary complexity:
 
 - **Connect layer** *(to implement sums of weighted connections)*
   - Dense connected layer
