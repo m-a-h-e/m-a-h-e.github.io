@@ -110,22 +110,21 @@ The mean vector $$\mu$$ can simply be generated using a [Linear](https://github.
 
 ## Variational Autoencoder Implementation
 
-{:.caption}
+<div class="video">
 <video controls poster="/assets/videos/variational_autoencoder_four_classes.png">
   <source src="/assets/videos/variational_autoencoder_four_classes.webm" type="video/webm">
   <source src="/assets/videos/variational_autoencoder_four_classes.ogv" type="video/ogg">
   <source src="/assets/videos/variational_autoencoder_four_classes.mp4" type="video/mp4">
 </video>
-Variational Autoencoder with Latent Space Regularisation using KL-Divergence
+<p>Variational Autoencoder with Latent Space Regularisation using KL-Divergence</p>
+</div>
 
 ## Variational Autoencoder References
 
-{:.caption}
 [![Deep Generative Modeling, MIT 6.S191](https://img.youtube.com/vi/rZufA635dq4/0.jpg)](https://www.youtube.com/watch?v=rZufA635dq4)
 Deep Generative Modeling, MIT 6.S191 (2020)
 <div class="clearfix"></div>
 
-{:.caption}
 [![Generative Models, Stanford University cs231n](https://img.youtube.com/vi/5WoItGTWV54/0.jpg)](https://www.youtube.com/watch?v=5WoItGTWV54)
 Generative Models, Stanford University cs231n (2017)
 <div class="clearfix"></div>

@@ -15,19 +15,23 @@ An autoencoder is a structure which encodes a high dimensional input dataset int
 
 ## Autoencoder Implementation
 
-{:.caption}
+{:.w90}
+<div class="video">
 <video controls poster="/assets/videos/autoencoder_four_classes_tanh.png">
   <source src="/assets/videos/autoencoder_four_classes_tanh.webm" type="video/webm">
   <source src="/assets/videos/autoencoder_four_classes_tanh.ogv" type="video/ogg">
   <source src="/assets/videos/autoencoder_four_classes_tanh.mp4" type="video/mp4">
 </video>
-Autoencoder without Latent Space Regularization (Tanh activation)
+<p>Autoencoder without Latent Space Regularization (Tanh activation)</p>
+</div>
 
-{:.caption}
+{:.w90}
+<div class="video">
 <video controls poster="/assets/videos/autoencoder_four_classes_leaky_relu.png">
   <source src="/assets/videos/autoencoder_four_classes_leaky_relu.webm" type="video/webm">
   <source src="/assets/videos/autoencoder_four_classes_leaky_relu.ogv" type="video/ogg">
   <source src="/assets/videos/autoencoder_four_classes_leaky_relu.mp4" type="video/mp4">
 </video>
-Autoencoder without Latent Space Regularization (LeakyReLU activation)
+<p>Autoencoder without Latent Space Regularization (LeakyReLU activation)</p>
+</div>
 
