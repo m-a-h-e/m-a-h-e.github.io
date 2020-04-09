@@ -46,6 +46,7 @@
     },{
       "name": "Additional Notes",
       "page_names": [
+        "important_notes.md",
         "numpy_image_data.md"
       ]
     },{
