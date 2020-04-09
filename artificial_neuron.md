@@ -22,7 +22,7 @@ This bias value models the activation threshold and serves as an input independe
 The sum value is then passed through an activation function which - in most cases - is a non-linear function.
 This simple structure is the base element which Neural Networks are made of.
 
-## A Mathematical Description
+## A Linear Function Model
 
 Given an input vector $$x$$, the input weights vector $$w$$ and a constant scalar bias value $$b = 1$$ together with its weight $$wb$$, the following equation describes the Artificial Neuron.
 
