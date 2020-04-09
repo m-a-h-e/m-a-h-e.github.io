@@ -2,7 +2,7 @@
 tags: python,numpy,neural-network,successful learning
 mathjax: true
 ---
-# Important Notes for Successful Machine Learning
+# Successful Neural Network Learning Notes
 
 ## Regularization
 
