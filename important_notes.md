@@ -49,5 +49,5 @@ mathjax: true
 - A proper weight initialization is the base for a successful learning process
 - The layer weights (parameters) shall be initialized in a way that the passed through data and the
   back-passed gradients keep their mean value through the network and do not explode or vanish
-- Initial neural network weights shall be random values which allows each neuron to become a specialist for a particular pattern ... the diversity of the initial weights is the base for learning a complex function. If all weights of a layer would be initialized with the same weight value they would all behave equal and output the same value which prevents learning complex functions
+- Initial neural network weights shall be random values which allows each neuron to become a specialist for a particular pattern. The diversity of the initial weights is the base for learning a complex function. If all weights of a neural network layer would be initialized using the same weight value they would all behave equal and output the same value which prevents learning a complex function
 
