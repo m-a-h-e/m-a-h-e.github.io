@@ -1,5 +1,5 @@
 ---
-tags: python,numpy,neural-network,successful learning,regularization,dataset,activation function,loss function,learning rate,weight initialization
+tags: python,numpy,neural-network,successful learning,regularization,weight decay,ridge,lasso,gradient clipping,dataset,normalization,activation function,loss function,learning rate,stable learning,momentum,weight initialization
 mathjax: true
 ---
 # Successful Neural Network Learning Notes
@@ -7,12 +7,12 @@ mathjax: true
 ## Regularization
 
 - Batch Normalization to move data distribution to the optimal working range
-- Weight Decay to keep the weights small which reduces the exploding gradient problem
-- Dropout helps to harden the network against distortion
-- Reduction of the neural network size (model complexity / number of network parameters)
+- Weight decay ("Ridge Regression" = L2 Norm weight decay, "Lasso Regression" = L1 Norm weight decay) to keep the weights small which helps to tackle overfitting if the number of data samples is small compared to the network complexity
+- Dropout helps against overfitting by randomly blanking a percentage of neurons during training which reduces functional dependencies between neurons. This gain in neuron independency tackles model overfitting which helps to close the gap between training and validation accuracy
+- Reducing the model complexity (the number of network parameters) if there is only a small number of data available for training
 - Gradient clipping to prevent exploding gradients
-- Add data or gradient noise to get better stochastic behavior and improve generalization
-- Minimum learning data batch size to stabalize the gradient direction and value
+- Add data noise or gradient noise to get better stochastic behavior, improve generalization and possibly escape local optimization minima
+- A minimum learning data batch size to stabalize the gradient direction and value
 
 ## Dataset
 
@@ -43,11 +43,12 @@ mathjax: true
 - A too small learning rate makes learning unnecessary slow
 - Find the tradeoff between stability and learning speed
 - Select an optimization algorithm (like Adam) which dynamically adjusts the learning rate and introduces momentum
+- Divide the accumulated layer weight gradients by the training batch size (which gives its mean) to avoid large gradient values and make the learning rate independent of the training batch size
 
 ## Weight Initialization
 
 - A proper weight initialization is the base for a successful learning process
 - The layer weights (parameters) shall be initialized in a way that the passed through data and the
   back-passed gradients keep their mean value through the network and do not explode or vanish
-- Initial neural network weights shall be random values which allows each neuron to become a specialist for a particular pattern. The diversity of the initial weights is the base for learning a complex function. If all weights of a neural network layer would be initialized using the same weight value they would all behave equal and output the same value which prevents learning a complex function
+- Neural network weights shall be initialized using random values which allows each neuron to become a specialist for a particular pattern. The diversity of the initial weights is the base for learning a complex function. If all weights of a neural network layer would be initialized using the same weight value they would all behave equal and output the same value which prevents learning a complex function
 
