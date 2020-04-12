@@ -52,3 +52,8 @@ mathjax: true
   back-passed gradients keep their mean value through the network and do not explode or vanish
 - Neural network weights shall be initialized using random values which allows each neuron to become a specialist for a particular pattern. The diversity of the initial weights is the base for learning a complex function. If all weights of a neural network layer would be initialized using the same weight value they would all behave equal and output the same value which prevents learning a complex function
 
+## Model Complexity
+
+- In case a model has an insufficient complexity (too few parameters to approximate the desired function) the optimizer will not be able to reduce the loss or increase the model accuracy above a certain level, because the model can only represent a low dimensional approximation of the target function.
+- In case the model complexity is higher than needed, the model tends to overfit which will result in poor model generalization and can be detected by an unusual difference between (a good) training data accuracy and (a bad) validation data accuracy. To tackle the overfitting problem, several regularization methods can be used.
+
