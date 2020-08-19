@@ -7,7 +7,7 @@ HOST   = --host localhost --port 4000
 build: clean check
 	bundle exec jekyll build $(CONFIG) --incremental --verbose
 
-serve: clean
+serve: build
 	bundle exec jekyll serve $(CONFIG) --incremental $(HOST)
 
 check: clean
