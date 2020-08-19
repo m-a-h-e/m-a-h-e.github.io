@@ -34,9 +34,9 @@ The right balance between exploitation and exploration is a basic problem in rei
 - Temporal Difference Learning (TD)
   - Q Learning Algorithm
   - SARSA Algorithm
-  - expected SARSA algorithm
+  - Expected SARSA Algorithm
   - Dyna-Q Algorithm
-  - Q Network Architectures
+  - Deep Q Network (DQN) Architectures
 
 - Policy Gradient Methods
 

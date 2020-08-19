@@ -2,7 +2,7 @@
 tags: python,numpy,neural-network,reinforcement learning,deep Q learning,DQN,DDQN,Dueling
 mathjax: true
 ---
-# Deep Q Network (DQN) Learning
+# Deep Q Network (DQN) Architectures
 
 - basic Q network
   - state to vector of Q values related to all actions, or

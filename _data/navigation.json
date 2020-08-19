@@ -30,7 +30,7 @@
         "reinforcement_learning.md",
         "monte_carlo_methods.md",
         "temporal_difference.md",
-        "deep_q_learning.md",
+        "deep_q_networks.md",
         "policy_gradient.md",
         "monte_carlo_tree_search.md",
         "cross_entropy_method.md"
