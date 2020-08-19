@@ -25,6 +25,17 @@
         "inception_classification.md"
       ]
     },{
+      "name": "Reinforcement Learning",
+      "page_names": [
+        "reinforcement_learning.md",
+        "monte_carlo_methods.md",
+        "temporal_difference.md",
+        "deep_q_learning.md",
+        "policy_gradient.md",
+        "monte_carlo_tree_search.md",
+        "cross_entropy_method.md"
+      ]
+    },{
       "name": "Generative Models",
       "page_names": [
         "autoencoder.md",
@@ -36,12 +47,6 @@
       "page_names": [
         "recurrent_networks.md",
         "long_short_term_memory.md"
-      ]
-    },{
-      "name": "Reinforcement Learning",
-      "page_names": [
-        "tabular_q_learning.md",
-        "deep_q_learning.md"
       ]
     },{
       "name": "Additional Notes",
