@@ -19,42 +19,42 @@ These layers of neurons are coupled by weighted connections which are adjusted d
 
 A good way to build neural networks is to define the following basic building blocks which make it easy to assemble neural networks of arbitrary complexity:
 
-- **Connect layer** *(to implement sums of weighted connections)*
-  - Dense connected layer
-  - Convolution layer
-  - UpConvolution layer
-  - Pooling layer
+#### **Connect layer** *(to implement sums of weighted connections)*
+- Dense connected layer
+- Convolution layer
+- UpConvolution layer
+- Pooling layer
 
-- **Function layer** *(to implement neuron activation functions)*
-  - [Linear](https://github.com/maideas/numpy-neural-network/blob/master/Linear.ipynb)
-  - [ReLU](https://github.com/maideas/numpy-neural-network/blob/master/ReLU.ipynb)
-  - [LeakyReLU](https://github.com/maideas/numpy-neural-network/blob/master/LeakyReLU.ipynb)
-  - [Tanh](https://github.com/maideas/numpy-neural-network/blob/master/Tanh.ipynb)
-  - [Sigmoid](https://github.com/maideas/numpy-neural-network/blob/master/Sigmoid.ipynb)
-  - [Softplus](https://github.com/maideas/numpy-neural-network/blob/master/Softplus.ipynb)
-  - [Softmax](classification.md)
+#### **Function layer** *(to implement neuron activation functions)*
+- [Linear](https://github.com/maideas/numpy-neural-network/blob/master/Linear.ipynb)
+- [ReLU](https://github.com/maideas/numpy-neural-network/blob/master/ReLU.ipynb)
+- [LeakyReLU](https://github.com/maideas/numpy-neural-network/blob/master/LeakyReLU.ipynb)
+- [Tanh](https://github.com/maideas/numpy-neural-network/blob/master/Tanh.ipynb)
+- [Sigmoid](https://github.com/maideas/numpy-neural-network/blob/master/Sigmoid.ipynb)
+- [Softplus](https://github.com/maideas/numpy-neural-network/blob/master/Softplus.ipynb)
+- [Softmax](classification.md)
 
-- **Loss layer** *(to implement network error loss functions)*
-  - RMS loss *(= L2 Norm loss)*
-  - L1 Norm loss
-  - Cross Entropy loss
-  - Binary Cross Entropy loss
-  - Kullback-Leibler loss
+#### **Loss layer** *(to implement network error loss functions)*
+- RMS loss *(= L2 Norm loss)*
+- L1 Norm loss
+- Cross Entropy loss
+- Binary Cross Entropy loss
+- Kullback-Leibler loss
 
-- **Complex layer**
-  - Sequential layer
-  - Inception layer
-  - Latent and Sample layer
-  - LSTM layer
-  - GRU layer
+#### **Complex layer**
+- Sequential layer
+- Inception layer
+- Latent and Sample layer
+- LSTM layer
+- GRU layer
 
 To adjust the weights *(parameters)* of the network, an optimization algorithm is needed:
 
-- **Optimizer**
-  - [An excellent overview by Sebastian Ruder](http://ruder.io/optimizing-gradient-descent/)
-  - Stochastic gradient descent
-  - RMSprop
-  - Adagrad
-  - Adadelta
-  - Adam
+#### **Optimizer**
+- [An excellent overview by Sebastian Ruder](http://ruder.io/optimizing-gradient-descent/)
+- Stochastic gradient descent
+- RMSprop
+- Adagrad
+- Adadelta
+- Adam
 

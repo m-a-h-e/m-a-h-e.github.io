@@ -4,11 +4,13 @@ mathjax: true
 ---
 # Deep Q Network (DQN) Architectures
 
-- basic Q network
+## Basic Q Network
   - state to vector of Q values related to all actions, or
   - state and action to scalar Q(s, a) value
 
-## Double DQN Algorithm
+## Double DQN Architecture
+
+target and behavior network ???? or something different ????
 
 - double (target and behavior networks)
   - prevents "tail chasing" / oscillating policy

@@ -14,34 +14,32 @@ The right balance between exploitation and exploration is a basic problem in rei
 ## The Markov Decision Process (MDP)
 
 - [Markov Decision Process (Wiki EN)](https://en.wikipedia.org/wiki/Markov_decision_process)
-- The Markov property
-  - all information about the environment is available through its observable state
-    - position, velocity, acceleration, etc.
-  - there is no hidden influence from the past to the future behavior of the environment, meaning the environment does not have a memory state, which is excluded from the observable state
-  - the future behavior of the environment only depends on its current state and the actions executed in it
-  - a process with these properties is called a Markov Decision Process
 
-## The Bellman Equation
+### The Markov property
 
-- state value V(s) or state-action value Q(s, a) bootstrap equation
-- can be understood as a recursive policy evaluation rule to calculate the value of states or state-action values
-- can also be adapted to work as a policy optimization rule
+- all information about the environment is available through its observable state
+  - position, velocity, acceleration, etc.
+- there is no hidden influence from the past to the future behavior of the environment, meaning the environment does not have a memory state, which is excluded from the observable state
+- the future behavior of the environment only depends on its current state and the actions executed in it
+- a process with these properties is called a Markov Decision Process
 
 ## Reinforcement Learning Algorithms
 
 - Monte Carlo RL Methods (MC)
 
 - Temporal Difference Learning (TD)
-  - Q Learning Algorithm
-  - SARSA Algorithm
-  - Expected SARSA Algorithm
-  - Dyna-Q Algorithm
-  - Deep Q Network (DQN) Architectures
+  - The Bellman Equation
+  - The Q Learning Algorithm
+  - The SARSA Algorithm
+  - The Expected SARSA Algorithm
+  - The Dyna-Q Algorithm
+
+- Deep Q Network (DQN) Architectures
 
 - Policy Gradient Methods
 
-- Monte Carlo Tree Search
-- The Alpha Zero Algorithm
+- Monte Carlo Tree Search Algorithms
+  - The Alpha Zero Algorithm
 
 - Cross Entropy RL Methods
   - learns policy by filtering out low-reward episodes trajectory data and favor high-reward episodes trajectory data
