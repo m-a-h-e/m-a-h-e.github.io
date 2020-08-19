@@ -10,8 +10,6 @@ mathjax: true
 
 ## Double DQN Architecture
 
-target and behavior network ???? or something different ????
-
 - double (target and behavior networks)
   - prevents "tail chasing" / oscillating policy
   - stabilizes learning process
