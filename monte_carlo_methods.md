@@ -2,7 +2,7 @@
 tags: python,numpy,neural-network,reinforcement learning
 mathjax: true
 ---
-# Monte Carlo RL Methods (MC)
+# Monte Carlo (MC) RL Methods
 
 - samples (state, action, reward) data from the environment following a given (usually epsilon-greedy or random) policy
 - averages total future reward for each visited state over a number of complete episode trajectories

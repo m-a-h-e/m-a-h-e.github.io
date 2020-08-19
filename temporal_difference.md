@@ -2,7 +2,7 @@
 tags: python,numpy,neural-network,reinforcement learning
 mathjax: true
 ---
-# Temporal Difference Learning (TD)
+# Temporal Difference (TD) Learning
 
 - state value or state-action value update after each temporal step (temporal difference)
 
