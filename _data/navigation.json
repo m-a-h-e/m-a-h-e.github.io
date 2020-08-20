@@ -5,34 +5,38 @@
       "page_names": [
         "index.md",
         "machine_learning_fields.md",
-        "artificial_neuron.md"
+        "artificial_neuron.md",
+        "dense_connected_layer.md"
       ]
     },{
       "name": "Regression",
       "page_names": [
-        "linear_regression.md",
-        "logistic_regression.md",
-        "dense_connected_layer.md",
+        "single_layer_regression.md",
         "non_linear_regression.md"
       ]
     },{
       "name": "Classification",
       "page_names": [
-        "classification.md",
-        "xor_classification.md",
+        "classification_basics.md",
         "convolutional_networks.md",
         "le_net_5_classification.md",
         "inception_classification.md"
       ]
     },{
+      "name": "General Notes",
+      "page_names": [
+        "success_notes.md",
+        "numpy_image_data.md"
+      ]
+    },{
       "name": "Reinforcement Learning",
       "page_names": [
         "reinforcement_learning.md",
-        "monte_carlo_methods.md",
         "temporal_difference.md",
         "deep_q_networks.md",
-        "policy_gradient.md",
+        "monte_carlo_methods.md",
         "monte_carlo_tree_search.md",
+        "policy_gradient.md",
         "cross_entropy_method.md"
       ]
     },{
@@ -47,12 +51,6 @@
       "page_names": [
         "recurrent_networks.md",
         "long_short_term_memory.md"
-      ]
-    },{
-      "name": "Additional Notes",
-      "page_names": [
-        "success_notes.md",
-        "numpy_image_data.md"
       ]
     },{
       "name": "My GitHub Repositories",

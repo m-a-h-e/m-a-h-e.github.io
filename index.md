@@ -32,7 +32,7 @@ A good way to build neural networks is to define the following basic building bl
 - [Tanh](https://github.com/maideas/numpy-neural-network/blob/master/Tanh.ipynb)
 - [Sigmoid](https://github.com/maideas/numpy-neural-network/blob/master/Sigmoid.ipynb)
 - [Softplus](https://github.com/maideas/numpy-neural-network/blob/master/Softplus.ipynb)
-- [Softmax](classification.md)
+- [Softmax](classification_basics.md)
 
 #### **Loss layer** *(to implement network error loss functions)*
 - RMS loss *(= L2 Norm loss)*

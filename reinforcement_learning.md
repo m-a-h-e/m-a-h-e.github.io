@@ -19,7 +19,7 @@ The right balance between exploitation and exploration is a basic problem in rei
 
 - all information about the environment is available through its observable state
   - position, velocity, acceleration, etc.
-- there is no hidden influence from the past to the future behavior of the environment, meaning the environment does not have a memory state, which is excluded from the observable state
+- there is no hidden influence from the past to the future behavior of the environment, meaning the environment does not have a memory state, which is excluded from its observable state
 - the future behavior of the environment only depends on its current state and the actions executed in it
 - a process with these properties is called a Markov Decision Process
 

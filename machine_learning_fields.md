@@ -16,13 +16,16 @@ These algorithms solve problems by exploring an environment and learning from - 
 building a model from labeled data or input-output data pairs
 
 #### Regression
+
 - Neural Networks
-  - [Linear Regression](linear_regression.md)
-  - [Logistic Regression](logistic_regression.md)
+  - [Linear Regression](single_layer_regression.md)
+  - [Logistic Regression](single_layer_regression.md)
+  - [Non-Linear Regression](non_linear_regression.md)
 
 #### Classification
+
 - Neural Networks
-  - [Logistic Regression + Softmax](xor_classification.md)
+  - [Logistic Regression + Softmax](classification_basics.md)
   - [Convolutional Neural Networks](convolutional_networks.md)
 - K Nearest Neighbors (KNN)
 - Support Vector Machines (SVM)
@@ -31,6 +34,7 @@ building a model from labeled data or input-output data pairs
 - Naive Bayes
 
 #### Time Series Prediction
+
 - Neural Networks
   - [Recurrent Neural Networks (RNN)](recurrent_networks.md)
   - [Long Short Term Memory (LSTM)](long_short_term_memory.md)
@@ -41,9 +45,11 @@ building a model from labeled data or input-output data pairs
 learning the underlying structure of data without given labels
 
 #### Clustering
+
 - K-Means
 
 #### Dimensionality Reduction
+
 - Principal Component Analysis (PCA)
 
 ## Semi-Supervised Learning
@@ -51,6 +57,7 @@ learning the underlying structure of data without given labels
 learning the underlying principal feature distribution and generating new but similar data
 
 #### Generative Models
+
 - [Autoencoders](autoencoder.md) / [Variational Autoencoders (VAEs)](variational_autoencoder.md)
 - [Generative Adversarial Networks (GANs)](generative_networks.md)
 
@@ -59,10 +66,11 @@ learning the underlying principal feature distribution and generating new but si
 solving tasks by exploring an environment and evaluating the returned reward
 
 #### Explorative Behavior Optimization
-- [Tabular Q Learning](tabular_q_learning.md)
-- Neural Networks
-  - [Deep Q Learning](deep_q_learning.md)
-  - Temporal Difference (TD) Learning
-  - Actor Critic Learning
-- Genetic Algorithms
+
+- [Temporal Difference (TD) Learning](temporal_difference.md)
+- [Deep Q Learning](deep_q_networks.md)
+- [Monte Carlo RL Methods](monte_carlo_methods.md)
+- [Monte Carlo Tree Search Algorithms](monte_carlo_tree_search.md)
+- [Policy Gradient Algorithms](policy_gradient.md)
+- [Cross Entropy RL Method](cross_entropy_method.md)
 
