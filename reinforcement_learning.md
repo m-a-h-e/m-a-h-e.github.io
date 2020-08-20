@@ -13,7 +13,7 @@ The right balance between exploitation and exploration is a basic problem in rei
 
 ## The Markov Decision Process (MDP)
 
-- [Markov Decision Process (Wiki EN)](https://en.wikipedia.org/wiki/Markov_decision_process)
+- [Markov Decision Process](https://en.wikipedia.org/wiki/Markov_decision_process)
 
 ### The Markov property
 
@@ -67,6 +67,9 @@ The right balance between exploitation and exploration is a basic problem in rei
   - model-based algorithms
   - experience replay buffer
     - buffer of experiance data used for learning based on batch sampling
+    - increases sample efficiency by using buffer entries more than once during neural network training
+    - using sampled batches of training data from the replay buffer results in more stable training than directly using potentially correlated sequential observations
+    - prioritized replay for faster learning
   
 - state value function V(s)
   - state-action value function Q(s, a)
@@ -108,21 +111,16 @@ The right balance between exploitation and exploration is a basic problem in rei
     - a parameter usually chosen between 0.95 and 1.00
     - the closer to 1, the higher the impact of distant reward values
 
-- replay buffer
-  - increases sample efficiency by using buffer entries more than once during neural network training
-  - using sampled batches of training data from the replay buffer results in more stable training than directly using potentially correlated sequential observations
-  - prioritized replay for faster learning
-
 - model
-  - usually a representation of the environment which enables planning
+  - a representation of the environment which enables planning
 
 ## Miscellaneous Topics
 
 - [An Introduction to DeepReinforcement Learning](https://arxiv.org/pdf/1811.12560.pdf)
 - [Deep Reinforcement Learning with Double Q-learning](https://arxiv.org/pdf/1509.06461.pdf)
 - [Dueling Network Architectures for Deep Reinforcement Learning](http://proceedings.mlr.press/v48/wangf16.pdf)
-- [Bellman equation (Wiki EN)](https://en.wikipedia.org/wiki/Bellman_equation)
-- [Temporal Difference Learning (Wiki DE)](https://de.wikipedia.org/wiki/Temporal_Difference_Learning)
+- [Bellman equation](https://en.wikipedia.org/wiki/Bellman_equation)
+- [Temporal Difference Learning](https://en.wikipedia.org/wiki/Temporal_difference_learning)
 - [A Beginner's Guide to Deep Reinforcement Learning (A.I. Wiki)](https://pathmind.com/wiki/deep-reinforcement-learning)
 - [Berkeley CS 294-112: Deep Reinforcement Learning](http://rail.eecs.berkeley.edu/deeprlcourse-fa17/f17docs/lecture_7_advanced_q_learning.pdf)
 - actor critic
