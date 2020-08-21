@@ -3,29 +3,34 @@ tags: python,numpy,neural-network,activation-functions,loss-functions,optimizer,
 ---
 # A Machine Learning and Neural Networks Compendium
 
-## Objective
+## The Objective
 
-Years ago I studied Microelectronics and Computer Science and had the opportunity to take some Machine Learning lectures.
-From this point on, I always followed this topic up to now where Neural Networks and Machine Learning gain a lot of momentum.
-My interest in all the things surrounding this field of research and the ever growing amount of available material took me to the decision to - once again - dive deeper into it. To understand all these things down to their details, I think a very good way is to implement all components of a neural network using a nice language called Python and the NumPy library.
-The idea was to use the knowledge about neural networks as they were when I studied and combine it with the latest research outcomes regarding new activation functions, new optimizer algorithms and new structures, better suited to solve several problems.
-As a side effect I got a better knowledge of Python and NumPy ...
+At the time I was studying Microelectronics and Computer Science I had the opportunity to take some Machine Learning lectures.
+Since that time I always followed this topic up to now where Neural Networks and Machine Learning gain a lot of momentum.
+My interest in all the things surrounding this field of research and the growing amount of available publications took me to the decision to - once again - dive deeper into it.
+
+To understand all the things down to their details, a nice way is to implement all components of neural networks including the optimization environment from scratch using a language called Python and e.g. the NumPy library.
+So I started based on my knowledge about neural networks as they were the days I studied, combining it with the latest research outcomes regarding new activation functions, new optimizer algorithms and new network structures, altogether better suited to solve several problems.
+
+As a positive side effect I got a better understanding of Python, NumPy, and later on of PyTorch and TensorFlow ...
 
 ## What is a Neural Network made of ?
 
->Connected Layers of Neurons
+>Connected Layers of [Artificial Neurons](artificial_neuron.md)
 
 These layers of neurons are coupled by weighted connections which are adjusted during the learning process in a way to minimize the prediction error of the network normally using some sort of error gradient backpropagation.
 
 A good way to build neural networks is to define the following basic building blocks which make it easy to assemble neural networks of arbitrary complexity:
 
 #### **Connect layer** *(to implement sums of weighted connections)*
-- Dense connected layer
-- Convolution layer
+
+- [Dense connected layer](dense_connected_layer.md)
+- [Convolution layer](convolutional_networks.md)
 - UpConvolution layer
 - Pooling layer
 
 #### **Function layer** *(to implement neuron activation functions)*
+
 - [Linear](https://github.com/maideas/numpy-neural-network/blob/master/Linear.ipynb)
 - [ReLU](https://github.com/maideas/numpy-neural-network/blob/master/ReLU.ipynb)
 - [LeakyReLU](https://github.com/maideas/numpy-neural-network/blob/master/LeakyReLU.ipynb)
@@ -35,6 +40,7 @@ A good way to build neural networks is to define the following basic building bl
 - [Softmax](classification_basics.md)
 
 #### **Loss layer** *(to implement network error loss functions)*
+
 - RMS loss *(= L2 Norm loss)*
 - L1 Norm loss
 - Cross Entropy loss
@@ -42,6 +48,7 @@ A good way to build neural networks is to define the following basic building bl
 - Kullback-Leibler loss
 
 #### **Complex layer**
+
 - Sequential layer
 - Inception layer
 - Latent and Sample layer
@@ -51,6 +58,7 @@ A good way to build neural networks is to define the following basic building bl
 To adjust the weights *(parameters)* of the network, an optimization algorithm is needed:
 
 #### **Optimizer**
+
 - [An excellent overview by Sebastian Ruder](http://ruder.io/optimizing-gradient-descent/)
 - Stochastic gradient descent
 - RMSprop
