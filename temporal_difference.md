@@ -15,7 +15,7 @@ mathjax: true
 ## The Q Learning Algorithm
 
 - model free algorithm
-- samples reward based on policy and adds maximum Q value of new state, which may not be equal to the Q value related to the action chosen following the current behavior policy
+- samples reward based on policy and adds maximum Q value of new state that may not be equal to the Q value related to the action chosen following the current behavior policy
 - because of this discrepancy, Q learning is called an off-policy algorithm
 
 ## The SARSA Algorithm
