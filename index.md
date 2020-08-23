@@ -2,7 +2,7 @@
 tags: python,numpy,neural-network,activation-functions,loss-functions,optimizer,optimizer-algorithms,derivatives,convolution,pooling,relu,leakyrelu,softmax
 ---
 
-# A Machine Learning and Neural Networks Compendium
+# A Machine Learning Compendium
 
 {:.caption}
 ![Machine Learning Word Cloud](assets/images/ml_word_cloud.png)
