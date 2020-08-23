@@ -4,12 +4,13 @@ tags: python,numpy,neural-network,activation-functions,loss-functions,optimizer,
 
 # A Machine Learning Compendium
 
+At the time I was studying Microelectronics and Computer Science I had the opportunity to take some fascinating machine learning lectures.
+Since that time I have followed this topic up to now where neural networks and machine learning gain a lot of momentum.
+
 {:.caption}
 ![Machine Learning Word Cloud](assets/images/ml_word_cloud.png)
 <div class="clearfix"></div>
 
-At the time I was studying Microelectronics and Computer Science I had the opportunity to take some fascinating machine learning lectures.
-Since that time I have followed this topic up to now where neural networks and machine learning gain a lot of momentum.
 My interest in all the things surrounding this field of research and the growing amount of available publications led me to the decision to - once again - dive deeper into it.
 
 To understand all the things down to their details, I decided to implement all components of neural networks including the optimization environment from scratch using Python and the NumPy library.
