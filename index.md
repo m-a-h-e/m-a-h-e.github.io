@@ -5,7 +5,7 @@ tags: python,numpy,neural-network,activation-functions,loss-functions,optimizer,
 # A Machine Learning Compendium
 
 At the time I was studying Microelectronics and Computer Science I had the opportunity to take some fascinating machine learning lectures.
-Since that time I have followed this topic up to now where neural networks and machine learning gain a lot of momentum.
+Since that time I have followed this topic up to now where the research in neural networks and machine learning gains a lot of momentum.
 
 {:.caption}
 ![Machine Learning Word Cloud](assets/images/ml_word_cloud.png)
@@ -17,7 +17,7 @@ To understand all the things down to their details, I decided to implement all c
 
 So I started based on my knowledge about neural networks as they were the days I studied, combining it with the latest research outcomes regarding new activation functions, new optimizer algorithms and new network structures, altogether better suited to solve several problems.
 
-As a positive side effect I got a better understanding of Python, NumPy, and later on of PyTorch and TensorFlow ...
+As a positive side effect I got a better understanding of Python, NumPy, and PyTorch later on ...
 
 ## What is a Neural Network made of ?
 
