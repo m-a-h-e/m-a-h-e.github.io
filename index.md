@@ -7,7 +7,7 @@ tags: python,numpy,neural-network,activation-functions,loss-functions,optimizer,
 At the time I was studying Microelectronics and Computer Science I had the opportunity to take some fascinating machine learning lectures.
 Since that time I have followed this topic up to now where the research in neural networks and machine learning gains a lot of momentum.
 
->Please see the <a href="#" class="show-nav-bar">navigation menu for details on machine learning and neural networks</a>, their usage for regression, prediction, and classification problems, for reinforcement learning, generative models and many other interesting fields.
+>Please see the <a href="#" class="show-nav-bar">navigation menu for details on machine learning and neural networks</a>, their usage for regression, prediction, and classification problems, for reinforcement learning, generative models and many other interesting fields of application.
 
 {:.caption}
 ![Machine Learning Word Cloud](assets/images/ml_word_cloud.png)
