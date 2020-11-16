@@ -4,6 +4,7 @@
       "name": "Introduction",
       "page_names": [
         "index.md",
+        "neural_network.md",
         "machine_learning_fields.md",
         "artificial_neuron.md",
         "dense_connected_layer.md"
