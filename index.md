@@ -11,7 +11,6 @@ Since that time I have followed this topic up to now where the research in neura
 
 {:.caption}
 ![Machine Learning Word Cloud](assets/images/ml_word_cloud.png)
-<div class="clearfix"></div>
 
 My interest in all the things surrounding this field of research and the growing amount of available publications led me to the decision to - once again - dive deeper into it.
 
