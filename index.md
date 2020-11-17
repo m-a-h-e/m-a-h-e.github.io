@@ -18,5 +18,5 @@ To understand all the things down to their details, I decided to implement all c
 
 So I started based on my knowledge about neural networks as they were the days I studied, combining it with the latest research outcomes regarding new activation functions, new optimizer algorithms and new network structures, altogether better suited to solve several problems.
 
-As a nice side effect I got a better understanding of Python, NumPy, and PyTorch later on.
+As a nice side effect I got a better understanding of Python, NumPy, and PyTorch.
 

@@ -2,7 +2,7 @@
 tags: neural-network,activation-functions,loss-functions,optimizer,optimizer-algorithms,derivatives,convolution,pooling,relu,leakyrelu,softmax
 ---
 
-# What is a Neural Network made of ?
+# Neural Network Components
 
 >Connected Layers of [Artificial Neurons](artificial_neuron.md)
 
@@ -14,7 +14,7 @@ A good way to build neural networks is to define the following basic building bl
 
 - [Dense connected layer](dense_connected_layer.md)
 - [Convolution layer](convolutional_networks.md)
-- UpConvolution layer
+- [UpConvolution layer](autoencoder.md)
 - Pooling layer
 
 #### **Function layer** *(to implement neuron activation functions)*
