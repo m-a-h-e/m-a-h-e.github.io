@@ -4,7 +4,7 @@ tags: neural-network,activation-functions,loss-functions,optimizer,optimizer-alg
 
 # Neural Network Components
 
->Connected Layers of [Artificial Neurons](artificial_neuron.md)
+>Neural networks are made of connected layers of [Artificial Neurons](artificial_neuron.md).
 
 These layers of neurons are coupled by weighted connections which are adjusted during the learning process in a way to minimize the prediction error of the network normally using some sort of error gradient backpropagation.
 
