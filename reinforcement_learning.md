@@ -7,7 +7,9 @@ mathjax: true
 Reinforcement Learning is a learning method that optimizes the execution of actions in an environment based on its observable state information to maximize the reward returned from the environment.
 Usually, this task has to be accomplished - tabula rasa - without prior knowledge about the environment.
 
-====> TODO IMAGE agent, action, environment, state, reward
+{:.caption}
+![reinforcement learning base diagram](/assets/images/reinforcement_learning_base_diagram.png)
+Reinforcement Learning Base Diagram
 
 Actions are executed by a reinforcement learning agent exploiting the already collected experience but also exploring the environment searching for possibilities to maximize the collected reward.
 
