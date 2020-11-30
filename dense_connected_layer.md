@@ -4,15 +4,15 @@ mathjax: true
 ---
 # The Dense Connected Layer
 
-{:.caption}
+{:.caption .img}
 ![dense connected layer forward pass](/assets/images/fully_conn_forward.png)
 Forward pass matrix operation to compute output vector
 
-{:.caption}
+{:.caption .img}
 ![dense connected layer backward pass](/assets/images/fully_conn_backward_gw.png)
 Backward pass matrix operation to compute weights gradient matrix
 
-{:.caption}
+{:.caption .img}
 ![dense connected layer backward pass](/assets/images/fully_conn_backward_gx.png)
 Backward pass matrix operation to compute input gradient vector
 

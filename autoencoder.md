@@ -4,7 +4,7 @@ mathjax: true
 ---
 # Autoencoder
 
-{:.caption}
+{:.caption .img}
 ![Classical Autoencoder](assets/images/autoencoder.png)
 Autoencoder Structure
 

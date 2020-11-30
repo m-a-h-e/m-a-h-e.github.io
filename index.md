@@ -9,7 +9,7 @@ Since that time I have followed this topic up to now where the research in neura
 
 >Please see the <a href="#" class="show-nav-bar">navigation menu for details on machine learning and neural networks</a>, their usage for regression, prediction, and classification problems, for reinforcement learning, generative models and other interesting fields of application.
 
-{:.caption}
+{:.caption .img}
 ![Machine Learning Word Cloud](assets/images/ml_word_cloud.png)
 
 My interest in all the things surrounding this field of research and the growing amount of available publications led me to the decision to - once again - dive deeper into it.

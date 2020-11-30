@@ -12,7 +12,7 @@ The Axon is a long isolated connector to Synapses which again connect to other N
 The Synapses and Dendrides have different connectivity strengths and therefore operate like information transportation weights.
 The fire rate (spike rate) of a Neuron depends on the Soma activation in a non-linear way.
 
-{:.caption}
+{:.caption .img}
 ![artificial neuron structure](/assets/images/artificial_neuron.png)
 Structure of an Artificial Neuron
 
@@ -37,7 +37,7 @@ $$y = w * x + wb$$
 In this case $$w$$, $$x$$, $$wb$$ and $$y$$ are all scalar values.
 The equation lools like a one-dimensional linear function with gain $$w$$ and offset $$wb$$ ... and yes ... an Artificial Neuron with only one scalar input can be used to model a linear function.
 
-{:.caption}
+{:.caption .img}
 ![linear function](assets/images/linear_function.png)
 A Linear Function with Gain w and Offset wb
 

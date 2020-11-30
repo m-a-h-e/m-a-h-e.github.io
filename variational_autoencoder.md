@@ -4,7 +4,7 @@ mathjax: true
 ---
 # Variational Autoencoder (VAE)
 
-{:.caption}
+{:.caption .img}
 ![Variational Autoencoder](assets/images/variational_autoencoder.png)
 Variational Autoencoder Structure
 
