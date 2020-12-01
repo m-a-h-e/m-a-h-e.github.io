@@ -120,9 +120,11 @@ The mean vector $$\mu$$ can simply be generated using a [Linear](https://github.
 
 ## Variational Autoencoder References
 
+{:.caption .img}
 [![Deep Generative Modeling, MIT 6.S191](https://img.youtube.com/vi/rZufA635dq4/0.jpg)](https://www.youtube.com/watch?v=rZufA635dq4)
 Deep Generative Modeling, MIT 6.S191 (2020)
 
+{:.caption .img}
 [![Generative Models, Stanford University cs231n](https://img.youtube.com/vi/5WoItGTWV54/0.jpg)](https://www.youtube.com/watch?v=5WoItGTWV54)
 Generative Models, Stanford University cs231n (2017)
 
