@@ -14,6 +14,43 @@ An autoencoder is a structure that encodes a high dimensional input dataset into
 
 ## Autoencoder Implementation
 
+```python
+import numpy_neural_network as npnn
+import npnn_datasets
+
+model = npnn.Sequential()
+model.layers = [
+  npnn.Conv2D(
+    shape_in=(3, 3, 1), shape_out=(2, 2, 6),
+    kernel_size=2, stride=1
+  ),
+  npnn.Tanh(2 * 2 * 6),
+  npnn.Conv2D(
+    shape_in=(2, 2, 6), shape_out=(1, 1, 2),
+    kernel_size=2, stride=1
+  ),
+  npnn.Tanh(1 * 1 * 2),
+  npnn.UpConv2D(
+    shape_in=(1, 1, 2), shape_out=(2, 2, 6),
+    kernel_size=2, stride=1
+  ),
+  npnn.Tanh(2 * 2 * 6),
+  npnn.UpConv2D(
+    shape_in=(2, 2, 6), shape_out=(3, 3, 1),
+    kernel_size=2, stride=1
+  ),
+  npnn.Tanh(3 * 3 * 1)
+]
+
+loss_layer = npnn.loss_layer.RMSLoss(shape_in=(3, 3, 1))
+optimizer  = npnn.optimizer.Adam(alpha=1e-2)
+dataset    = npnn_datasets.FourSmallImages()
+
+optimizer.norm  = dataset.norm
+optimizer.model = model
+optimizer.model.chain = loss_layer
+```
+
 {:.w90}
 <div class="video">
 <video controls poster="/assets/videos/autoencoder_four_classes_tanh.png">
@@ -23,6 +60,43 @@ An autoencoder is a structure that encodes a high dimensional input dataset into
 </video>
 <p>Autoencoder without Latent Space Regularization (Tanh activation)</p>
 </div>
+
+```python
+import numpy_neural_network as npnn
+import npnn_datasets
+
+model = npnn.Sequential()
+model.layers = [
+  npnn.Conv2D(
+    shape_in=(3, 3, 1), shape_out=(2, 2, 6),
+    kernel_size=2, stride=1
+  ),
+  npnn.LeakyReLU(2 * 2 * 6),
+  npnn.Conv2D(
+    shape_in=(2, 2, 6), shape_out=(1, 1, 2),
+    kernel_size=2, stride=1
+  ),
+  npnn.LeakyReLU(1 * 1 * 2),
+  npnn.UpConv2D(
+    shape_in=(1, 1, 2), shape_out=(2, 2, 6),
+    kernel_size=2, stride=1
+  ),
+  npnn.LeakyReLU(2 * 2 * 6),
+  npnn.UpConv2D(
+    shape_in=(2, 2, 6), shape_out=(3, 3, 1),
+    kernel_size=2, stride=1
+  ),
+  npnn.LeakyReLU(3 * 3 * 1)
+]
+
+loss_layer = npnn.loss_layer.RMSLoss(shape_in=(3, 3, 1))
+optimizer  = npnn.optimizer.Adam(alpha=1e-2)
+dataset    = npnn_datasets.FourSmallImages()
+
+optimizer.norm  = dataset.norm
+optimizer.model = model
+optimizer.model.chain = loss_layer
+```
 
 {:.w90}
 <div class="video">

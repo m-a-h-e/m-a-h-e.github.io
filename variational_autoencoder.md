@@ -109,6 +109,86 @@ The mean vector $$\mu$$ can simply be generated using a [Linear](https://github.
 
 ## Variational Autoencoder Implementation
 
+```python
+import numpy_neural_network as npnn
+import npnn_datasets
+from numpy_neural_network import Sequential
+
+encoder_model = npnn.Sequential()
+encoder_model.layers = [
+  npnn.Conv2D(
+    shape_in=(3, 3, 1), shape_out=(2, 2, 6),
+    kernel_size=2, stride=1
+  ),
+  npnn.Tanh(2 * 2 * 6),
+  npnn.Conv2D(
+    shape_in=(2, 2, 6), shape_out=(1, 1, 2),
+    kernel_size=2, stride=1
+  ),
+  npnn.Tanh(1 * 1 * 2),
+  npnn.Latent(shape_in=(1, 1, 2))
+]
+
+decoder_steps_per_encoder_step = 25
+
+class DecoderSequential(Sequential):
+
+  # override of Sequential step method
+  def step(self, x=None, t=None):
+    global decoder_steps_per_encoder_step
+
+    g_dec = np.zeros(x.shape)
+
+    for _ in np.arange(decoder_steps_per_encoder_step):
+      x_dec = x.copy()
+      t_dec = t.copy()
+
+      x_dec = self.forward(x_dec)
+      g, y_dec = self.chain.step(x=x_dec, t=t_dec)
+      g_dec += self.backward(g)
+
+    g_dec         = g_dec               / 
+      decoder_steps_per_encoder_step
+    self.loss     = self.chain.loss     / 
+      decoder_steps_per_encoder_step
+    self.accuracy = self.chain.accuracy / 
+      decoder_steps_per_encoder_step
+    return g_dec, y_dec
+
+decoder_model = DecoderSequential()
+decoder_model.layers = [
+  npnn.Sample(shape_out=(1, 1, 2)),
+  npnn.UpConv2D(
+    shape_in=(1, 1, 2), shape_out=(2, 2, 6),
+    kernel_size=2, stride=1
+  ),
+  npnn.Tanh(2 * 2 * 6),
+  npnn.UpConv2D(
+    shape_in=(2, 2, 6), shape_out=(3, 3, 1),
+    kernel_size=2, stride=1
+  ),
+  npnn.Tanh(3 * 3 * 1),
+  npnn.Dense(
+    shape_in=(3, 3, 1), shape_out=(3, 3, 1)
+  ),
+  npnn.Linear(3 * 3 * 1)
+]
+
+kl_loss_layer = npnn.loss_layer.KullbackLeiblerLoss(
+  shape_in=(1, 1, 4)
+)
+loss_layer    = npnn.loss_layer.RMSLoss(shape_in=(3, 3, 1))
+optimizer     = npnn.optimizer.Adam(alpha=5e-3)
+dataset       = npnn_datasets.FourSmallImages()
+
+encoder_model.chain = kl_loss_layer
+kl_loss_layer.chain = decoder_model
+decoder_model.chain = loss_layer
+
+optimizer.norm  = dataset.norm
+optimizer.model = encoder_model
+```
+
 <div class="video">
 <video controls poster="/assets/videos/variational_autoencoder_four_classes.png">
   <source src="/assets/videos/variational_autoencoder_four_classes.webm" type="video/webm">
@@ -122,7 +202,7 @@ The mean vector $$\mu$$ can simply be generated using a [Linear](https://github.
 
 {:.caption .img}
 [![Deep Generative Modeling, MIT 6.S191](https://img.youtube.com/vi/rZufA635dq4/0.jpg)](https://www.youtube.com/watch?v=rZufA635dq4)
-Deep Generative Modeling, MIT 6.S191 (2020)
+Ava Soleimany - Deep Generative Modeling, MIT 6.S191 (2020)
 
 {:.caption .img}
 [![Generative Models, Stanford University cs231n](https://img.youtube.com/vi/5WoItGTWV54/0.jpg)](https://www.youtube.com/watch?v=5WoItGTWV54)

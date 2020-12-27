@@ -6,9 +6,7 @@ mathjax: true
 
 ## The Softmax Function and its Derivative
 
-{:.note}
-We define n as the softmax output vector index and k as the softmax input vector index.
-The sum symbol in the formulas below always means "sum over all k" (sum over all input indices).
+>We define n as the softmax output vector index and k as the softmax input vector index. The sum symbol in the formulas below always means "sum over all k" (sum over all input indices).
 
 The softmax function is defined as
 
@@ -42,6 +40,29 @@ $$= y[n] (0 - y[k])$$
 
 ## XOR Classification
 
+```python
+import numpy_neural_network as npnn
+import npnn_datasets
+
+model = npnn.Sequential()
+model.layers = [
+  npnn.Dense(2, 4),
+  npnn.LeakyReLU(4),
+  npnn.Dense(4, 4),
+  npnn.LeakyReLU(4),
+  npnn.Dense(4, 1),
+  npnn.Sigmoid(1)
+]
+
+loss_layer = npnn.loss_layer.BinaryCrossEntropyLoss(1)
+optimizer  = npnn.optimizer.Adam(alpha=5e-3)
+dataset    = npnn_datasets.XORBinaryClassifier()
+
+optimizer.norm  = dataset.norm
+optimizer.model = model
+optimizer.model.chain = loss_layer
+```
+
 {:.w70}
 <div class="video">
 <video controls poster="assets/videos/xor_binary_classifier.png">
@@ -51,6 +72,29 @@ $$= y[n] (0 - y[k])$$
 </video>
 <p>XOR Classification using Sigmoid + Binary-Cross-Entropy-Loss</p>
 </div>
+
+```python
+import numpy_neural_network as npnn
+import npnn_datasets
+
+model = npnn.Sequential()
+model.layers = [
+  npnn.Dense(2, 4),
+  npnn.LeakyReLU(4),
+  npnn.Dense(4, 4),
+  npnn.LeakyReLU(4),
+  npnn.Dense(4, 2),
+  npnn.Softmax(2)
+]
+
+loss_layer = npnn.loss_layer.CrossEntropyLoss(2)
+optimizer  = npnn.optimizer.Adam(alpha=1e-2)
+dataset    = npnn_datasets.XORTwoClasses()
+
+optimizer.norm  = dataset.norm
+optimizer.model = model
+optimizer.model.chain = loss_layer
+```
 
 {:.w70}
 <div class="video">

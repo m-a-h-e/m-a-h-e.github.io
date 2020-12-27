@@ -6,7 +6,7 @@ tags: neural-network,activation-functions,loss-functions,optimizer,optimizer-alg
 
 >Neural networks are made of connected layers of [Artificial Neurons](artificial_neuron.md).
 
-These layers of neurons are coupled by weighted connections which are adjusted during the learning process in a way to minimize the prediction error of the network normally using some sort of error gradient backpropagation.
+These layers of neurons are coupled by weighted connections which are adjusted during the learning process in a way to minimize the prediction error of the network, using error gradient [Backpropagation](https://en.wikipedia.org/wiki/Backpropagation). This optimization method has been published in 1986 by [Geoffrey Hinton](https://en.wikipedia.org/wiki/Geoffrey_Hinton) et. al.
 
 A good way to build neural networks is to define the following basic building blocks which make it easy to assemble neural networks of different structure and arbitrary complexity:
 
@@ -40,7 +40,7 @@ A good way to build neural networks is to define the following basic building bl
 - Sequential layer
 - [Inception layer](inception_classification.md)
 - Latent and Sample layer
-- LSTM layer
+- [LSTM layer](long_short_term_memory.md)
 - GRU layer
 
 To adjust the weights *(parameters)* of the network, an optimization algorithm is needed:

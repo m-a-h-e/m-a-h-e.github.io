@@ -33,9 +33,9 @@
       "name": "Reinforcement Learning",
       "page_names": [
         "reinforcement_learning.md",
+        "monte_carlo_methods.md",
         "temporal_difference.md",
         "deep_q_networks.md",
-        "monte_carlo_methods.md",
         "monte_carlo_tree_search.md",
         "policy_gradient.md",
         "cross_entropy_method.md"

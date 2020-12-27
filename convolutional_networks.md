@@ -4,9 +4,64 @@ mathjax: true
 ---
 # Convolutional Neural Networks (CNNs)
 
-## The Convolution Layer
+{:.caption .img}
+[![Convolutional Neural Networks, MIT 6.S191](https://img.youtube.com/vi/iaSUYvmCekI/0.jpg)](https://www.youtube.com/watch?v=iaSUYvmCekI)
+Alexander Amini - Convolutional Neural Networks, MIT 6.S191 (2020)
+
+{:.caption .img}
+[![Convolutional Neural Networks, Stanford University](https://img.youtube.com/vi/bNb2fEVKeEo/0.jpg)](https://www.youtube.com/watch?v=bNb2fEVKeEo)
+Serena Yeung - Convolutional Neural Networks, Stanford University
+
+{:.caption .img}
+[![CNN Architectures, Stanford University](https://img.youtube.com/vi/DAOcjicFr1Y/0.jpg)](https://www.youtube.com/watch?v=DAOcjicFr1Y)
+Serena Yeung - CNN Architectures, Stanford University
 
 ## CNN Implementation
+
+```python
+import numpy_neural_network as npnn
+import npnn_datasets
+
+model = npnn.Sequential()
+model.layers = [
+  npnn.Pad2D(
+    shape_in=(10, 10, 1),
+    pad_axis0=2, pad_axis1=2
+  ),
+  npnn.Conv2D(
+    shape_in=(14, 14, 1), shape_out=(10, 10, 6),
+    kernel_size=5, stride=1
+  ),
+  npnn.LeakyReLU(10 * 10 * 6),
+
+  npnn.MaxPool(
+    shape_in=(10, 10, 6), shape_out=(5, 5, 6),
+    kernel_size=2
+  ),
+  npnn.Conv2D(
+    shape_in=(5, 5, 6), shape_out=(2, 2, 10),
+    kernel_size=3, stride=2
+  ),
+  npnn.LeakyReLU(2 * 2 * 10),
+
+  npnn.MaxPool(
+    shape_in=(2, 2, 10), shape_out=(1, 1, 10),
+    kernel_size=2
+  ),
+  npnn.LeakyReLU(1 * 1 * 10),
+
+  npnn.Dense((1, 1, 10), 4),
+  npnn.Softmax(4)
+]
+
+loss_layer = npnn.loss_layer.CrossEntropyLoss(4)
+optimizer  = npnn.optimizer.Adam(alpha=1e-2)
+dataset    = npnn_datasets.FourImgClasses()
+
+optimizer.norm  = dataset.norm
+optimizer.model = model
+optimizer.model.chain = loss_layer
+```
 
 {:.w90}
 <div class="video">
@@ -29,4 +84,3 @@ mathjax: true
 plot of network validation batch data target values (green) and 
 predicted network output values (orange)</p>
 </div>
-
