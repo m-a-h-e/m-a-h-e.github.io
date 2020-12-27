@@ -18,7 +18,7 @@ That means to leverage valuable knowledge and in parallel allow to discover unkn
 
 >[Reinforcement Learning - The Book (MIT Press, Cambridge)](http://incompleteideas.net/book/the-book.html)
 
->[An Introduction to Deep Reinforcement Learning](https://arxiv.org/pdf/1811.12560.pdf)
+>[An Introduction to Deep Reinforcement Learning (McGill University)](https://arxiv.org/pdf/1811.12560.pdf)
 
 ## The Markov Decision Process (MDP)
 
