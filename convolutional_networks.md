@@ -6,15 +6,15 @@ mathjax: true
 
 {:.caption .img}
 [![Convolutional Neural Networks, MIT 6.S191](https://img.youtube.com/vi/iaSUYvmCekI/0.jpg)](https://www.youtube.com/watch?v=iaSUYvmCekI)
-Alexander Amini - Convolutional Neural Networks, MIT 6.S191 (2020)
+[Alexander Amini](https://www.mit.edu/~amini/) - Convolutional Neural Networks, MIT 6.S191 (2020)
 
 {:.caption .img}
 [![Convolutional Neural Networks, Stanford University](https://img.youtube.com/vi/bNb2fEVKeEo/0.jpg)](https://www.youtube.com/watch?v=bNb2fEVKeEo)
-Serena Yeung - Convolutional Neural Networks, Stanford University
+[Serena Yeung](https://ai.stanford.edu/~syyeung/) - Convolutional Neural Networks, Stanford University
 
 {:.caption .img}
 [![CNN Architectures, Stanford University](https://img.youtube.com/vi/DAOcjicFr1Y/0.jpg)](https://www.youtube.com/watch?v=DAOcjicFr1Y)
-Serena Yeung - CNN Architectures, Stanford University
+[Serena Yeung](https://ai.stanford.edu/~syyeung/) - CNN Architectures, Stanford University
 
 ## CNN Implementation
 

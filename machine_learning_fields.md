@@ -19,14 +19,14 @@ These algorithms solve problems by exploring an environment and learning from - 
 
 >Building a model from labeled data or input-output data pairs.
 
-#### Regression
+### Regression
 
 - Neural Networks
   - [Linear Regression](single_layer_regression.md)
   - [Logistic Regression](single_layer_regression.md)
   - [Non-Linear Regression](non_linear_regression.md)
 
-#### Classification
+### Classification
 
 - Neural Networks
   - [Logistic Regression + Softmax](classification_basics.md)
@@ -37,7 +37,7 @@ These algorithms solve problems by exploring an environment and learning from - 
 - Random Forests
 - Naive Bayes
 
-#### Time Series Prediction
+### Time Series Prediction
 
 - Neural Networks
   - [Recurrent Neural Networks (RNN)](recurrent_networks.md)
@@ -48,11 +48,11 @@ These algorithms solve problems by exploring an environment and learning from - 
 
 >Learning the underlying structure of data without given labels.
 
-#### Clustering
+### Clustering
 
 - K-Means
 
-#### Dimensionality Reduction
+### Dimensionality Reduction
 
 - Principal Component Analysis (PCA)
 
@@ -60,7 +60,7 @@ These algorithms solve problems by exploring an environment and learning from - 
 
 >Learning the underlying principal feature distribution and generating new but similar data.
 
-#### Generative Models
+### Generative Models
 
 - [Autoencoders](autoencoder.md) / [Variational Autoencoders (VAEs)](variational_autoencoder.md)
 - [Generative Adversarial Networks (GANs)](generative_networks.md)
@@ -69,7 +69,7 @@ These algorithms solve problems by exploring an environment and learning from - 
 
 >Solving tasks by exploring an environment and evaluating the returned reward.
 
-#### Explorative Behavior Optimization
+### Explorative Behavior Optimization
 
 - [Temporal Difference (TD) Learning](temporal_difference.md)
 - [Deep Q Learning](deep_q_networks.md)

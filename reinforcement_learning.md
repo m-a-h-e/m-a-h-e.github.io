@@ -16,11 +16,13 @@ Actions are executed by a reinforcement learning agent exploiting the already co
 The optimal balance between exploitation and exploration is a basic problem in reinforcement learning.
 That means to leverage valuable knowledge and in parallel allow to discover unknown territory that may lead to improved behavior in the sense of larger reward to be collected.
 
-- [An Introduction to Deep Reinforcement Learning](https://arxiv.org/pdf/1811.12560.pdf)
+>[Reinforcement Learning - The Book (MIT Press, Cambridge)](http://incompleteideas.net/book/the-book.html)
+
+>[An Introduction to Deep Reinforcement Learning](https://arxiv.org/pdf/1811.12560.pdf)
 
 ## The Markov Decision Process (MDP)
 
-- [Markov Decision Process](https://en.wikipedia.org/wiki/Markov_decision_process)
+>[Markov Decision Process](https://en.wikipedia.org/wiki/Markov_decision_process)
 
 ### The Markov property
 
@@ -53,19 +55,19 @@ That means to leverage valuable knowledge and in parallel allow to discover unkn
 
 {:.caption .img}
 [![Reinforcement Learning, MIT 6.S191](https://img.youtube.com/vi/nZfaHIxDD5w/0.jpg)](https://www.youtube.com/watch?v=nZfaHIxDD5w)
-Alexander Amini - Reinforcement Learning, MIT 6.S191 (2020)
+[Alexander Amini](https://www.mit.edu/~amini/) - Reinforcement Learning, MIT 6.S191 (2020)
 
 {:.caption .img}
 [![The Basics of Reinforcement Learning, McGill University](https://img.youtube.com/vi/313kbpBq8Sg/0.jpg)](https://www.youtube.com/watch?v=313kbpBq8Sg)
-Joelle Pineau - The Basics of Reinforcement Learning, McGill University
+[Joelle Pineau](https://www.cs.mcgill.ca/~jpineau/) - The Basics of Reinforcement Learning, McGill University
 
 {:.caption .img}
 [![Deep Reinforcement Learning, Stanford University](https://img.youtube.com/vi/lvoHnicueoE/0.jpg)](https://www.youtube.com/watch?v=lvoHnicueoE)
-Serena Yeung - Deep Reinforcement Learning, Stanford University
+[Serena Yeung](https://ai.stanford.edu/~syyeung/) - Deep Reinforcement Learning, Stanford University
 
 {:.caption .img}
 [![TensorFlow and Deep Reinforcement Learning](https://img.youtube.com/vi/t1A3NTttvBA/0.jpg)](https://www.youtube.com/watch?v=t1A3NTttvBA)
-Martin Gorner - TensorFlow and Deep Reinforcement Learning
+Martin Görner - TensorFlow and Deep Reinforcement Learning
 
 {:.caption .img}
 [![Reinforcement Learning Course - DeepMind & UCL](https://img.youtube.com/vi/ISk80iLhdfU/0.jpg)](https://www.youtube.com/watch?v=ISk80iLhdfU&list=PLqYmG7hTraZBKeNJ-JE_eyJHZ7XgBoAyb)
@@ -143,7 +145,6 @@ Reinforcement Learning Course - DeepMind & UCL
 
 ## Miscellaneous Topics
 
-- [Reinforcement Learning - The Book (MIT Press, Cambridge)](http://incompleteideas.net/book/the-book.html)
 - [A Beginner's Guide to Deep Reinforcement Learning (A.I. Wiki)](https://pathmind.com/wiki/deep-reinforcement-learning)
 - actor critic
 - async advantage actor critic (A3C)

@@ -4,12 +4,14 @@ mathjax: true
 ---
 # Temporal Difference (TD) Learning
 
-- [Temporal Difference Learning](https://en.wikipedia.org/wiki/Temporal_difference_learning)
+>[Temporal Difference Learning](https://en.wikipedia.org/wiki/Temporal_difference_learning)
+
 - state value or state-action value update after each temporal step (temporal difference)
 
 ## The Bellman Equation
 
-- [The Bellman Equation](https://en.wikipedia.org/wiki/Bellman_equation)
+>[The Bellman Equation](https://en.wikipedia.org/wiki/Bellman_equation)
+
 - state value V(s) or state-action value Q(s, a) bootstrap equation
 - can be understood as a recursive policy evaluation rule to calculate the value of states or state-action values
 - can also be adapted to work as a policy optimization rule
@@ -19,7 +21,8 @@ mathjax: true
 - model free algorithm
 - samples reward based on policy and adds maximum Q value of new state that may not be equal to the Q value related to the action chosen following the current behavior policy
 - because of this discrepancy, Q learning is called an off-policy algorithm
-- [Berkeley CS 294-112: Deep Reinforcement Learning (Advanced Q Learning)](http://rail.eecs.berkeley.edu/deeprlcourse-fa17/f17docs/lecture_7_advanced_q_learning.pdf)
+
+>[Berkeley CS 294-112: Deep Reinforcement Learning (Advanced Q Learning)](http://rail.eecs.berkeley.edu/deeprlcourse-fa17/f17docs/lecture_7_advanced_q_learning.pdf)
 
 ## The SARSA Algorithm
 

@@ -202,11 +202,11 @@ optimizer.model = encoder_model
 
 {:.caption .img}
 [![Deep Generative Modeling, MIT 6.S191](https://img.youtube.com/vi/rZufA635dq4/0.jpg)](https://www.youtube.com/watch?v=rZufA635dq4)
-Ava Soleimany - Deep Generative Modeling, MIT 6.S191 (2020)
+[Ava Soleimany](https://www.mit.edu/~asolei/) - Deep Generative Modeling, MIT 6.S191 (2020)
 
 {:.caption .img}
 [![Generative Models, Stanford University cs231n](https://img.youtube.com/vi/5WoItGTWV54/0.jpg)](https://www.youtube.com/watch?v=5WoItGTWV54)
-Generative Models, Stanford University cs231n (2017)
+[Serena Yeung](https://ai.stanford.edu/~syyeung/) - Generative Models, Stanford University cs231n (2017)
 
 - [Understanding Variational Autoencoders (VAEs) - by Joseph Rocca](https://towardsdatascience.com/understanding-variational-autoencoders-vaes-f70510919f73)
 - [Variational Autoencoders - by Jeremy Jordan](https://www.jeremyjordan.me/variational-autoencoders/)
