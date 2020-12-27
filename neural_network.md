@@ -12,7 +12,7 @@ A good way to build neural networks is to define the following basic elements, w
 
 ## Connect layer 
 
->To implement sums of weighted connections.
+>Implement sums of weighted connections.
 
 - [Dense connected layer](dense_connected_layer.md)
 - [Convolution layer](convolutional_networks.md)
@@ -21,7 +21,7 @@ A good way to build neural networks is to define the following basic elements, w
 
 ## Function layer
 
->To implement neuron activation functions.
+>Implement neuron activation functions.
 
 - [Linear](https://github.com/maideas/numpy-neural-network/blob/master/Linear.ipynb)
 - [ReLU](https://github.com/maideas/numpy-neural-network/blob/master/ReLU.ipynb)
@@ -33,7 +33,7 @@ A good way to build neural networks is to define the following basic elements, w
 
 ## Loss layer
 
->To implement network error loss functions.
+>Implement error loss functions.
 
 - [RMS loss](single_layer_regression.md) (= L2 Norm loss)
 - L1 Norm loss
@@ -51,7 +51,7 @@ A good way to build neural networks is to define the following basic elements, w
 
 ## Optimizer
 
->Algorithm, to adjust the parameters of the network.
+>Adjust the network parameters during learning.
 
 - [An excellent overview by Sebastian Ruder](http://ruder.io/optimizing-gradient-descent/)
 - Stochastic gradient descent

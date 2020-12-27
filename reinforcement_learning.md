@@ -16,13 +16,13 @@ Actions are executed by a reinforcement learning agent exploiting the already co
 The optimal balance between exploitation and exploration is a basic problem in reinforcement learning.
 That means to leverage valuable knowledge and in parallel allow to discover unknown territory that may lead to improved behavior in the sense of larger reward to be collected.
 
->[Reinforcement Learning - The Book (MIT Press, Cambridge)](http://incompleteideas.net/book/the-book.html)
+[Reinforcement Learning - The Book (MIT Press, Cambridge)](http://incompleteideas.net/book/the-book.html)
 
->[An Introduction to Deep Reinforcement Learning (McGill University)](https://arxiv.org/pdf/1811.12560.pdf)
+[An Introduction to Deep Reinforcement Learning (McGill University)](https://arxiv.org/pdf/1811.12560.pdf)
 
 ## The Markov Decision Process (MDP)
 
->[Markov Decision Process](https://en.wikipedia.org/wiki/Markov_decision_process)
+[Markov Decision Process](https://en.wikipedia.org/wiki/Markov_decision_process)
 
 ### The Markov property
 
@@ -34,24 +34,23 @@ That means to leverage valuable knowledge and in parallel allow to discover unkn
 
 ## Reinforcement Learning Algorithms
 
-- Monte Carlo RL Methods (MC)
+[Monte Carlo RL Methods (MC)](monte_carlo_methods.md)
 
-- Temporal Difference Learning (TD)
-  - The Bellman Equation
-  - The Q Learning Algorithm
-  - The SARSA Algorithm
-  - The Expected SARSA Algorithm
-  - The Dyna-Q Algorithm
+[Temporal Difference Learning (TD)](temporal_difference.md)
+- The Bellman Equation
+- The Q Learning Algorithm
+- The SARSA Algorithm
+- The Expected SARSA Algorithm
+- The Dyna-Q Algorithm
 
-- Deep Q Network (DQN) Architectures
+[Deep Q Network (DQN) Architectures](deep_q_networks.md)
 
-- Policy Gradient Methods
+[Monte Carlo Tree Search Algorithms](monte_carlo_tree_search.md)
+- The Alpha Zero Algorithm
 
-- Monte Carlo Tree Search Algorithms
-  - The Alpha Zero Algorithm
+[Policy Gradient Methods](policy_gradient.md)
 
-- Cross Entropy RL Methods
-  - learns policy by filtering out low-reward episodes trajectory data and favor high-reward episodes trajectory data
+[Cross Entropy RL Methods](cross_entropy_method.md)
 
 {:.caption .img}
 [![Reinforcement Learning, MIT 6.S191](https://img.youtube.com/vi/nZfaHIxDD5w/0.jpg)](https://www.youtube.com/watch?v=nZfaHIxDD5w)
