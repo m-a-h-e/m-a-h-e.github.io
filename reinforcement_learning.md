@@ -59,19 +59,19 @@ That means to leverage valuable knowledge and in parallel allow to discover unkn
 
 {:.caption .img}
 [![The Basics of Reinforcement Learning, McGill University](https://img.youtube.com/vi/313kbpBq8Sg/0.jpg)](https://www.youtube.com/watch?v=313kbpBq8Sg)
-[Joelle Pineau](https://www.cs.mcgill.ca/~jpineau/) - The Basics of Reinforcement Learning, McGill University
+[Joelle Pineau](https://www.cs.mcgill.ca/~jpineau/) - The Basics of Reinforcement Learning, McGill University (2017)
 
 {:.caption .img}
 [![Deep Reinforcement Learning, Stanford University](https://img.youtube.com/vi/lvoHnicueoE/0.jpg)](https://www.youtube.com/watch?v=lvoHnicueoE)
-[Serena Yeung](https://ai.stanford.edu/~syyeung/) - Deep Reinforcement Learning, Stanford University
+[Serena Yeung](https://ai.stanford.edu/~syyeung/) - Deep Reinforcement Learning, Stanford University (2017)
 
 {:.caption .img}
 [![TensorFlow and Deep Reinforcement Learning](https://img.youtube.com/vi/t1A3NTttvBA/0.jpg)](https://www.youtube.com/watch?v=t1A3NTttvBA)
-Martin Görner - TensorFlow and Deep Reinforcement Learning
+Martin Görner - TensorFlow and Deep Reinforcement Learning (2018)
 
 {:.caption .img}
 [![Reinforcement Learning Course - DeepMind & UCL](https://img.youtube.com/vi/ISk80iLhdfU/0.jpg)](https://www.youtube.com/watch?v=ISk80iLhdfU&list=PLqYmG7hTraZBKeNJ-JE_eyJHZ7XgBoAyb)
-Reinforcement Learning Course - DeepMind & UCL
+DeepMind & UCL - Reinforcement Learning Course (2018)
 
 ## Glossary
 

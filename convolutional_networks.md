@@ -10,11 +10,11 @@ mathjax: true
 
 {:.caption .img}
 [![Convolutional Neural Networks, Stanford University](https://img.youtube.com/vi/bNb2fEVKeEo/0.jpg)](https://www.youtube.com/watch?v=bNb2fEVKeEo)
-[Serena Yeung](https://ai.stanford.edu/~syyeung/) - Convolutional Neural Networks, Stanford University
+[Serena Yeung](https://ai.stanford.edu/~syyeung/) - Convolutional Neural Networks, Stanford University (2017)
 
 {:.caption .img}
 [![CNN Architectures, Stanford University](https://img.youtube.com/vi/DAOcjicFr1Y/0.jpg)](https://www.youtube.com/watch?v=DAOcjicFr1Y)
-[Serena Yeung](https://ai.stanford.edu/~syyeung/) - CNN Architectures, Stanford University
+[Serena Yeung](https://ai.stanford.edu/~syyeung/) - CNN Architectures, Stanford University (2017)
 
 ## CNN Implementation
 

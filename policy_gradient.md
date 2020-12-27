@@ -12,4 +12,4 @@ mathjax: true
 
 {:.caption .img}
 [![Reinforcement Learning, Policy Gradients and Actor Critics](https://img.youtube.com/vi/bRfUxQs6xIM/0.jpg)](https://www.youtube.com/watch?v=bRfUxQs6xIM)
-[Hado Van Hasselt](https://hadovanhasselt.com/) - Reinforcement Learning, Policy Gradients and Actor Critics
+[Hado Van Hasselt](https://hadovanhasselt.com/) - Reinforcement Learning, Policy Gradients and Actor Critics (2018)
