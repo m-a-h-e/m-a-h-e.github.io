@@ -10,7 +10,7 @@ mathjax: true
 
 ## Double DQN Architecture
 
->[Deep Reinforcement Learning with Double Q-learning](https://arxiv.org/pdf/1509.06461.pdf)
+>[Deep Reinforcement Learning with Double Q-learning (Google DeepMind)](https://arxiv.org/pdf/1509.06461.pdf)
 
 - double (target and behavior networks)
   - prevents "tail chasing" / oscillating policy
@@ -18,7 +18,7 @@ mathjax: true
 
 ## Dueling Network Architecture
 
->[Dueling Network Architectures for Deep Reinforcement Learning](http://proceedings.mlr.press/v48/wangf16.pdf)
+>[Dueling Network Architectures for Deep Reinforcement Learning (Google DeepMind)](http://proceedings.mlr.press/v48/wangf16.pdf)
 
 - dueling (value advantage decomposition)
   - helps the network to independently learn state value and action advatages which is often more simple
