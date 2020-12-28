@@ -50,8 +50,8 @@ script:
 
 ## Maze Example Implementation
 
-<div id="maze-shell-1"></div>
-<div id="maze-shell-2"></div>
-<div id="maze-shell-3"></div>
-<div id="maze-shell-4"></div>
+<div class="breakout" id="maze-shell-1"></div>
+<div class="breakout" id="maze-shell-2"></div>
+<div class="breakout" id="maze-shell-3"></div>
+<div class="breakout" id="maze-shell-4"></div>
 
