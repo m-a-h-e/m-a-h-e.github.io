@@ -1,6 +1,11 @@
 ---
 tags: python,numpy,neural-network,reinforcement learning
-mathjax: true
+style:
+  - src: https://maideas.github.io/svelte-td-learning/build/bundle.css
+script:
+  - src: https://cdn.plot.ly/plotly-latest.min.js
+  - src: https://maideas.github.io/svelte-td-learning/build/bundle.js
+    flags: defer
 ---
 # Temporal Difference (TD) Learning
 
@@ -42,4 +47,11 @@ mathjax: true
   - real experiance is sampled from the environment
   - simulated experiance is generated using already collected real experiance
   - both real and simulated experiance are used to optimize the value function and policy of the agent
+
+## Maze Example Implementation
+
+<div id="maze-shell-1"></div>
+<div id="maze-shell-2"></div>
+<div id="maze-shell-3"></div>
+<div id="maze-shell-4"></div>
 
