@@ -11,6 +11,10 @@ mathjax: true
 [![A Tree Search Algorithms Survey](https://img.youtube.com/vi/yMRuYeOLf0o/0.jpg)](https://www.youtube.com/watch?v=yMRuYeOLf0o)
 [Roy van Rijn](https://www.royvanrijn.com/) - A Tree Search Algorithms Survey (2017)
 
+{:.caption .img}
+[![Tree Search, Amplification and Distillation](https://img.youtube.com/vi/v9M2Ho9I9Qo/0.jpg)](https://www.youtube.com/watch?v=v9M2Ho9I9Qo)
+Robert Miles - Tree Search, Amplification and Distillation (2019)
+
 ## The Alpha Zero Algorithm
 - uses generalizing value and policy neural networks to target fully observable deterministic problems with very large state space and large branching factor
   - a value network predicts the winner of the game
