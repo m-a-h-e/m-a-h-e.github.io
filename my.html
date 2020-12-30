@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax fetch test</title>
+
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", () => {
+
+        function parse_data(data) {
+          lines = data.replace(/\r/g, "").split("\n")
+          lines.forEach(line => {
+            // match array: [0] = complete match string, [1] = first parenthesized part, ...
+            ma = line.match(/Content (will be) (added) soon./)
+            if (ma) {
+              console.log(ma[0])
+              console.log(ma[1])
+              console.log(ma[2])
+            }
+          })
+        }
+
+        var xhr = new XMLHttpRequest()
+
+        xhr.onload = () => {
+          if (xhr.status >= 200 && xhr.status < 300) {
+            parse_data(xhr.response)
+          }
+        }
+
+        document.getElementById("fetch").onclick = () => {
+          xhr.open("GET", "http://localhost:4000/recurrent_networks.html")
+          xhr.send()
+        }
+      })
+    </script>
+</head>
+<body>
+    <a href="#" id="fetch">click</a>
+</body>
+</html>

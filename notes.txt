@@ -1,0 +1,8 @@
+
+
+* Binary Cross-Entropy: Cross-entropy as a loss function for a binary classification task.
+* Categorical Cross-Entropy: Cross-entropy as a loss function for a multi-class classification task.
+
+
+https://worditout.com/word-cloud/create
+
