@@ -36,12 +36,12 @@ That means to leverage valuable knowledge and in parallel allow to discover unkn
 
 [Monte Carlo RL Methods (MC)](monte_carlo_methods.md)
 
-[Temporal Difference Learning (TD)](temporal_difference.md)
-- The Bellman Equation
-- The Q Learning Algorithm
-- The SARSA Algorithm
-- The Expected SARSA Algorithm
-- The Dyna-Q Algorithm
+Temporal Difference (TD) Learning
+- [The Bellman Equation](bellman_equation.md)
+- [Q-Learning Algorithm](q_learning_algorithm.md)
+- [SARSA Algorithm](sarsa_algorithm.md)
+- [Expected SARSA Algorithm](expected_sarsa_algorithm.md)
+- [Dyna-Q Algorithm](dyna_q_algorithm.md)
 
 [Deep Q Network (DQN) Architectures](deep_q_networks.md)
 

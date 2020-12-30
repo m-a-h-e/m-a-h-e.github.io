@@ -71,7 +71,13 @@ These algorithms solve problems by exploring an environment and learning from - 
 
 ### Explorative Behavior Optimization
 
-- [Temporal Difference (TD) Learning](temporal_difference.md)
+- Temporal Difference (TD) Learning
+  - [The Bellman Equation](bellman_equation.md)
+  - [Q-Learning Algorithm](q_learning_algorithm.md)
+  - [SARSA Algorithm](sarsa_algorithm.md)
+  - [Expected SARSA Algorithm](expected_sarsa_algorithm.md)
+  - [Dyna-Q Algorithm](dyna_q_algorithm.md)
+
 - [Deep Q Learning](deep_q_networks.md)
 - [Monte Carlo RL Methods](monte_carlo_methods.md)
 - [Monte Carlo Tree Search Algorithms](monte_carlo_tree_search.md)
