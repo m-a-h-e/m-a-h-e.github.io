@@ -72,7 +72,7 @@ Martin Görner - TensorFlow and Deep Reinforcement Learning (2018)
 [![Reinforcement Learning Course - DeepMind & UCL](https://img.youtube.com/vi/ISk80iLhdfU/0.jpg)](https://www.youtube.com/watch?v=ISk80iLhdfU&list=PLqYmG7hTraZBKeNJ-JE_eyJHZ7XgBoAyb)
 DeepMind & UCL - Reinforcement Learning Course (2018)
 
-## Glossary
+## Glossary and Future Page Extensions
 
 - environment
   - deterministic state change
@@ -150,5 +150,4 @@ DeepMind & UCL - Reinforcement Learning Course (2018)
 - Learning values across many orders of magnitude "adaptive normalization"
 - A Distributional Perspective on Reinforcement Learning
 - Recurrent DQN
-
 
