@@ -33,9 +33,18 @@
       "name": "Reinforcement Learning",
       "page_names": [
         "reinforcement_learning.md",
+        
         "monte_carlo_methods.md",
-        "temporal_difference.md",
+
+        "bellman_equation.md",
+        "q_learning_algorithm.md",
+        "sarsa_algorithm.md",
+        "expected_sarsa_algorithm.md",
+        "dyna_q_algorithm.md",
+        "gridworld_examples.md",
+
         "deep_q_networks.md",
+
         "monte_carlo_tree_search.md",
         "policy_gradient.md",
         "cross_entropy_method.md"
