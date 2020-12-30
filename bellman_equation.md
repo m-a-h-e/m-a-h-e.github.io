@@ -48,3 +48,13 @@ $$Q^\pi_{t+1}(s, a) = (1 - \alpha) Q^\pi_{t}(s, a) + \alpha G^\pi_{t}$$
 
 >The state transistion probability values are a property of the environment and must not be explicitly implemented by a TD learning algorithm. The transition probabilities are implicitly modelled (emerge) by doing a lot of averaging TD steps with the same state action pairs and probably different next states.
 
+## Related TD Learning Algorithms
+
+The following temporal difference learning algorithms are based on the Bellman Equation:
+
+- [Q-Learning](q_learning_algorithm.md)
+- [SARSA](sarsa_algorithm.md)
+- [Expected SARSA](expected_sarsa_algorithm.md)
+- [Dyna-Q](dyna_q_algorithm.md)
+
+>Please see the JavaScript [gridworld examples](gridworld_examples.md) for details.
