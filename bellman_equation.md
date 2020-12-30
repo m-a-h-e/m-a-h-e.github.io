@@ -46,7 +46,7 @@ and learning rate $$\alpha$$
 
 $$Q^\pi_{t+1}(s, a) = (1 - \alpha) Q^\pi_{t}(s, a) + \alpha G^\pi_{t}$$
 
->The state transistion probability values are a property of the environment and must not be explicitly implemented by a TD learning algorithm. The transition probabilities are implicitly modelled (emerge) by doing a lot of averaging TD steps with the same state action pairs and probably different next states.
+>The state transistion probabilities are a property of the environment and must not be explicitly implemented by a TD learning algorithm. The transition probabilities are implicitly modelled (emerge) by doing a lot of averaging TD steps with the same state action pairs and probably different next states.
 
 ## Related TD Learning Algorithms
 
