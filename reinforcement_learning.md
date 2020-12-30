@@ -32,6 +32,18 @@ That means to leverage valuable knowledge and in parallel allow to discover unkn
 - the future behavior of the environment only depends on its current state and the actions executed in it
 - a process with these properties is called a Markov Decision Process
 
+## Model-Free Reinforcement Learning Structure
+
+{:.caption .img}
+![Model-Free Reinforcement Learning Structure](/assets/images/model_free_rl_structure.png)
+Model-Free Reinforcement Learning Structure
+
+## Model-Based Reinforcement Learning Structure
+
+{:.caption .img}
+![Model-Based Reinforcement Learning Structure](/assets/images/model_based_rl_structure.png)
+Model-Based Reinforcement Learning Structure
+
 ## Reinforcement Learning Algorithms
 
 [Monte Carlo RL Methods (MC)](monte_carlo_methods.md)
