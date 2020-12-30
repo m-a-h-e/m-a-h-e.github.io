@@ -10,8 +10,6 @@ mathjax: true
 
 ## SARSA Example Implementation
 
-Please see my [Svelte TD Learning Repository](https://github.com/maideas/svelte-td-learning) for the complete code and the interactive [Gridworld Examples](gridworld_examples.md) for more information.
-
 ```javascript
 const SarsaQTableUpdate = (state, a, r, stateNext, aNext) => {
   let g;

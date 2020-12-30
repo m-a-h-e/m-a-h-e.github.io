@@ -11,8 +11,6 @@ mathjax: true
 
 ## Q Learning Example Implementation
 
-Please see my [Svelte TD Learning Repository](https://github.com/maideas/svelte-td-learning) for the complete code and the interactive [Gridworld Examples](gridworld_examples.md) for more information.
-
 ```javascript
 const QLearningQTableUpdate = (state, a, r, stateNext) => {
   let g;
