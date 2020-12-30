@@ -12,6 +12,8 @@ script:
 
 [Google DeepMind AI Safety Gridworlds Paper](https://arxiv.org/pdf/1711.09883.pdf)
 
+The following gridworld examples have been implemented using [Svelte](https://svelte.dev/) and the [Plotly JavaScript Library](https://plotly.com/javascript/).
+
 <div id="maze-shell-1"></div>
 <div id="maze-shell-2"></div>
 <div id="maze-shell-3"></div>
