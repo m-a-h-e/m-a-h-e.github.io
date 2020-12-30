@@ -14,34 +14,16 @@ import npnn_datasets
 
 model = npnn.Sequential()
 model.layers = [
-  npnn.Pad2D(
-    shape_in=(28, 28, 1),
-    pad_axis0=2, pad_axis1=2
-  ),
-  npnn.Conv2D(
-    shape_in=(32, 32, 1), shape_out=(28, 28, 6), 
-    kernel_size=5, stride=1
-  ),
+  npnn.Pad2D(shape_in=(28, 28, 1), pad_axis0=2, pad_axis1=2),
+  npnn.Conv2D(shape_in=(32, 32, 1), shape_out=(28, 28, 6), kernel_size=5, stride=1),
   npnn.Tanh(28 * 28 * 6),
 
-  npnn.MaxPool(
-    shape_in=(28, 28, 6), shape_out=(14, 14, 6),
-    kernel_size=2
-  ),
-  npnn.Conv2D(
-    shape_in=(14, 14, 6), shape_out=(10, 10, 16), 
-    kernel_size=5, stride=1
-  ),
+  npnn.MaxPool(shape_in=(28, 28, 6), shape_out=(14, 14, 6), kernel_size=2),
+  npnn.Conv2D(shape_in=(14, 14, 6), shape_out=(10, 10, 16), kernel_size=5, stride=1),
   npnn.Tanh(10 * 10 * 16),
 
-  npnn.MaxPool(
-    shape_in=(10, 10, 16), shape_out=(5, 5, 16), 
-    kernel_size=2
-  ),
-  npnn.Conv2D(
-    shape_in=(5, 5, 16), shape_out=(1, 1, 120), 
-    kernel_size=5, stride=1
-  ),
+  npnn.MaxPool(shape_in=(10, 10, 16), shape_out=(5, 5, 16), kernel_size=2),
+  npnn.Conv2D(shape_in=(5, 5, 16), shape_out=(1, 1, 120), kernel_size=5, stride=1),
   npnn.Tanh(1 * 1 * 120),
 
   npnn.Dense(120, 84),

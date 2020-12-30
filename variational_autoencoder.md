@@ -116,15 +116,9 @@ from numpy_neural_network import Sequential
 
 encoder_model = npnn.Sequential()
 encoder_model.layers = [
-  npnn.Conv2D(
-    shape_in=(3, 3, 1), shape_out=(2, 2, 6),
-    kernel_size=2, stride=1
-  ),
+  npnn.Conv2D(shape_in=(3, 3, 1), shape_out=(2, 2, 6), kernel_size=2, stride=1),
   npnn.Tanh(2 * 2 * 6),
-  npnn.Conv2D(
-    shape_in=(2, 2, 6), shape_out=(1, 1, 2),
-    kernel_size=2, stride=1
-  ),
+  npnn.Conv2D(shape_in=(2, 2, 6), shape_out=(1, 1, 2), kernel_size=2, stride=1),
   npnn.Tanh(1 * 1 * 2),
   npnn.Latent(shape_in=(1, 1, 2))
 ]
@@ -147,36 +141,23 @@ class DecoderSequential(Sequential):
       g, y_dec = self.chain.step(x=x_dec, t=t_dec)
       g_dec += self.backward(g)
 
-    g_dec         = g_dec               / 
-      decoder_steps_per_encoder_step
-    self.loss     = self.chain.loss     / 
-      decoder_steps_per_encoder_step
-    self.accuracy = self.chain.accuracy / 
-      decoder_steps_per_encoder_step
+    g_dec         = g_dec               / decoder_steps_per_encoder_step
+    self.loss     = self.chain.loss     / decoder_steps_per_encoder_step
+    self.accuracy = self.chain.accuracy / decoder_steps_per_encoder_step
     return g_dec, y_dec
 
 decoder_model = DecoderSequential()
 decoder_model.layers = [
   npnn.Sample(shape_out=(1, 1, 2)),
-  npnn.UpConv2D(
-    shape_in=(1, 1, 2), shape_out=(2, 2, 6),
-    kernel_size=2, stride=1
-  ),
+  npnn.UpConv2D(shape_in=(1, 1, 2), shape_out=(2, 2, 6), kernel_size=2, stride=1),
   npnn.Tanh(2 * 2 * 6),
-  npnn.UpConv2D(
-    shape_in=(2, 2, 6), shape_out=(3, 3, 1),
-    kernel_size=2, stride=1
-  ),
+  npnn.UpConv2D(shape_in=(2, 2, 6), shape_out=(3, 3, 1), kernel_size=2, stride=1),
   npnn.Tanh(3 * 3 * 1),
-  npnn.Dense(
-    shape_in=(3, 3, 1), shape_out=(3, 3, 1)
-  ),
+  npnn.Dense(shape_in=(3, 3, 1), shape_out=(3, 3, 1)),
   npnn.Linear(3 * 3 * 1)
 ]
 
-kl_loss_layer = npnn.loss_layer.KullbackLeiblerLoss(
-  shape_in=(1, 1, 4)
-)
+kl_loss_layer = npnn.loss_layer.KullbackLeiblerLoss(shape_in=(1, 1, 4))
 loss_layer    = npnn.loss_layer.RMSLoss(shape_in=(3, 3, 1))
 optimizer     = npnn.optimizer.Adam(alpha=5e-3)
 dataset       = npnn_datasets.FourSmallImages()

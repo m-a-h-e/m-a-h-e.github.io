@@ -18,25 +18,13 @@ import npnn_datasets
 
 model = npnn.Sequential()
 model.layers = [
-  npnn.Conv2D(
-    shape_in=(3, 3, 1), shape_out=(2, 2, 6),
-    kernel_size=2, stride=1
-  ),
+  npnn.Conv2D(shape_in=(3, 3, 1), shape_out=(2, 2, 6), kernel_size=2, stride=1),
   npnn.Tanh(2 * 2 * 6),
-  npnn.Conv2D(
-    shape_in=(2, 2, 6), shape_out=(1, 1, 2),
-    kernel_size=2, stride=1
-  ),
+  npnn.Conv2D(shape_in=(2, 2, 6), shape_out=(1, 1, 2), kernel_size=2, stride=1),
   npnn.Tanh(1 * 1 * 2),
-  npnn.UpConv2D(
-    shape_in=(1, 1, 2), shape_out=(2, 2, 6),
-    kernel_size=2, stride=1
-  ),
+  npnn.UpConv2D(shape_in=(1, 1, 2), shape_out=(2, 2, 6), kernel_size=2, stride=1),
   npnn.Tanh(2 * 2 * 6),
-  npnn.UpConv2D(
-    shape_in=(2, 2, 6), shape_out=(3, 3, 1),
-    kernel_size=2, stride=1
-  ),
+  npnn.UpConv2D(shape_in=(2, 2, 6), shape_out=(3, 3, 1), kernel_size=2, stride=1),
   npnn.Tanh(3 * 3 * 1)
 ]
 
@@ -65,25 +53,13 @@ import npnn_datasets
 
 model = npnn.Sequential()
 model.layers = [
-  npnn.Conv2D(
-    shape_in=(3, 3, 1), shape_out=(2, 2, 6),
-    kernel_size=2, stride=1
-  ),
+  npnn.Conv2D(shape_in=(3, 3, 1), shape_out=(2, 2, 6), kernel_size=2, stride=1),
   npnn.LeakyReLU(2 * 2 * 6),
-  npnn.Conv2D(
-    shape_in=(2, 2, 6), shape_out=(1, 1, 2),
-    kernel_size=2, stride=1
-  ),
+  npnn.Conv2D(shape_in=(2, 2, 6), shape_out=(1, 1, 2), kernel_size=2, stride=1),
   npnn.LeakyReLU(1 * 1 * 2),
-  npnn.UpConv2D(
-    shape_in=(1, 1, 2), shape_out=(2, 2, 6),
-    kernel_size=2, stride=1
-  ),
+  npnn.UpConv2D(shape_in=(1, 1, 2), shape_out=(2, 2, 6), kernel_size=2, stride=1),
   npnn.LeakyReLU(2 * 2 * 6),
-  npnn.UpConv2D(
-    shape_in=(2, 2, 6), shape_out=(3, 3, 1),
-    kernel_size=2, stride=1
-  ),
+  npnn.UpConv2D(shape_in=(2, 2, 6), shape_out=(3, 3, 1), kernel_size=2, stride=1),
   npnn.LeakyReLU(3 * 3 * 1)
 ]
 

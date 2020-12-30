@@ -24,20 +24,14 @@ model.layers = [
     2,  4,
         2
   ),
-  npnn.MaxPool(
-    shape_in=(28, 28, 12), shape_out=(14, 14, 12), 
-    kernel_size=2
-  ),
+  npnn.MaxPool(shape_in=(28, 28, 12), shape_out=(14, 14, 12), kernel_size=2),
   npnn.Inception((14, 14, 12),
         2,
     4,  6,
     4,  6,
         2
   ),
-  npnn.MaxPool(
-    shape_in=(14, 14, 16), shape_out=(7, 7, 16), 
-    kernel_size=2
-  ),
+  npnn.MaxPool(shape_in=(14, 14, 16), shape_out=(7, 7, 16), kernel_size=2),
   npnn.Inception((7, 7, 16),
         2,
     6,  6,

@@ -24,30 +24,15 @@ import npnn_datasets
 
 model = npnn.Sequential()
 model.layers = [
-  npnn.Pad2D(
-    shape_in=(10, 10, 1),
-    pad_axis0=2, pad_axis1=2
-  ),
-  npnn.Conv2D(
-    shape_in=(14, 14, 1), shape_out=(10, 10, 6),
-    kernel_size=5, stride=1
-  ),
+  npnn.Pad2D(shape_in=(10, 10, 1), pad_axis0=2, pad_axis1=2),
+  npnn.Conv2D(shape_in=(14, 14, 1), shape_out=(10, 10, 6), kernel_size=5, stride=1),
   npnn.LeakyReLU(10 * 10 * 6),
 
-  npnn.MaxPool(
-    shape_in=(10, 10, 6), shape_out=(5, 5, 6),
-    kernel_size=2
-  ),
-  npnn.Conv2D(
-    shape_in=(5, 5, 6), shape_out=(2, 2, 10),
-    kernel_size=3, stride=2
-  ),
+  npnn.MaxPool(shape_in=(10, 10, 6), shape_out=(5, 5, 6), kernel_size=2),
+  npnn.Conv2D(shape_in=(5, 5, 6), shape_out=(2, 2, 10), kernel_size=3, stride=2),
   npnn.LeakyReLU(2 * 2 * 10),
 
-  npnn.MaxPool(
-    shape_in=(2, 2, 10), shape_out=(1, 1, 10),
-    kernel_size=2
-  ),
+  npnn.MaxPool(shape_in=(2, 2, 10), shape_out=(1, 1, 10), kernel_size=2),
   npnn.LeakyReLU(1 * 1 * 10),
 
   npnn.Dense((1, 1, 10), 4),
