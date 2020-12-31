@@ -58,10 +58,10 @@ Model-Based Reinforcement Learning Structure
 
 Temporal Difference (TD) Learning
 - [The Bellman Equation](bellman_equation.md)
-- [Q-Learning Algorithm](q_learning_algorithm.md)
-- [SARSA Algorithm](sarsa_algorithm.md)
-- [Expected SARSA Algorithm](expected_sarsa_algorithm.md)
-- [Dyna-Q Algorithm](dyna_q_algorithm.md)
+- [Q-Learning Algorithm (model-free)](q_learning_algorithm.md)
+- [SARSA Algorithm (model-free)](sarsa_algorithm.md)
+- [Expected SARSA Algorithm (model-free)](expected_sarsa_algorithm.md)
+- [Dyna-Q Algorithm (model-based)](dyna_q_algorithm.md)
 
 [Deep Q Network (DQN) Architectures](deep_q_networks.md)
 
