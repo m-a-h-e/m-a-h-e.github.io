@@ -52,6 +52,11 @@ The state and reward model itself are trained by sampled environment data points
 ![Model-Based Reinforcement Learning Structure](/assets/images/model_based_rl_structure.png)
 Model-Based Reinforcement Learning Structure
 
+The policy and environment model can be implemented in very different ways.
+The most simple policy and model implementations are lookup tables, which are limited to Reinforcement Learning problems with small and discrete state and action spaces.
+
+For problems with larger state and action spaces, neural networks can be used to implement the policy and model functions. Neural networks have the advantage to generalize and interpoltate for previously unseen input data.
+
 ## Reinforcement Learning Algorithms
 
 [Monte Carlo RL Methods (MC)](monte_carlo_methods.md)
