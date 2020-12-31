@@ -28,6 +28,7 @@ const QLearningQTableUpdate = (state, a, r, stateNext) => {
 const runQLearningEpisodeStep = (state) => {
   let stateNext;
   let a, r;
+
   if (mazeComp.isTerminal(state)) {
     runEpisode();  // run next episode (calls runQLearningEpisode)
   } else {

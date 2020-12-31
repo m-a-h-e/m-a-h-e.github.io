@@ -1,5 +1,5 @@
 ---
-tags: python,numpy,neural-network,artifical neuron,linear regression,logistic regression
+tags: python,numpy,neural-network,artificial neuron,linear regression,logistic regression
 mathjax: true
 ---
 # Single Layer Regression

@@ -1,5 +1,5 @@
 ---
-tags: python,numpy,neural-network,artifical neuron
+tags: python,numpy,neural-network,artificial neuron
 mathjax: true
 ---
 # The Artificial Neuron
@@ -35,7 +35,7 @@ The most simple Artificial Neuron has only one weighted input path, a weighted b
 $$y = w_x * x + w_b$$
 
 In this case $$w_x$$, $$x$$, $$w_b$$, $$b$$ and $$y$$ are all scalar values.
-The equation lools like a one-dimensional linear function with gain $$w_x$$ and offset $$w_b$$ ... and yes ... an Artificial Neuron with only one scalar input can be used to model a linear function.
+The equation looks like a one-dimensional linear function with gain $$w_x$$ and offset $$w_b$$ ... and yes ... an Artificial Neuron with only one scalar input can be used to model a linear function.
 
 {:.caption .img}
 ![linear function](assets/images/linear_function.png)
@@ -47,10 +47,10 @@ Learning - even for a Neuron - is a step by step adaption process according an e
 
 The objective is to optimize the error by adjusting the Neuron parameters in a way that the error gets smaller.
 The error is a multidimensional function depending on the Neuron parameters (its weights) and its input values.
-Its a landscape we have to descent - step by step - towards its minimun.
+Its a landscape we have to descent - step by step - towards its minimum.
 
 To determine the direction of the optimal descent we have to calculate the gradient - meaning the partial derivative of the error function - at the point we are at the moment.
-The gradient always points towards the ascending direction which means we have to step exactly towards the oposite direction and repeat this procedure until we reach a minimum.
+The gradient always points towards the ascending direction which means we have to step exactly towards the opposite direction and repeat this procedure until we reach a minimum.
 
 Unfortunately this minimum can be a local one or a plateau and the optimal global minimum may be far away and unreachable behind huge error mountains.
 

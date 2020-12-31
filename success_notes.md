@@ -12,7 +12,7 @@ mathjax: true
 - Reducing the model complexity (the number of network parameters) if there is only a small number of data available for training
 - Gradient clipping to prevent exploding gradients
 - Add data noise or gradient noise to get better stochastic behavior, improve generalization and possibly escape local optimization minima
-- A minimum learning data batch size to stabalize the gradient direction and value
+- A minimum learning data batch size to stabilize the gradient direction and value
 
 ## Dataset
 

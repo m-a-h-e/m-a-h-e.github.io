@@ -21,7 +21,7 @@ Robert Miles - Tree Search, Amplification and Distillation (2019)
   - a policy network generates an action probability vector
   - value and policy function may be implemented using a combined (shared weights) neural network with two heads generating the scalar state value and the action probability vector
   - both value and policy function in conjunction represent a model that can be used for planning
-- the algorithm incorporates a Monte Carlo Tree Search like element to generate simulated experiance, used to optimize the value and policy network
+- the algorithm incorporates a Monte Carlo Tree Search like element to generate simulated experience, used to optimize the value and policy network
 - self-play against randomly chosen previous versions of itself, is the one and only mechanism used to improve the playing strength of the algorithm
 
 {:.caption .img}

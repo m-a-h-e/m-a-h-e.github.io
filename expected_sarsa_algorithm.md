@@ -44,6 +44,7 @@ const ExpectedSarsaQTableUpdate = (state, a, r, stateNext, aNext) => {
 const runExpectedSarsaEpisodeStep = (state, a) => {
   let stateNext;
   let aNext, r;
+
   if (mazeComp.isTerminal(state)) {
     runEpisode();  // run next episode (calls runExpectedSarsaEpisode)
   } else {

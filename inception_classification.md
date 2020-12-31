@@ -10,7 +10,7 @@ mathjax: true
 
 {:.caption .img}
 [![Inception Network Motivation](https://img.youtube.com/vi/C86ZXvgpejM/0.jpg)](https://www.youtube.com/watch?v=C86ZXvgpejM)
-[Andrew Ng](https://en.wikipedia.org/wiki/Andrew_Ng) - Inception Network Motivation, [Deeplearning AI](https://www.deeplearning.ai/)
+[Andrew Ng](https://en.wikipedia.org/wiki/Andrew_Ng) - Inception Network Motivation, [Deep Learning AI](https://www.deeplearning.ai/)
 
 ```python
 import numpy_neural_network as npnn

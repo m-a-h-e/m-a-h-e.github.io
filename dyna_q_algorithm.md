@@ -4,11 +4,11 @@ mathjax: true
 ---
 # The Dyna-Q Algorithm
 
-- model based temporal difference algorithm which uses real and simulated experiance
+- model based temporal difference algorithm which uses real and simulated (planned) experience
   - the model implements a (state, action) to (new state, reward) mapping
-  - real experiance is sampled from the environment
-  - simulated experiance is generated using already collected real experiance
-  - both real and simulated experiance are used to optimize the value function and policy of the agent
+  - real experience is sampled from the environment
+  - simulated experience is generated using already collected real experience
+  - both real and simulated experience are used to optimize the value function and policy of the agent
 
 ## Dyna-Q Example Implementation
 
@@ -28,6 +28,7 @@ const DynaQModelUpdate = (state, a, r, stateNext) => {
   let x = state[0];
   let y = state[1];
   let seen = false;
+
   for (let n = 0; n < seenStateActions.length; n++) {
     if (
       seenStateActions[n][0] == x &&
@@ -52,6 +53,7 @@ const DynaQGetModelStateAction = () => {
 const runDynaQEpisodeStep = (state) => {
   let stateNext;
   let a, r;
+
   if (mazeComp.isTerminal(state)) {
     runEpisode();  // run next episode (calls runDynaQEpisode)
   } else {

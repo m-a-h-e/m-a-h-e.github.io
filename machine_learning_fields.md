@@ -3,12 +3,13 @@ tags: python,numpy,neural-network,machine learning,supervised learning,unsupervi
 ---
 # Machine Learning Fields
 
->Machine Learning algorithms are usualy classified into 3 to 4 groups.
+>Machine Learning algorithms are usually classified into 3 to 4 groups.
 
 The first group contains algorithms which learn the relation between given input-output data pairs.
 Because the input as well as the output (target) values are given, this group is called Supervised Learning.
 
-The next group of algorithms are used to find the underlying structure of data without telling the algorithm what it has to find. For this reason this group is called Unsupervised Learning.
+The next group of algorithms are used to find the underlying structure of data without telling the algorithm what it has to find.
+For this reason this group is called Unsupervised Learning.
 
 The third group is somehow a mixture of the properties of the first two and is therefore called Semi-Supervised Learning.
 Another main group of machine learning algorithms is called Reinforcement Learning.

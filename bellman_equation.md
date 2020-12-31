@@ -28,7 +28,7 @@ The next state value $$V^\pi(s')$$ becomes the sum over all next states, that ca
 $$V^\pi(s) = r(s, a^\pi) + \sum_{s'} p(s'|s, a^\pi) V^\pi(s')$$
 
 Because the next state value also depends on the value of its next state, the state values become the sum of all future rewards collected while executing the given policy.
-To prevent infinit state values in non-terminated environments, the future reward gets discounted by a factor $$\gamma$$ smaller than 1.0.
+To prevent infinite state values in non-terminated environments, the future reward gets discounted by a factor $$\gamma$$ smaller than 1.0.
 
 $$V^\pi(s) = r(s, a^\pi, s') + \gamma \sum_{s'} p(s'|s, a^\pi) V^\pi(s')$$
 
@@ -46,7 +46,7 @@ and the learning rate $$\alpha$$, we get the following $$Q$$ value update rule:
 
 $$Q^\pi_{t+1}(s, a) = (1 - \alpha) Q^\pi_{t}(s, a) + \alpha G^\pi_{t}$$
 
->The state transistion probabilities are a property of the environment and must not be explicitly implemented by a TD learning algorithm. The transition probabilities are implicitly modelled (emerge) by doing a lot of averaging TD steps with the same state action pairs and probably different next states.
+>The state transition probabilities are a property of the environment and must not be explicitly implemented by a TD learning algorithm. The transition probabilities are implicitly modelled (emerge) by doing a lot of averaging TD steps with the same state action pairs and probably different next states.
 
 ## TD Learning Algorithms
 

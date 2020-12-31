@@ -8,7 +8,12 @@ mathjax: true
 ![Variational Autoencoder](assets/images/variational_autoencoder.png)
 Variational Autoencoder Structure
 
-A Variational AutoEncoder is trained like a normal autoencoder to minimize the reconstruction loss, but in addition the latent space representation of the dataset is optimized to form a gaussian normal distribution with zero mean and unit variance. This can be done by using the [Kullback-Leibler Divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence#Multivariate_normal_distributions) that calculates the distance between two probability distributions and allows to miminize this distance by gradient descent with respect to the encoder parameters. To get a robust latent space representation, latent space vectors are sampled using a gaussian distribution and the decoder is optimized to correctly map these sampled latent space vectors to the original target vectors. This adds a stochastic element to the learning process and prevents the VAE - together with the latent space regularisation - from overfitting. As a result - after training - the decoder can be used to generate new, better interpolated and more meaningful output data from unseen latent space vectors.
+A Variational AutoEncoder is trained like a normal autoencoder to minimize the reconstruction loss, but in addition the latent space representation of the dataset is optimized to form a gaussian normal distribution with zero mean and unit variance.
+This can be done by using the [Kullback-Leibler Divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence#Multivariate_normal_distributions) 
+that calculates the distance between two probability distributions and allows to minimize this distance by gradient descent with respect to the encoder parameters.
+To get a robust latent space representation, latent space vectors are sampled using a gaussian distribution and the decoder is optimized to correctly map these sampled latent space vectors to the original target vectors.
+This adds a stochastic element to the learning process and prevents the VAE - together with the latent space regularisation - from overfitting.
+As a result - after training - the decoder can be used to generate new, better interpolated and more meaningful output data from unseen latent space vectors.
 
 ## Deriving the Kullback-Leibler Divergence Loss
 
@@ -97,14 +102,18 @@ $$\frac{d D_{KL}}{d \mu_i} = \frac{1}{2} \left( 2 \mu_i \right) = \mu_i$$
 - p : probability distribution.
 - $$\mathcal{N}$$ : a [gaussian normal distribution](https://en.wikipedia.org/wiki/Normal_distribution), represented by an [expected value vector](https://en.wikipedia.org/wiki/Expected_value) and a [covariance matrix](https://en.wikipedia.org/wiki/Covariance_matrix).
 - $$\pmb{I}$$ : [identity matrix](https://en.wikipedia.org/wiki/Identity_matrix).
-- $$\Sigma$$ : the [covariance matrix](https://en.wikipedia.org/wiki/Covariance_matrix) of a probability distribution. In case of the VAE, the latent space covariance matrix is defined as a diagonal matrix and can therefore be represented by its diagonal vector. The non-diagonal elements are supposed to be 0 which implies that the latent space features are uncorrelated / independent of each other.
+- $$\Sigma$$ : the [covariance matrix](https://en.wikipedia.org/wiki/Covariance_matrix) of a probability distribution.
+In case of the VAE, the latent space covariance matrix is defined as a diagonal matrix and can therefore be represented by its diagonal vector.
+The non-diagonal elements are supposed to be 0 which implies that the latent space features are uncorrelated / independent of each other.
 - $$\sigma^2$$ : a variance vector = vector of squared standard deviation values.
 - $$\mu$$ : a mean vector.
 - $$tr(A)$$ : the [trace](https://en.wikipedia.org/wiki/Trace_(linear_algebra)) of the matrix that equals the sum over all diagonal elements of the matrix.
 - $$\vert A \vert$$ : the [determinant](https://en.wikipedia.org/wiki/Determinant) of the matrix that - in case of a diagonal matrix - equals the product over all diagonal elements of the matrix.
 - $$ln$$ : the natural log is a good choice when calculating the [Kullback-Leibler Divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence#Multivariate_normal_distributions) of multivariate normal distributions.
 
-To get meaningful variance values - which are always positive - the activation function which generates $$\sigma^2$$ has to softly map negative values from the encoder network to positive values. A good choice is the [Softplus](numpy-neural-network/blob/master/Softplus.ipynb) activation function. This also prevents negative values to be fed into the log function which is part of the Kullback-Leibler Divergence loss.
+To get meaningful variance values - which are always positive - the activation function which generates $$\sigma^2$$ has to softly map negative values from the encoder network to positive values.
+A good choice is the [Softplus](numpy-neural-network/blob/master/Softplus.ipynb) activation function.
+This also prevents negative values to be fed into the log function which is part of the Kullback-Leibler Divergence loss.
 The mean vector $$\mu$$ can simply be generated using a [Linear](https://github.com/maideas/numpy-neural-network/blob/master/Linear.ipynb) activation function.
 
 ## Variational Autoencoder Implementation

@@ -6,7 +6,7 @@ mathjax: true
 
 - model free algorithm
 - similar to Q learning algorithm, but samples reward based on policy and adds policy related Q value of new state
-- SARSA algorithms are called on-policy, because the experiance used for learning is aquired following the current policy
+- SARSA algorithms are called on-policy, because the experience used for learning is acquired following the current policy
 
 ## SARSA Example Implementation
 
@@ -27,6 +27,7 @@ const SarsaQTableUpdate = (state, a, r, stateNext, aNext) => {
 const runSarsaEpisodeStep = (state, a) => {
   let stateNext;
   let aNext, r;
+
   if (mazeComp.isTerminal(state)) {
     runEpisode();  // run next episode (calls runSarsaEpisode)
   } else {
