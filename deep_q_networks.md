@@ -10,7 +10,7 @@ mathjax: true
 
 ## Basic DQN Algorithm
 
-1. Execute a policy step and store the experienced data-point $$[s, a, r, s']$$ in an experience buffer.
+1. Execute a policy step and store the experienced data-point $$[s, a, r, s']$$ into an experience buffer.
 2. Sample a batch of unconnected experience data-points from the experience buffer and use it to optimize (train) the policy network.
 
 The fact, that - to optimize the policy - the experienced data is not used directly, but through sampling of unconnected data batches from an experience buffer, stabilizes the policy network behavior and the policy learning process.
