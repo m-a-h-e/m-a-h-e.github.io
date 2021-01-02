@@ -13,6 +13,7 @@
       "name": "Regression",
       "page_names": [
         "single_layer_regression.md",
+        "xor_regression.md",
         "non_linear_regression.md"
       ]
     },{
@@ -22,6 +23,11 @@
         "convolutional_networks.md",
         "le_net_5_classification.md",
         "inception_classification.md"
+      ]
+    },{
+      "name": "TensorFlow.js Basics",
+      "docs_names": [
+        "tfjs-xor-learning"
       ]
     },{
       "name": "General Notes",
