@@ -56,7 +56,7 @@ model.layers = [
 
 loss_layer = npnn.loss_layer.BinaryCrossEntropyLoss(1)
 optimizer  = npnn.optimizer.Adam(alpha=5e-3)
-dataset    = npnn_datasets.XORBinaryClassifier()
+dataset    = npnn_datasets.XORBinClasses()
 
 optimizer.norm  = dataset.norm
 optimizer.model = model
@@ -65,10 +65,10 @@ optimizer.model.chain = loss_layer
 
 {:.w70}
 <div class="video">
-<video controls poster="assets/videos/xor_binary_classifier.png">
-  <source src="assets/videos/xor_binary_classifier.webm" type="video/webm">
-  <source src="assets/videos/xor_binary_classifier.ogv" type="video/ogg">
-  <source src="assets/videos/xor_binary_classifier.mp4" type="video/mp4">
+<video controls poster="assets/videos/xor_bin_classes.png">
+  <source src="assets/videos/xor_bin_classes.webm" type="video/webm">
+  <source src="assets/videos/xor_bin_classes.ogv" type="video/ogg">
+  <source src="assets/videos/xor_bin_classes.mp4" type="video/mp4">
 </video>
 <p>XOR Classification using Sigmoid + Binary-Cross-Entropy-Loss</p>
 </div>
