@@ -24,24 +24,22 @@ import npnn_datasets
 
 model = npnn.Sequential()
 model.layers = [
-  npnn.Pad2D(shape_in=(10, 10, 1), pad_axis0=2, pad_axis1=2),
-  npnn.Conv2D(shape_in=(14, 14, 1), shape_out=(10, 10, 6), kernel_size=5, stride=1),
-  npnn.LeakyReLU(10 * 10 * 6),
+  npnn.Conv2D(shape_in=(8, 8, 1), shape_out=(6, 6, 4), kernel_size=3, stride=1),
+  npnn.LeakyReLU(6 * 6 * 4),
 
-  npnn.MaxPool(shape_in=(10, 10, 6), shape_out=(5, 5, 6), kernel_size=2),
-  npnn.Conv2D(shape_in=(5, 5, 6), shape_out=(2, 2, 10), kernel_size=3, stride=2),
-  npnn.LeakyReLU(2 * 2 * 10),
+  npnn.MaxPool(shape_in=(6, 6, 4), shape_out=(3, 3, 4), kernel_size=2),
+  npnn.Pad2D(shape_in=(3, 3, 4), pad_axis0=1, pad_axis1=1),
+  npnn.Conv2D(shape_in=(5, 5, 4), shape_out=(3, 3, 4), kernel_size=3, stride=1),
+  npnn.LeakyReLU(3 * 3 * 4),
 
-  npnn.MaxPool(shape_in=(2, 2, 10), shape_out=(1, 1, 10), kernel_size=2),
-  npnn.LeakyReLU(1 * 1 * 10),
-
-  npnn.Dense((1, 1, 10), 4),
+  npnn.AvgPool(shape_in=(3, 3, 4), shape_out=(1, 1, 4), kernel_size=3),
+  npnn.Shape(shape_in=(1, 1, 4), shape_out=(4)),
   npnn.Softmax(4)
 ]
 
 loss_layer = npnn.loss_layer.CrossEntropyLoss(4)
 optimizer  = npnn.optimizer.Adam(alpha=1e-2)
-dataset    = npnn_datasets.FourImgClasses()
+dataset    = npnn_datasets.FourSteppedIcons()
 
 optimizer.norm  = dataset.norm
 optimizer.model = model
@@ -50,22 +48,22 @@ optimizer.model.chain = loss_layer
 
 {:.w90}
 <div class="video">
-<video controls poster="assets/videos/four_img_classes.png">
-  <source src="assets/videos/four_img_classes.webm" type="video/webm">
-  <source src="assets/videos/four_img_classes.ogv" type="video/ogg">
-  <source src="assets/videos/four_img_classes.mp4" type="video/mp4">
+<video controls poster="assets/videos/four_stepped_icons_6x6_double_conv.png">
+  <source src="assets/videos/four_stepped_icons_6x6_double_conv.webm" type="video/webm">
+  <source src="assets/videos/four_stepped_icons_6x6_double_conv.ogv" type="video/ogg">
+  <source src="assets/videos/four_stepped_icons_6x6_double_conv.mp4" type="video/mp4">
 </video>
-<p>Four Different Image Pattern Classification using a CNN</p>
+<p>Four Different Icon Pattern Classification using a CNN</p>
 </div>
 
 {:.w90}
 <div class="video">
-<video controls poster="assets/videos/four_img_classes_2.png">
-  <source src="assets/videos/four_img_classes_2.webm" type="video/webm">
-  <source src="assets/videos/four_img_classes_2.ogv" type="video/ogg">
-  <source src="assets/videos/four_img_classes_2.mp4" type="video/mp4">
+<video controls poster="assets/videos/four_stepped_icons_6x6_double_conv_2.png">
+  <source src="assets/videos/four_stepped_icons_6x6_double_conv_2.webm" type="video/webm">
+  <source src="assets/videos/four_stepped_icons_6x6_double_conv_2.ogv" type="video/ogg">
+  <source src="assets/videos/four_stepped_icons_6x6_double_conv_2.mp4" type="video/mp4">
 </video>
-<p>Four Different Image Pattern Classification using a CNN<br>
+<p>Four Different Icon Pattern Classification using a CNN<br>
 plot of network validation batch data target values (green) and 
 predicted network output values (orange)</p>
 </div>
