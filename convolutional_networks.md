@@ -69,3 +69,9 @@ optimizer.model.chain = loss_layer
 plot of network validation batch data target values (green) and 
 predicted network output values (orange)</p>
 </div>
+
+## References
+
+[A Beginner's Guide to Convolutional Neural Networks](https://towardsdatascience.com/a-beginners-guide-to-convolutional-neural-networks-cnns-14649dbddce8)
+[Convolutional Neural Networks - A Beginner's Guide](https://towardsdatascience.com/convolution-neural-networks-a-beginners-guide-implementing-a-mnist-hand-written-digit-8aa60330d022)
+
