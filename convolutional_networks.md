@@ -33,7 +33,7 @@ model.layers = [
   npnn.LeakyReLU(3 * 3 * 4),
 
   npnn.AvgPool(shape_in=(3, 3, 4), shape_out=(1, 1, 4), kernel_size=3),
-  npnn.Shape(shape_in=(1, 1, 4), shape_out=(4)),
+  npnn.Reshape(shape_in=(1, 1, 4), shape_out=(4)),
   npnn.Softmax(4)
 ]
 
