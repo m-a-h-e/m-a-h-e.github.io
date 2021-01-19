@@ -40,9 +40,9 @@ import numpy as np
 zf = ZipFile("test.zip")
 
 data = []
-for file_name in zf.infolist():
-    f = zf.open(file_name)
-    img = Image.open(f)
+for zfi in zf.infolist():
+    fi = zf.open(zfi)
+    img = Image.open(fi)
     data.append(np.array(img))
 ```
 
