@@ -8,29 +8,31 @@ mathjax: true
 - the immediate reward $$r(s, a)$$ received when executing action $$a$$ in state $$s$$ following policy $$\pi$$
 - the value $$V^\pi(s')$$ of state $$s'$$ reached by executing the policy step
 
-This gives the following bootstrapping state value evaluation rule
+This gives the following bootstrap state value evaluation rule:
 
 $$V^\pi(s) = r(s, a^\pi) + V^\pi(s')$$
 
 for deterministic environments.
 
-For stochastic environments, in which the same action $$a$$ executed in the same state $$s$$ may result in different next states $$s'$$, the transition probabilities $$p(s'|s, a^\pi)$$ have to be taken into account.
-The next state value $$V^\pi(s')$$ becomes the sum over all next states, that can be reached from state $$s$$ executing policy action $$a^\pi$$, weighted by the related state transition probabilities:
+For stochastic environments, in which the same action $$a$$ executed in the same state $$s$$ may result in different next states $$s'$$, the transition probabilities $$p$$ have to be taken into account.
+
+The next state value $$V^\pi(s')$$ becomes the sum over all next states, that can be reached from state $$s$$ executing policy action $$a^\pi$$, weighted with the related state transition probabilities $$p$$:
 
 $$V^\pi(s) = r(s, a^\pi) + \sum_{s'} p(s'|s, a^\pi) V^\pi(s')$$
 
-Because the next state value also depends on the value of its next state, the state values become the sum of all future rewards collected while executing the given policy.
-To prevent infinite state values in non-terminated environments, the future reward gets discounted by a factor $$\gamma$$ smaller than 1.0.
+Because the value of each state depends on the value of the related next state, it becomes the sum of future rewards collected while executing a given policy.
+
+To prevent infinite state values, the sum of future rewards often gets discounted by a factor $$\gamma$$ smaller than 1.0:
 
 $$V^\pi(s) = r(s, a^\pi, s') + \gamma \sum_{s'} p(s'|s, a^\pi) V^\pi(s')$$
 
-The Q state-action value related to state $$s$$ and action $$a$$ is defined as:
+The Q state-action value (state-action pair quality) related to state $$s$$ and action $$a$$ is defined as:
 
 $$Q^\pi(s, a) = r(s, a^\pi, s') + \gamma \sum_{s'} p(s'|s, a^\pi) \max_{a'} Q^\pi(s', a')$$
 
 which can be transformed into a $$Q$$ value 
 [Temporal Difference (TD) Learning](https://en.wikipedia.org/wiki/Temporal_difference_learning)
-rule with
+rule with:
 
 $$G^\pi = r(s, a^\pi, s') + \gamma \sum_{s'} p(s'|s, a^\pi) \max_{a'} Q^\pi(s', a')$$
 
