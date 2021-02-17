@@ -5,24 +5,16 @@ mathjax: true
 # The Bellman Equation
 
 [The Bellman Equation](https://en.wikipedia.org/wiki/Bellman_equation) defines the value $$V^\pi(s)$$ of a given state as the sum of
-- the immediate reward $$r(s, \pi(s))$$ received when executing one policy $$\pi$$ step from state $$s$$
-- and the value $$V^\pi(s')$$ of state $$s'$$ reached by executing the policy step
+- the immediate reward $$r(s, a)$$ received when executing action $$a$$ in state $$s$$ following policy $$\pi$$
+- the value $$V^\pi(s')$$ of state $$s'$$ reached by executing the policy step
 
-This gives us the following bootstrapping state value evaluation rule:
-
-$$V^\pi(s) = r(s, \pi(s)) + V^\pi(s')$$
-
-with the optimal policy definition
-
-$$\pi(s) = arg \max_{a} Q(s, a) = a^\pi$$
-
-we get:
+This gives the following bootstrapping state value evaluation rule
 
 $$V^\pi(s) = r(s, a^\pi) + V^\pi(s')$$
 
 for deterministic environments.
 
-For stochastic environments, in which the same action executed in the same state may result in different next states, the transition probabilities have to be taken into account.
+For stochastic environments, in which the same action $$a$$ executed in the same state $$s$$ may result in different next states $$s'$$, the transition probabilities $$p(s'|s, a^\pi)$$ have to be taken into account.
 The next state value $$V^\pi(s')$$ becomes the sum over all next states, that can be reached from state $$s$$ executing policy action $$a^\pi$$, weighted by the related state transition probabilities:
 
 $$V^\pi(s) = r(s, a^\pi) + \sum_{s'} p(s'|s, a^\pi) V^\pi(s')$$
