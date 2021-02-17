@@ -37,7 +37,7 @@ Since that time I have followed this topic up to now where the research in neura
   </div>
 </nav>
 
-My interest in machine learning research and the growing amount of available publications led me to the decision to - once again - dive deeper into it.
+My interest in machine learning research and the growing amount of available publications led me to the decision to - once again - dive deeper into this topic.
 
 To understand all the things down to their details, I decided to implement all components of neural networks including the optimization environment from scratch using Python and the NumPy library.
 
