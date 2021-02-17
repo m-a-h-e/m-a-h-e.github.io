@@ -22,7 +22,7 @@ $$V^\pi(s) = r(s, a^\pi) + \sum_{s'} p(s'|s, a^\pi) V^\pi(s')$$
 
 Because the value of each state depends on the value of the related next state, it becomes the sum of future rewards collected while executing a given policy.
 
-To prevent infinite state values, the sum of future rewards often gets discounted by a factor $$\gamma$$ smaller than 1.0:
+To prevent infinite state values, the sum of future rewards often gets discounted by a factor $$\gamma$$ smaller than 1:
 
 $$V^\pi(s) = r(s, a^\pi, s') + \gamma \sum_{s'} p(s'|s, a^\pi) V^\pi(s')$$
 
