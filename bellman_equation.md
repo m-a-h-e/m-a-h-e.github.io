@@ -28,17 +28,17 @@ $$V^\pi(s) = r(s, a^\pi, s') + \gamma \sum_{s'} p(s'|s, a^\pi) V^\pi(s')$$
 
 The Q state-action value (state-action pair quality) related to state $$s$$ and action $$a$$ is defined as:
 
-$$Q^\pi(s, a) = r(s, a^\pi, s') + \gamma \sum_{s'} p(s'|s, a^\pi) \max_{a'} Q^\pi(s', a')$$
+$$Q(s, a^\pi) = r(s, a^\pi, s') + \gamma \sum_{s'} p(s'|s, a^\pi) \max_{a'} Q(s', a')$$
 
 which can be transformed into a $$Q$$ value 
 [Temporal Difference (TD) Learning](https://en.wikipedia.org/wiki/Temporal_difference_learning)
 rule with:
 
-$$G^\pi = r(s, a^\pi, s') + \gamma \sum_{s'} p(s'|s, a^\pi) \max_{a'} Q^\pi(s', a')$$
+$$G^\pi = r(s, a^\pi, s') + \gamma \sum_{s'} p(s'|s, a^\pi) \max_{a'} Q(s', a')$$
 
 and the learning rate $$\alpha$$, we get the following $$Q$$ value update rule:
 
-$$Q^\pi_{t+1}(s, a) = (1 - \alpha) Q^\pi_{t}(s, a) + \alpha G^\pi_{t}$$
+$$Q_{t+1}(s, a^\pi) = (1 - \alpha) Q_{t}(s, a^\pi) + \alpha G^\pi_{t}$$
 
 >The state transition probabilities are a property of the environment and must not be explicitly implemented by a TD learning algorithm. The transition probabilities are implicitly modelled (emerge) by doing a lot of averaging TD steps with the same state action pairs and probably different next states.
 
