@@ -1,14 +1,18 @@
 ---
-tags: python,numpy,neural-network,reinforcement learning,deep Q learning,DQN,DDQN,Dueling
+tags: python,numpy,neural-network,reinforcement learning,deep Q learning,DQN,DDQN,Dueling,experience replay,replay buffer
 mathjax: true
 ---
 # Deep Q Network (DQN) Architectures
 
 ## Basic Q Network
+
   - state to vector of Q values related to all actions, or
   - state and action to scalar Q(s, a) value
 
 ## Basic DQN Algorithm
+
+[Deep Q-learning with Experience Replay (Google DeepMind 2013)](https://arxiv.org/pdf/1312.5602.pdf)
+[Human-level Control through Deep Reinforcement Learning (Nature 2015)](https://web.stanford.edu/class/psych209/Readings/MnihEtAlHassibis15NatureControlDeepRL.pdf)
 
 1. Execute a policy step and store the experienced data-point $$[s, a, r, s']$$ into an experience buffer.
 2. Sample a batch of unconnected experience data-points from the experience buffer and use it to optimize (train) the policy network.
