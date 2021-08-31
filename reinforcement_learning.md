@@ -20,6 +20,8 @@ That means to leverage valuable knowledge and in parallel allow to discover unkn
 
 [An Introduction to Deep Reinforcement Learning (McGill University)](https://arxiv.org/pdf/1811.12560.pdf)
 
+[Spinning Up in Deep Reinforcement Learning (OpenAI)](https://spinningup.openai.com/en/latest/index.html)
+
 ## The Markov Decision Process (MDP)
 
 [Markov Decision Process](https://en.wikipedia.org/wiki/Markov_decision_process)
