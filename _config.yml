@@ -5,3 +5,5 @@ remote_theme: maideas/maideas-clean-theme
 markdown: kramdown
 sass:
   style: compressed
+plugins:
+  - jekyll-seo-tag
