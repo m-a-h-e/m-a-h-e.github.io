@@ -5,6 +5,7 @@ style:
   - src: https://maideas.github.io/svelte-td-learning/build/bundle.css
 script:
   - src: https://cdn.plot.ly/plotly-latest.min.js
+  - src: https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js
   - src: https://maideas.github.io/svelte-td-learning/build/bundle.js
     flags: defer
 ---
