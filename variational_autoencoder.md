@@ -112,7 +112,7 @@ The non-diagonal elements are supposed to be 0 which implies that the latent spa
 - $$ln$$ : the natural log is a good choice when calculating the [Kullback-Leibler Divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence#Multivariate_normal_distributions) of multivariate normal distributions.
 
 To get meaningful variance values - which are always positive - the activation function which generates $$\sigma^2$$ has to softly map negative values from the encoder network to positive values.
-A good choice is the [Softplus](numpy-neural-network/blob/master/Softplus.ipynb) activation function.
+A good choice is the [Softplus](https://github.com/maideas/numpy-neural-network/blob/master/Softplus.ipynb) activation function.
 This also prevents negative values to be fed into the log function which is part of the Kullback-Leibler Divergence loss.
 The mean vector $$\mu$$ can simply be generated using a [Linear](https://github.com/maideas/numpy-neural-network/blob/master/Linear.ipynb) activation function.
 
