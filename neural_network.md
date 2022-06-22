@@ -28,6 +28,7 @@ A good way to build neural networks is to define the following basic elements, w
 - [LeakyReLU](https://github.com/maideas/numpy-neural-network/blob/master/LeakyReLU.ipynb)
 - [Tanh](https://github.com/maideas/numpy-neural-network/blob/master/Tanh.ipynb)
 - [Sigmoid](https://github.com/maideas/numpy-neural-network/blob/master/Sigmoid.ipynb)
+- [Swish](https://github.com/maideas/numpy-neural-network/blob/master/Swish.ipynb)
 - [Softplus](https://github.com/maideas/numpy-neural-network/blob/master/Softplus.ipynb)
 - [Softmax](classification_basics.md)
 
